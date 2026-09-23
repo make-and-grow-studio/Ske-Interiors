@@ -19,22 +19,23 @@ RJ is a UI/UX designer, not a developer. Explain choices in plain language, keep
 - No React unless a component truly needs state (the estimator and quote form may use a small island).
 
 ## Design direction
-Warm, quiet, material-led. Mood of Modora (warm natural light, wood, stone), structure and restraint of Renova (generous whitespace, strong grid, oversized wordmark footer), project-page depth of Next Concept.
+Quiet luxury, material-led. RJ revised the look after prompt 04 (references in `/references/`: `luxury-banner.webp`, `elite.png`, `aebele.webp`): ivory and marble-white grounds, warm charcoal text, one gold accent, light high-contrast serif headlines in capitals, small spaced-out capital labels, and a handwritten script used sparingly as a signature. Layout ideas still come from Modora (hero, services grid, carousel), Renova (restraint, timeline, wordmark footer) and Next Concept (project pages).
 
 Tokens (adjust in `src/styles/tokens.css` only):
-- `--teak` #5B3E2A (primary dark, text on light)
-- `--lime-plaster` #ECE6DC (main background)
-- `--stone` #BDB3A4 (lines, muted UI)
-- `--charcoal` #1F1D1A (dark sections, footer)
-- `--brass` #A5854F (single accent: links, focus, active states)
-- `--white` #FFFFFF (cards on dark)
+- `--ivory` #F4F1EC (main background), `--paper` #FBF9F6 (lighter panels)
+- `--graphite` #2E2C28 (text and primary buttons), `--graphite-muted` #6B655C (secondary text)
+- `--sand` #D9D1C4 (hairlines only)
+- `--espresso` #221D18 (dark sections, footer, photo scrims)
+- `--gold` #B8925A (single accent: rules, script, accents on dark). On ivory, small gold text uses `--gold-deep` #82643A (gold alone fails contrast)
+- `--white` #FFFFFF
 Do not introduce terracotta/orange accents or gradients.
 
 Type:
-- Display: Bodoni Moda (high-contrast serif) for H1/H2 and the footer wordmark
-- Text/UI: Hanken Grotesk for body, nav, buttons, labels
-- Scale: 1.25 ratio; body 17–18px, line-height 1.6; display headings tight (1.0–1.1) with slight negative tracking
-- Sentence case everywhere. No all-caps labels, no single-word italic/colour accents in headlines.
+- Display: Cormorant Garamond Light (300) for H1/H2/H3, card titles and the footer wordmark, set in capitals via CSS, lining numerals
+- Text/UI: Jost for body; nav, buttons and labels in small spaced capitals (12px, 0.22em tracking)
+- Script: Ms Madi (brush signature) as the accent (e.g. the hero's second line). At most one per section, never for information people must read quickly
+- Scale: 1.25 ratio; body 17–18px, line-height 1.65; display headings tight (0.95–1.0)
+- Write copy in sentence case in the HTML; capitals come from CSS (`text-transform`), so search engines and screen readers get normal text
 - Line length under 75 characters for body copy.
 
 Layout:

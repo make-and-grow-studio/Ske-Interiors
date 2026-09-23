@@ -103,7 +103,6 @@ const browser = await chromium.launch({
 const context = await browser.newContext({ viewport: { width: 1440, height: 900 } });
 const results = {};
 const failed = [];
-const networkImages = {};
 
 for (const url of urls) {
   const slug = slugOf(url);

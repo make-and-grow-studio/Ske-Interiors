@@ -1,0 +1,91 @@
+---
+/**
+ * Button: primary (solid) or secondary (outline).
+ * Renders a link when `href` is given, otherwise a <button>.
+ * Colours come from the surface tokens, so it works on ivory, espresso
+ * and over photos without extra props. Label in small spaced capitals.
+ *
+ *   <Button href="/get-a-quote/">Get a free quote</Button>
+ *   <Button variant="secondary" type="submit">Send enquiry</Button>
+ */
+import type { HTMLAttributes } from 'astro/types';
+
+type Props = {
+  variant?: 'primary' | 'secondary';
+  href?: string;
+  type?: 'button' | 'submit' | 'reset';
+  /** Stretch to the container width (e.g. mobile forms) */
+  block?: boolean;
+  class?: string;
+} & Omit<HTMLAttributes<'a'> & HTMLAttributes<'button'>, 'type'>;
+
+const { variant = 'primary', href, type = 'button', block = false, class: className, ...rest } = Astro.props;
+const classes = ['btn', `btn-${variant}`, block && 'btn-block', className];
+---
+
+{
+  href ? (
+    <a href={href} class:list={classes} {...rest}>
+      <slot />
+    </a>
+  ) : (
+    <button type={type} class:list={classes} {...rest}>
+      <slot />
+    </button>
+  )
+}
+
+<style>
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    min-height: 50px; /* comfortable touch target */
+    padding: 0.9rem 1.9rem;
+    border: 1px solid var(--ink);
+    border-radius: var(--corner-sm);
+    font-family: var(--family-text);
+    font-size: var(--step-n2);
+    font-weight: 500;
+    letter-spacing: var(--tracking-label);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-decoration: none;
+    cursor: pointer;
+    /* Only colour changes: no movement on hover (CLAUDE.md motion rules) */
+    transition:
+      background-color var(--duration-fast) ease,
+      color var(--duration-fast) ease,
+      border-color var(--duration-fast) ease;
+  }
+
+  .btn-primary {
+    background: var(--ink);
+    color: var(--on-ink);
+  }
+  .btn-primary:hover {
+    background: var(--ink-strong);
+    border-color: var(--ink-strong);
+  }
+
+  .btn-secondary {
+    background: transparent;
+    color: var(--ink);
+  }
+  .btn-secondary:hover {
+    background: var(--ink);
+    color: var(--on-ink);
+  }
+
+  .btn-block {
+    display: flex;
+    width: 100%;
+  }
+
+  .btn:disabled,
+  .btn[aria-disabled='true'] {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+</style>

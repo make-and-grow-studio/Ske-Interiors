@@ -1,0 +1,27 @@
+---
+/**
+ * Layout for internal, never-indexed pages (design system, setup check).
+ * The public BaseLayout (SEO, analytics, header/footer) arrives in prompt 03.
+ */
+import { Font } from 'astro:assets';
+import '../styles/global.css';
+
+type Props = { title: string };
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en-IN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>{title} | SKE Interiors</title>
+    <Font cssVariable="--font-cormorant" preload />
+    <Font cssVariable="--font-jost" preload />
+    <Font cssVariable="--font-script" preload />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

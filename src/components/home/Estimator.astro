@@ -1,0 +1,257 @@
+---
+/**
+ * Home 1.8: Budget estimator (lead magnet). Behaviour: src/scripts/estimator.ts.
+ *
+ * Flow: pick property, scope and finish → "Show my estimate" asks for name +
+ * phone (WhatsApp) → the details are sent to the form service (Web3Forms)
+ * → generate_lead (+ Meta Lead) fires → the range appears with the small
+ * print and a WhatsApp button prefilled with their choices.
+ *
+ * PRICES: src/data/pricing.json holds PLACEHOLDER numbers SKE hasn't
+ * approved. Until "approved" is true, a production build never sends
+ * the numbers to the browser; visitors see a callback message instead.
+ * Development and review builds show the range with a placeholder marker.
+ *
+ * Without JavaScript it's a normal form: every field shows, and it posts
+ * straight to Web3Forms, which redirects to /thank-you/.
+ */
+import ChoiceGroup from '../ui/ChoiceGroup.astro';
+import Field from '../ui/Field.astro';
+import Button from '../ui/Button.astro';
+import Placeholder from '../Placeholder.astro';
+import { estimator } from '../../data/home';
+import { whatsappUrl } from '../../data/site';
+import pricing from '../../data/pricing.json';
+
+const showPlaceholders = import.meta.env.DEV || import.meta.env.PUBLIC_SHOW_PLACEHOLDERS === 'true';
+const canShowRange = pricing.approved || showPlaceholders;
+const accessKey = import.meta.env.PUBLIC_WEB3FORMS_KEY || '';
+const site = Astro.site ?? new URL('https://skeinteriors.com');
+
+/* Only what the browser needs, and no numbers at all unless allowed */
+const config = {
+  key: accessKey,
+  pricing: canShowRange ? { ranges: pricing.ranges, finishMultiplier: pricing.finishMultiplier } : null,
+  placeholderPrices: !pricing.approved,
+  simulate: !accessKey && showPlaceholders, // dev/review with no key: pretend it sent
+  whatsappBase: whatsappUrl(''),
+  error: estimator.error,
+};
+---
+
+<section class="estimate" id="estimate" aria-labelledby="estimate-heading">
+  <div class="container-page estimate__grid">
+    <div class="estimate__intro">
+      <p class="eyebrow estimate__eyebrow">Budget</p>
+      <h2 id="estimate-heading" class="estimate__heading">{estimator.heading}</h2>
+      <p class="estimate__body">{estimator.body}</p>
+      {!pricing.approved && <Placeholder>CONFIRM: pricing table with SKE (placeholder numbers, not published)</Placeholder>}
+      {!accessKey && <Placeholder>PUBLIC_WEB3FORMS_KEY is empty: submissions are simulated here</Placeholder>}
+    </div>
+
+    <form
+      class="estimate__form"
+      action="https://api.web3forms.com/submit"
+      method="POST"
+      novalidate
+      data-estimator
+      data-config={JSON.stringify(config)}
+    >
+      <input type="hidden" name="access_key" value={accessKey} />
+      <input type="hidden" name="subject" value="New estimator lead from skeinteriors.com" />
+      <input type="hidden" name="from_name" value="SKE Interiors website" />
+      <input type="hidden" name="form" value="Home: budget estimator" />
+      <input type="hidden" name="redirect" value={new URL('/thank-you/', site).href} />
+      <!-- spam trap: people never see or tick this -->
+      <input type="checkbox" name="botcheck" class="estimate__trap" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+      <div class="estimate__choices" data-choices>
+        <ChoiceGroup legend="Property" name="property" options={estimator.property} />
+        <ChoiceGroup legend="Scope" name="scope" options={estimator.scope} />
+        <ChoiceGroup legend="Finish" name="finish" options={estimator.finish} />
+      </div>
+
+      <fieldset class="estimate__gate" data-gate>
+        <legend class="estimate__gate-legend caps">Your details, to see the range</legend>
+        <div class="estimate__fields">
+          <Field label="Name" name="name" id="est-name" required autocomplete="name" />
+          <Field label="Phone (WhatsApp)" name="phone" id="est-phone" type="tel" required />
+        </div>
+      </fieldset>
+
+      <p class="estimate__error" role="alert" data-form-error></p>
+
+      <div class="estimate__actions">
+        <Button type="submit" data-submit>{estimator.button}</Button>
+      </div>
+
+      <!-- The result (filled in by estimator.ts, announced to screen readers) -->
+      <div class="estimate__result" data-result hidden tabindex="-1">
+        <p class="estimate__result-label caps" data-result-label>Indicative range</p>
+        <p class="estimate__range" data-range></p>
+        <p class="estimate__thanks" data-thanks hidden></p>
+        <p class="estimate__small" data-small>{estimator.smallPrint}</p>
+        <Button href={whatsappUrl()} variant="secondary" data-whatsapp data-track="click_whatsapp" target="_blank" rel="noopener">
+          WhatsApp us
+        </Button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<script>
+  import '../../scripts/estimator';
+</script>
+
+<style>
+  .estimate {
+    padding-block: var(--section-y);
+  }
+  .estimate__grid {
+    display: grid;
+    gap: var(--space-7);
+  }
+  @media (min-width: 1024px) {
+    .estimate__grid {
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      column-gap: var(--grid-gap);
+      align-items: start;
+    }
+    .estimate__intro {
+      grid-column: 1 / span 4;
+      position: sticky;
+      top: calc(88px + var(--space-6));
+    }
+    .estimate__form {
+      grid-column: 6 / -1;
+    }
+  }
+  .estimate__intro,
+  .estimate__form {
+    min-width: 0;
+  }
+  .estimate__eyebrow {
+    margin: 0 0 var(--space-5);
+  }
+  .estimate__heading {
+    margin: 0;
+    max-width: 14ch;
+    font-size: var(--step-5);
+  }
+  .estimate__body {
+    margin: var(--space-5) 0 var(--space-4);
+    max-width: 40ch;
+    color: var(--ink-muted);
+  }
+
+  .estimate__form {
+    display: grid;
+    gap: var(--space-6);
+    padding: var(--space-6) var(--space-5);
+    background: var(--paper);
+    border: 1px solid var(--hairline);
+  }
+  @media (min-width: 768px) {
+    .estimate__form {
+      padding: var(--space-7);
+    }
+  }
+  .estimate__choices {
+    display: grid;
+    gap: var(--space-6);
+  }
+  .estimate__trap {
+    position: absolute;
+    left: -9999px;
+  }
+
+  .estimate__gate {
+    margin: 0;
+    padding: var(--space-6) 0 0;
+    border: 0;
+    border-top: 1px solid var(--hairline);
+    min-width: 0;
+  }
+  .estimate__gate[hidden] {
+    display: none;
+  }
+  .estimate__gate-legend {
+    float: left; /* keeps the legend inside the fieldset's top padding */
+    width: 100%;
+    margin-bottom: var(--space-5);
+    color: var(--accent);
+  }
+  .estimate__fields {
+    clear: both;
+    display: grid;
+    gap: var(--space-5);
+  }
+  @media (min-width: 768px) {
+    .estimate__fields {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .estimate__error {
+    margin: 0;
+    color: var(--error);
+    font-size: var(--step-n1);
+    font-weight: 500;
+  }
+  .estimate__error:empty {
+    display: none;
+  }
+
+  /* ---- Result ---- */
+  .estimate__result {
+    padding-top: var(--space-6);
+    border-top: 1px solid var(--gold);
+  }
+  .estimate__result[hidden] {
+    display: none;
+  }
+  .estimate__result:focus {
+    outline: none;
+  }
+  .estimate__result-label {
+    margin: 0 0 var(--space-3);
+    color: var(--accent);
+  }
+  .estimate__range {
+    margin: 0;
+    font-family: var(--family-display);
+    font-weight: var(--weight-display);
+    font-size: var(--step-6);
+    line-height: 1;
+    font-variant-numeric: lining-nums;
+  }
+  .estimate__range:empty {
+    display: none;
+  }
+  .estimate__thanks {
+    margin: 0;
+    font-size: var(--step-1);
+  }
+  .estimate__small {
+    margin: var(--space-4) 0 var(--space-5);
+    font-size: var(--step-n1);
+    color: var(--ink-muted);
+  }
+  /* dev/review only: added by estimator.ts next to placeholder prices */
+  .estimate__range :global(.estimate__placeholder) {
+    display: inline-block;
+    white-space: nowrap;
+    margin-left: 0.5em;
+    padding: 0.1em 0.5em;
+    border: 1px dashed var(--accent);
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: var(--step-n2);
+    vertical-align: middle;
+  }
+  /* once the range shows, the form above is done */
+  [data-done] .estimate__choices,
+  [data-done] .estimate__gate,
+  [data-done] .estimate__actions {
+    display: none;
+  }
+</style>

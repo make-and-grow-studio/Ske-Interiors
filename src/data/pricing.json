@@ -1,0 +1,12 @@
+{
+  "_README": "PLACEHOLDER PRICES. SKE has NOT approved these numbers. Do not publish them. While approved is false, a production build never shows a range: visitors get a callback message instead, and the numbers are not even sent to the browser. They only show in development or on a review build (PUBLIC_SHOW_PLACEHOLDERS=true), marked as placeholders. When SKE sends real ranges: replace the values below (whole rupees), set approved to true, and tick the item in TODO-client.md.",
+  "approved": false,
+  "ranges": {
+    "1BHK": { "Kitchen only": [100000, 200000], "Kitchen + wardrobes": [200000, 300000], "Full home": [300000, 500000] },
+    "2BHK": { "Kitchen only": [100000, 200000], "Kitchen + wardrobes": [300000, 400000], "Full home": [500000, 700000] },
+    "3BHK": { "Kitchen only": [100000, 200000], "Kitchen + wardrobes": [400000, 500000], "Full home": [700000, 900000] },
+    "Villa": { "Kitchen only": [200000, 300000], "Kitchen + wardrobes": [500000, 700000], "Full home": [1000000, 1500000] },
+    "Office": { "Kitchen only": [100000, 200000], "Kitchen + wardrobes": [200000, 300000], "Full home": [500000, 1000000] }
+  },
+  "finishMultiplier": { "Essential": 1, "Premium": 1.3, "Luxury": 1.7 }
+}

@@ -1,0 +1,143 @@
+---
+/**
+ * Base layout for every public page.
+ *
+ * <head>: unique title + description (from the content file), canonical,
+ * Open Graph + Twitter tags, JSON-LD, preloaded fonts, analytics (loaded late).
+ * <body>: skip link, header, <main>, footer, mobile bottom bar.
+ *
+ *   <BaseLayout
+ *     title="Interior Designers in Coimbatore | SKE Interiors"
+ *     description="…"
+ *     headerVariant="overlay"
+ *     jsonLd={[businessSchema, faqSchema]}>
+ *     …page…
+ *   </BaseLayout>
+ */
+import { Font } from 'astro:assets';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import MobileBar from '../components/MobileBar.astro';
+import Analytics from '../components/Analytics.astro';
+import '../styles/global.css';
+
+type Props = {
+  /** ≤60 characters, from the content file */
+  title: string;
+  /** ≤155 characters, from the content file */
+  description: string;
+  /** Social share image: a path in /public (default: /og/default.jpg) */
+  ogImage?: string;
+  ogImageAlt?: string;
+  ogType?: 'website' | 'article';
+  /** Keep the page out of search results (e.g. /thank-you/) */
+  noindex?: boolean;
+  /** Structured data: one schema.org object or a list */
+  jsonLd?: Record<string, unknown> | Record<string, unknown>[];
+  /** Transparent header over a hero photo (home) or solid (inner pages) */
+  headerVariant?: 'overlay' | 'solid';
+};
+
+const {
+  title,
+  description,
+  ogImage = '/og/default.jpg',
+  ogImageAlt = 'Living room interior designed by SKE Interiors, Coimbatore',
+  ogType = 'website',
+  noindex = false,
+  jsonLd,
+  headerVariant = 'solid',
+} = Astro.props;
+
+const site = Astro.site ?? new URL('https://skeinteriors.com');
+const canonical = new URL(Astro.url.pathname, site).href;
+const ogImageUrl = new URL(ogImage, site).href;
+const schemas = jsonLd ? (Array.isArray(jsonLd) ? jsonLd : [jsonLd]) : [];
+
+if (import.meta.env.DEV) {
+  if (title.length > 60) console.warn(`[seo] Title over 60 characters on ${Astro.url.pathname}: "${title}"`);
+  if (description.length > 155) console.warn(`[seo] Description over 155 characters on ${Astro.url.pathname}`);
+}
+---
+
+<!doctype html>
+<html lang="en-IN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex, follow" />}
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:type" content={ogType} />
+    <meta property="og:site_name" content="SKE Interiors" />
+    <meta property="og:locale" content="en_IN" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImageUrl} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={ogImageAlt} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageUrl} />
+
+    <!-- Icons -->
+    <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="theme-color" content="#F4F1EC" />
+
+    <!-- Fonts: self-hosted, preloaded, with metric-matched fallbacks -->
+    <Font cssVariable="--font-cormorant" preload />
+    <Font cssVariable="--font-jost" preload />
+    <Font cssVariable="--font-script" preload />
+
+    <!-- Page-specific extras, e.g. the hero image preload -->
+    <slot name="head" />
+
+    {schemas.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
+
+    <Analytics />
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Skip to content</a>
+    <Header variant={headerVariant} />
+    <main id="main" tabindex="-1">
+      <slot />
+    </main>
+    <Footer />
+    <MobileBar />
+  </body>
+</html>
+
+<style is:global>
+  /* Room for the fixed mobile bar so it never covers the footer */
+  @media (max-width: 767.98px) {
+    :root {
+      --mobile-bar-h: calc(57px + env(safe-area-inset-bottom));
+    }
+  }
+
+  .skip-link {
+    position: absolute;
+    top: 0.75rem;
+    left: 0.75rem;
+    z-index: 100;
+    padding: 0.75rem 1rem;
+    background: var(--graphite);
+    color: var(--ivory);
+    font-size: var(--step-n1);
+    font-weight: 500;
+    translate: 0 -200%;
+  }
+  .skip-link:focus {
+    translate: 0 0;
+  }
+  main:focus {
+    outline: none;
+  }
+</style>

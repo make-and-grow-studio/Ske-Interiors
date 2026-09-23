@@ -1,0 +1,133 @@
+---
+/**
+ * Line drawings for the four process steps (Renova-style line illustrations):
+ * 1 a conversation, 2 a measuring tape, 3 a 3D room wireframe, 4 the finished room.
+ *
+ * Every line has pathLength="1", so process.ts can "draw" it by animating
+ * stroke-dashoffset from 1 to 0 without measuring anything.
+ * Lines with class "gold" are the single accent in each drawing.
+ */
+type Props = { step: 1 | 2 | 3 | 4 };
+const { step } = Astro.props;
+
+/* Step 2: the tick marks along the tape, every 13px, longer every fifth */
+const ticks = Array.from({ length: 21 }, (_, i) => {
+  const x = 72 + i * 13;
+  return `M${x} 278 V${i % 5 === 0 ? 268 : 273}`;
+}).join(' ');
+---
+
+<svg class="drawing" viewBox="0 0 480 360" aria-hidden="true" focusable="false">
+  {
+    step === 1 && (
+      <g>
+        <path pathLength="1" d="M40 300 H440" />
+        {/* two armchairs facing each other */}
+        <path pathLength="1" d="M80 300 V250 H170 V300" />
+        <path pathLength="1" d="M80 250 V170 Q80 160 92 160 Q104 160 104 172 V250" />
+        <path pathLength="1" d="M104 222 H150 Q162 222 162 234 V250" />
+        <path pathLength="1" d="M400 300 V250 H310 V300" />
+        <path pathLength="1" d="M400 250 V170 Q400 160 388 160 Q376 160 376 172 V250" />
+        <path pathLength="1" d="M376 222 H330 Q318 222 318 234 V250" />
+        {/* low table with two cups */}
+        <path pathLength="1" d="M195 262 H285 M205 262 V300 M275 262 V300" />
+        <path pathLength="1" d="M222 262 V250 H236 V262 M246 262 V252 H258 V262" />
+        {/* speech bubbles */}
+        <path
+          class="gold"
+          pathLength="1"
+          d="M130 70 H230 Q240 70 240 80 V120 Q240 130 230 130 H165 L150 146 L152 130 H130 Q120 130 120 120 V80 Q120 70 130 70 Z"
+        />
+        <path pathLength="1" d="M140 92 H220 M140 108 H195" />
+        <path
+          pathLength="1"
+          d="M270 40 H350 Q360 40 360 50 V82 Q360 92 350 92 H330 L332 106 L316 92 H270 Q260 92 260 82 V50 Q260 40 270 40 Z"
+        />
+        <path pathLength="1" d="M280 60 H340 M280 74 H320" />
+      </g>
+    )
+  }
+  {
+    step === 2 && (
+      <g>
+        <path pathLength="1" d="M40 300 H440 M60 300 V50" />
+        {/* window on the back wall */}
+        <path pathLength="1" d="M130 80 H250 V165 H130 Z M190 80 V165 M130 122 H250" />
+        {/* tape measure case and pulled-out tape */}
+        <path pathLength="1" d="M340 300 V244 Q340 232 352 232 H408 Q420 232 420 244 V300" />
+        <circle pathLength="1" cx="380" cy="266" r="18" />
+        <circle pathLength="1" cx="380" cy="266" r="5" />
+        <path pathLength="1" d="M62 278 H340 M62 290 H340" />
+        <path class="thin" pathLength="1" d={ticks} />
+        {/* the dimension line */}
+        <path class="gold" pathLength="1" d="M62 206 H340 M72 200 L62 206 L72 212 M330 200 L340 206 L330 212" />
+        <path class="thin" pathLength="1" d="M62 194 V268 M340 194 V228" />
+      </g>
+    )
+  }
+  {
+    step === 3 && (
+      <g>
+        {/* isometric room: floor, two walls */}
+        <path pathLength="1" d="M60 240 L240 150 L420 240 L240 330 Z" />
+        <path pathLength="1" d="M60 240 V120 L240 30 V150 M240 30 L420 120 V240" />
+        <path
+          class="thin"
+          pathLength="1"
+          d="M105 262.5 L285 172.5 M150 285 L330 195 M195 307.5 L375 217.5 M105 217.5 L285 307.5 M150 195 L330 285 M195 172.5 L375 262.5"
+        />
+        {/* window on the right wall */}
+        <path pathLength="1" d="M303 96.5 L357 123.5 V173.5 L303 146.5 Z M330 110 V160" />
+        {/* sofa block against the left wall */}
+        <path
+          class="gold"
+          pathLength="1"
+          d="M141 235.5 L222 195 V155 L186 137 L105 177.5 L141 195.5 L222 155 M141 195.5 V235.5 M105 177.5 V217.5 L141 235.5"
+        />
+        {/* pendant light */}
+        <path pathLength="1" d="M270 70 V110 M258 122 L270 110 L282 122 Z" />
+      </g>
+    )
+  }
+  {
+    step === 4 && (
+      <g>
+        <path pathLength="1" d="M40 300 H440" />
+        <path class="thin" pathLength="1" d="M90 312 H350" />
+        {/* sofa */}
+        <path pathLength="1" d="M110 300 V240 H330 V300" />
+        <path pathLength="1" d="M120 240 V200 Q120 190 130 190 H310 Q320 190 320 200 V240 M220 190 V240" />
+        <path pathLength="1" d="M100 300 V232 Q100 222 110 222 H120 M340 300 V232 Q340 222 330 222 H320" />
+        {/* framed picture */}
+        <path class="gold" pathLength="1" d="M170 80 H270 V155 H170 Z" />
+        <path pathLength="1" d="M182 142 L207 116 L222 131 L238 113 L258 142" />
+        {/* floor lamp */}
+        <path pathLength="1" d="M390 300 V122 M372 300 H408 M380 90 H400 L414 122 H366 Z" />
+        {/* plant */}
+        <path pathLength="1" d="M50 300 L56 262 H84 L90 300" />
+        <path pathLength="1" d="M70 262 Q58 225 70 190 M70 262 Q86 228 96 208 M70 262 Q56 238 44 228" />
+      </g>
+    )
+  }
+</svg>
+
+<style>
+  .drawing {
+    display: block;
+    width: 100%;
+    height: auto;
+    fill: none;
+    stroke: var(--ink);
+    stroke-width: 1.4;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .drawing .gold {
+    stroke: var(--accent-line);
+    stroke-width: 1.8;
+  }
+  .drawing .thin {
+    stroke: var(--ink-muted);
+    stroke-width: 1;
+  }
+</style>

@@ -1,0 +1,128 @@
+/*
+ * SKE Interiors design tokens.
+ * Change colours, type and spacing here only. Tailwind reads these through
+ * src/styles/global.css, so a change here updates every page.
+ *
+ * Direction (RJ, after prompt 04, from references in /references/):
+ * ivory and marble-white grounds, warm charcoal text, a single gold accent;
+ * light high-contrast serif headlines in capitals, small spaced-out capital
+ * labels, and a handwritten script used sparingly as a signature accent.
+ */
+
+:root {
+  /* ---- Colour ---- */
+  --ivory: #f4f1ec; /* main background (Elite / Æbele "pampas beige") */
+  --paper: #fbf9f6; /* lighter panels and cards on ivory */
+  --graphite: #2e2c28; /* text and primary buttons: 12.4:1 on ivory */
+  --graphite-muted: #6b655c; /* secondary text: 5.1:1 on ivory */
+  --sand: #d9d1c4; /* hairlines and dividers only (decorative) */
+  --espresso: #221d18; /* dark sections, footer, photo scrims */
+  --gold: #b8925a; /* the accent: lines, script, accents on dark (5.8:1 on espresso) */
+  --gold-deep: #82643a; /* gold for small text on light: 4.9:1 on ivory (gold is 2.6:1) */
+  --white: #ffffff;
+  --error: #8c2f24; /* form errors only, always with an icon and words: 7.3:1 on ivory */
+
+  /* ---- Surfaces ----
+   * Components use these semantic tokens, never raw colours, so the same
+   * component works on light and dark backgrounds. Light is the default;
+   * add class "surface-dark" (or "surface-photo" over images) to switch. */
+  --surface: var(--ivory);
+  --ink: var(--graphite); /* main text */
+  --ink-muted: var(--graphite-muted); /* secondary text */
+  --ink-strong: var(--espresso); /* hover state for solid buttons */
+  --accent: var(--gold-deep); /* links, focus ring, active states, gold labels */
+  --accent-line: var(--gold); /* decorative gold rules and underlines */
+  --hairline: var(--sand); /* decorative dividers */
+  --field-line: #8f877c; /* edge of form fields: 3.2:1 on ivory */
+  --on-ink: var(--ivory); /* text on a solid --ink button */
+
+  /* ---- Fonts ----
+   * Created by Astro's fonts API (astro.config.mjs) with metric-matched
+   * fallbacks. Free stand-ins for the references' Ivar Fine / GT America /
+   * Haigrast. */
+  --family-display: var(--font-cormorant); /* Cormorant Garamond: headlines, in capitals */
+  --family-text: var(--font-jost); /* Jost: body, labels, buttons, nav */
+  --family-script: var(--font-script); /* Ms Madi: brush signature accent, sparingly */
+
+  /* ---- Type scale: 1.25 ratio at desktop ----
+   * Fluid between a 375px and a 1440px screen. Body is 17px on phones and
+   * 18px on desktop; on phones the ratio tightens to 1.2 so headlines fit. */
+  --step-n2: 0.75rem; /* 12px: labels in capitals, legal */
+  --step-n1: clamp(0.8854rem, 0.8803rem + 0.0219vw, 0.9rem); /* 14px: captions */
+  --step-0: clamp(1.0625rem, 1.0405rem + 0.0939vw, 1.125rem); /* 17 → 18px: body */
+  --step-1: clamp(1.275rem, 1.2288rem + 0.1972vw, 1.4062rem); /* 20 → 22px: lead text */
+  --step-2: clamp(1.53rem, 1.4498rem + 0.3423vw, 1.7578rem); /* 24 → 28px: H3 */
+  --step-3: clamp(1.836rem, 1.7088rem + 0.5427vw, 2.1973rem); /* 29 → 35px */
+  --step-4: clamp(2.2032rem, 2.0119rem + 0.8163vw, 2.7466rem); /* 35 → 44px: H2 */
+  --step-5: clamp(2.6438rem, 2.3659rem + 1.1859vw, 3.4332rem); /* 42 → 55px: large H2 */
+  --step-6: clamp(3.1726rem, 2.7786rem + 1.681vw, 4.2915rem); /* 51 → 69px: page H1 */
+  --step-7: clamp(3.8071rem, 3.2588rem + 2.3396vw, 5.3644rem); /* 61 → 86px */
+  --step-8: clamp(4.5686rem, 3.8161rem + 3.2105vw, 6.7055rem); /* 73 → 107px: home hero */
+
+  --leading-body: 1.65;
+  --leading-display: 0.98; /* capitals sit tight, like the references */
+  --tracking-display: 0.01em;
+  --weight-display: 300; /* light: the fine, high-contrast look */
+  --tracking-label: 0.22em; /* small capitals: nav, buttons, eyebrows */
+  --measure: 68ch;
+
+  /* ---- Layout: 12-column grid, max 1440px ---- */
+  --container-max: 1440px;
+  --gutter: 24px; /* side padding on mobile */
+  --grid-gap: 16px;
+
+  /* ---- Spacing (8px base) ---- */
+  --space-1: 0.25rem; /* 4 */
+  --space-2: 0.5rem; /* 8 */
+  --space-3: 0.75rem; /* 12 */
+  --space-4: 1rem; /* 16 */
+  --space-5: 1.5rem; /* 24 */
+  --space-6: 2rem; /* 32 */
+  --space-7: 3rem; /* 48 */
+  --space-8: 4rem; /* 64 */
+  --space-9: 6rem; /* 96 */
+  --space-10: 8rem; /* 128 */
+  --section-y: clamp(4.5rem, 2.8rem + 7vw, 9rem); /* generous: the references breathe */
+
+  /* ---- Shape: square and architectural ---- */
+  --corner-sm: 0px;
+  --corner-md: 0px;
+  --corner-round: 999px; /* only the slider handle and carousel arrows */
+  --line: 1px solid var(--hairline);
+
+  /* ---- Motion ---- */
+  --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration-fast: 200ms;
+  --duration-base: 400ms;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --gutter: 48px; /* side padding on desktop */
+    --grid-gap: 24px;
+  }
+}
+
+/* Dark sections and footer (espresso) */
+.surface-dark {
+  --surface: var(--espresso);
+  --ink: var(--ivory);
+  --ink-muted: #b3ab9f; /* 7.4:1 on espresso */
+  --ink-strong: var(--white);
+  --accent: var(--gold); /* 5.8:1 on espresso */
+  --accent-line: var(--gold);
+  --hairline: rgb(244 241 236 / 0.16);
+  --field-line: rgb(244 241 236 / 0.55);
+  --on-ink: var(--espresso);
+}
+
+/* Text over photography (e.g. header over the home hero) */
+.surface-photo {
+  --ink: var(--white);
+  --ink-muted: rgb(255 255 255 / 0.86);
+  --ink-strong: var(--ivory);
+  --accent: var(--white);
+  --accent-line: var(--gold);
+  --hairline: rgb(255 255 255 / 0.38);
+  --on-ink: var(--espresso);
+}

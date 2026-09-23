@@ -1,0 +1,631 @@
+---
+/**
+ * /design-system/: internal reference page (noindex, not in the sitemap).
+ * Shows the real components so a change here is a change everywhere.
+ */
+import { Picture } from 'astro:assets';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CtaBlock from '../components/CtaBlock.astro';
+import Header from '../components/Header.astro';
+import Button from '../components/ui/Button.astro';
+import TextLink from '../components/ui/TextLink.astro';
+import Field from '../components/ui/Field.astro';
+import ChoiceGroup from '../components/ui/ChoiceGroup.astro';
+import ImageCard from '../components/ui/ImageCard.astro';
+
+// Real SKE images from the scrape (see scrape/image-report.md)
+import swingLiving from '../../scrape/images/shared/FB_IMG_1671554675670.jpg';
+import threeBhkLiving from '../../scrape/images/shared/20190131_190717_153528da-cd8d-431c-849f-7317bd5e206a.jpg';
+import oneBhkBedroom from '../../scrape/images/shared/FB_IMG_1669397475101.jpg';
+import threeBhkStair from '../../scrape/images/shared/20190131_190715_5c7214a7-65a8-4dc0-9547-690a4395b35d.jpg';
+
+const colours = [
+  { name: 'Ivory', token: '--ivory', hex: '#F4F1EC', use: 'Main background', swatch: 'bg-ivory' },
+  { name: 'Paper', token: '--paper', hex: '#FBF9F6', use: 'Lighter panels and cards', swatch: 'bg-paper' },
+  { name: 'Graphite', token: '--graphite', hex: '#2E2C28', use: 'Text and primary buttons · 12.4:1', swatch: 'bg-graphite' },
+  { name: 'Graphite muted', token: '--graphite-muted', hex: '#6B655C', use: 'Secondary text · 5.1:1', swatch: 'bg-graphite-muted' },
+  { name: 'Sand', token: '--sand', hex: '#D9D1C4', use: 'Hairlines only, never text', swatch: 'bg-sand' },
+  { name: 'Espresso', token: '--espresso', hex: '#221D18', use: 'Dark sections, footer, scrims', swatch: 'bg-espresso' },
+  { name: 'Gold', token: '--gold', hex: '#B8925A', use: 'Rules, script, accents on dark · 5.8:1 on espresso', swatch: 'bg-gold' },
+  { name: 'Gold deep', token: '--gold-deep', hex: '#82643A', use: 'Small gold text on ivory · 4.9:1', swatch: 'bg-gold-deep' },
+  { name: 'Error', token: '--error', hex: '#8C2F24', use: 'Form errors only · 7.3:1', swatch: 'bg-error' },
+];
+
+const typeSteps = [
+  { token: '--step-8', px: '73 → 107px', role: 'Home hero · Cormorant Light, capitals', sample: 'Spaces crafted', kind: 'display', cls: 'text-step-8' },
+  { token: 'script', px: '84 → 123px', role: 'Signature accent · Ms Madi', sample: 'for the way you live', kind: 'script', cls: 'text-step-8' },
+  { token: '--step-6', px: '51 → 69px', role: 'Page H1', sample: 'Let’s talk about your space.', kind: 'display', cls: 'text-step-6' },
+  { token: '--step-4', px: '35 → 44px', role: 'H2', sample: 'Questions we get asked', kind: 'display', cls: 'text-step-4' },
+  { token: '--step-2', px: '24 → 28px', role: 'H3, card titles · Cormorant, capitals', sample: 'Modular kitchens', kind: 'display', cls: 'text-step-2' },
+  { token: '--step-1', px: '20 → 22px', role: 'Lead text · Jost Light', sample: 'Designed in 3D first, then built and fitted by our own carpenters.', kind: 'text', cls: 'text-step-1 font-light' },
+  { token: '--step-0', px: '17 → 18px', role: 'Body · Jost', sample: 'Every project starts with a conversation about how you live or work.', kind: 'text', cls: 'text-step-0' },
+  { token: 'eyebrow', px: '12px · 0.22em', role: 'Labels, nav, buttons · Jost, spaced capitals', sample: 'Interior designers in Coimbatore', kind: 'eyebrow', cls: '' },
+];
+
+const alt = (room: string, type: string) => `${room} of a ${type} in Coimbatore, designed by SKE Interiors`;
+---
+
+<BaseLayout
+  title="Design system | SKE Interiors"
+  description="Internal reference for the SKE Interiors website: colours, type and components."
+  noindex
+>
+  <div>
+    <!-- Intro -->
+    <header class="container-page ds-intro">
+      <p class="ds-eyebrow">Internal · not indexed</p>
+      <h1 class="text-step-6">Design system</h1>
+      <p class="text-step-1 ds-lead">
+        Colours, type, buttons, form fields, image cards and the header for skeinteriors.com. Everything here is a
+        real component. The reasoning is in <code>design/plan.md</code>.
+      </p>
+      <nav aria-label="On this page" class="ds-toc">
+        <a href="#colour">Colour</a><a href="#type">Type</a><a href="#buttons">Buttons</a><a href="#forms">Forms</a
+        ><a href="#cards">Image cards</a><a href="#header">Header</a><a href="#cta">Call to action</a>
+      </nav>
+    </header>
+
+    <!-- Colour -->
+    <section id="colour" class="container-page ds-section" aria-labelledby="colour-h">
+      <h2 id="colour-h" class="text-step-4 ds-h2">Colour</h2>
+      <p class="ds-note">
+        Ivory and paper grounds, warm graphite text, one gold accent. Gold is for rules, the script and dark
+        sections; small gold text on ivory uses <strong>gold deep</strong> (gold itself is only 2.6:1 there).
+        Ratios are WCAG contrast against ivory unless noted.
+      </p>
+      <ul class="ds-swatches">
+        {
+          colours.map((c) => (
+            <li>
+              <div class:list={['ds-swatch', c.swatch]} />
+              <p class="ds-swatch__name">{c.name}</p>
+              <p class="ds-swatch__meta">
+                {c.hex} · <code>{c.token}</code>
+              </p>
+              <p class="ds-swatch__use">{c.use}</p>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <!-- Type -->
+    <section id="type" class="container-page ds-section" aria-labelledby="type-h">
+      <h2 id="type-h" class="text-step-4 ds-h2">Type</h2>
+      <p class="ds-note">
+        Headlines in Cormorant Garamond Light, set in capitals. Body and interface in Jost; labels, nav and
+        buttons in small spaced capitals. A brush signature script (Ms Madi) as a signature accent, at
+        most once per section. Capitals are applied with CSS, so the HTML stays in sentence case.
+      </p>
+      <ul class="ds-type">
+        {
+          typeSteps.map((t) => (
+            <li class="ds-type__row">
+              <p class="ds-type__meta">
+                <code>{t.token}</code>
+                <br />
+                {t.px}
+                <br />
+                <span>{t.role}</span>
+              </p>
+              <p
+                class:list={[
+                  t.cls,
+                  t.kind === 'display' && 'ds-display',
+                  t.kind === 'text' && 'ds-text',
+                  t.kind === 'script' && 'script ds-script',
+                  t.kind === 'eyebrow' && 'eyebrow ds-text',
+                ]}
+              >
+                {t.sample}
+              </p>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <!-- Buttons -->
+    <section id="buttons" class="ds-section" aria-labelledby="buttons-h">
+      <div class="container-page">
+        <h2 id="buttons-h" class="text-step-4 ds-h2">Buttons and links</h2>
+        <p class="ds-note">
+          Square, 50px tall, small spaced capitals. Hover changes colour only; nothing moves. Text links keep a
+          fine gold underline.
+        </p>
+      </div>
+
+      <div class="ds-surfaces">
+        <div class="ds-surface">
+          <p class="ds-surface__label">On ivory</p>
+          <div class="ds-row">
+            <Button href="#">Get a free quote</Button>
+            <Button href="#" variant="secondary">See our work</Button>
+            <TextLink href="#" arrow>More about us</TextLink>
+          </div>
+          <p class="ds-inline-link">
+            Inline link in body text: <a href="#">read reviews on Google</a>.
+          </p>
+        </div>
+
+        <div class="ds-surface surface-dark">
+          <p class="ds-surface__label">On espresso</p>
+          <div class="ds-row">
+            <Button href="#">Get a free quote</Button>
+            <Button href="#" variant="secondary">WhatsApp us</Button>
+            <TextLink href="#" arrow>Show map</TextLink>
+          </div>
+          <p class="ds-inline-link">
+            Inline link in body text: <a href="#">read reviews on Google</a>.
+          </p>
+        </div>
+
+        <div class="ds-surface ds-surface--photo">
+          <Picture
+            src={swingLiving}
+            alt=""
+            formats={['avif', 'webp']}
+            widths={[600, 1000]}
+            sizes="(min-width: 1024px) 33vw, 100vw"
+            class="ds-surface__bg"
+          />
+          <div class="ds-surface__content surface-photo">
+            <p class="ds-surface__label">Over a photo</p>
+            <div class="ds-row">
+              <Button href="#">Get a free quote</Button>
+              <Button href="#" variant="secondary">Call us</Button>
+              <TextLink href="#" arrow>See our work</TextLink>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-page ds-states">
+        <p class="ds-surface__label">States (ivory)</p>
+        <div class="ds-row">
+          <Button>Default</Button>
+          <Button class="is-hover">Hover</Button>
+          <Button class="is-focus">Keyboard focus</Button>
+          <Button disabled>Disabled</Button>
+        </div>
+        <div class="ds-row">
+          <Button variant="secondary">Default</Button>
+          <Button variant="secondary" class="is-hover">Hover</Button>
+          <Button variant="secondary" class="is-focus">Keyboard focus</Button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Forms -->
+    <section id="forms" class="container-page ds-section" aria-labelledby="forms-h">
+      <h2 id="forms-h" class="text-step-4 ds-h2">Form fields</h2>
+      <p class="ds-note">
+        Underlined fields with labels always visible above. Phone is the only required contact field, with a +91
+        prefix and a numeric keypad. Errors use an icon, words and a thicker rule, never colour alone.
+      </p>
+
+      <form class="ds-form" novalidate onsubmit="return false">
+        <div class="ds-form__col">
+          <p class="ds-surface__label">Default</p>
+          <Field label="Name" name="name" required autocomplete="name" placeholder="Your name" />
+          <Field
+            label="Phone (WhatsApp)"
+            name="phone"
+            type="tel"
+            required
+            hint="We'll call or WhatsApp you on this number."
+          />
+          <Field label="Email" name="email" type="email" autocomplete="email" placeholder="you@example.com" />
+          <Field label="Property type" name="property" type="select" options={['1BHK', '2BHK', '3BHK', 'Villa', 'Office', 'Shop']} />
+          <Field label="Message" name="message" type="textarea" placeholder="Tell us about your space" />
+        </div>
+
+        <div class="ds-form__col">
+          <p class="ds-surface__label">Error states</p>
+          <Field label="Name" name="name-err" required error="Please enter your name." />
+          <Field
+            label="Phone (WhatsApp)"
+            name="phone-err"
+            type="tel"
+            required
+            value="98945 886"
+            error="Enter a 10-digit mobile number, like 98945 88673."
+          />
+          <Field label="Email" name="email-err" type="email" value="rajesh@" error="That email address looks incomplete." />
+          <ChoiceGroup
+            legend="What's the space?"
+            name="space-err"
+            options={['Home', 'Office', 'Shop', 'Other']}
+            error="Choose one to continue."
+          />
+          <div class="ds-form-error" role="alert">
+            <strong>Your enquiry didn't send.</strong> Check your phone number and try again, or WhatsApp us on +91
+            98945 88673.
+          </div>
+        </div>
+      </form>
+
+      <div class="ds-choices">
+        <p class="ds-surface__label">Choices (estimator and quote form)</p>
+        <ChoiceGroup legend="Property" name="property-c" options={['1BHK', '2BHK', '3BHK', 'Villa', 'Office']} value="2BHK" />
+        <ChoiceGroup
+          legend="What do you need? (choose any)"
+          name="needs-c"
+          multiple
+          options={['Kitchen', 'Wardrobes', 'Living', 'Bedrooms', 'False ceiling', 'Flooring', 'Full interior']}
+          value={['Kitchen', 'Wardrobes']}
+        />
+      </div>
+    </section>
+
+    <!-- Image cards -->
+    <section id="cards" class="container-page ds-section" aria-labelledby="cards-h">
+      <h2 id="cards-h" class="text-step-4 ds-h2">Image cards</h2>
+      <p class="ds-note">
+        The photo carries the card: no tags or buttons over the image. Title and location below a hairline. No
+        hover animation; the title gains an underline. AVIF and WebP at three widths.
+      </p>
+      <div class="ds-cards">
+        <ImageCard
+          href="#"
+          image={threeBhkLiving}
+          alt={alt('Family lounge with glass balustrade and cove lighting', '3BHK')}
+          title="3BHK home interior"
+          meta="Coimbatore"
+          kind="Home · 3D design"
+          class="ds-cards__wide"
+          sizes="(min-width: 1024px) 50vw, 100vw"
+        />
+        <ImageCard
+          href="#"
+          image={swingLiving}
+          alt={alt('Living room with a brass-chain oonjal swing and wood-slat ceiling', '2BHK')}
+          title="2BHK house interior"
+          meta="Coimbatore"
+          kind="Home · Finished"
+          ratio="portrait"
+          sizes="(min-width: 1024px) 25vw, 100vw"
+        />
+        <ImageCard
+          href="#"
+          image={oneBhkBedroom}
+          alt={alt('Bedroom seating corner with bookshelf', '1BHK')}
+          title="1BHK house interior"
+          meta="Coimbatore"
+          kind="Home · 3D design"
+          ratio="portrait"
+          sizes="(min-width: 1024px) 25vw, 100vw"
+        />
+      </div>
+    </section>
+
+    <!-- Header -->
+    <section id="header" class="ds-section" aria-labelledby="header-h">
+      <div class="container-page">
+        <h2 id="header-h" class="text-step-4 ds-h2">Header</h2>
+        <p class="ds-note">
+          Over the home hero it's transparent with white text. Everywhere else, and once you scroll, it's solid
+          ivory with a hairline. Below 1024px the nav becomes "Menu"; below 768px "Get a free quote" moves to the
+          bottom bar. Menu, dropdown and scroll behaviour come in prompt 03.
+        </p>
+        <p class="ds-surface__label">Over the hero photo</p>
+      </div>
+      <div class="ds-header-demo">
+        <Picture
+          src={threeBhkStair}
+          alt=""
+          formats={['avif', 'webp']}
+          widths={[800, 1440, 2000]}
+          sizes="100vw"
+          class="ds-header-demo__bg"
+        />
+        <div class="ds-header-demo__scrim"></div>
+        <Header variant="overlay" current="/" static class="ds-header-demo__header" />
+      </div>
+      <div class="container-page">
+        <p class="ds-surface__label ds-mt">Solid (inner pages, and after scrolling)</p>
+      </div>
+      <Header variant="solid" current="/our-works/" static />
+    </section>
+
+    <!-- CTA block -->
+    <section id="cta" class="ds-section" aria-labelledby="cta-h">
+      <div class="container-page">
+        <h2 id="cta-h" class="text-step-4 ds-h2">Call-to-action block</h2>
+        <p class="ds-note">
+          Heading, short text, two actions, optional full-bleed photo with a flat espresso scrim. Used to close every
+          page. An optional aside holds contact details (Home closing section).
+        </p>
+      </div>
+      <CtaBlock
+        heading="Ready to start?"
+        primary={{ label: 'Get a free quote', href: '/get-a-quote/' }}
+        secondary={{ label: 'See our work', href: '/our-works/' }}
+        headingLevel="h3"
+      />
+      <CtaBlock
+        heading="Planning your new home?"
+        primary={{ label: 'Get a free quote', href: '/get-a-quote/' }}
+        secondary={{ label: 'WhatsApp us', href: '#', track: 'click_whatsapp' }}
+        tone="light"
+        headingLevel="h3"
+      />
+    </section>
+
+    <footer class="container-page ds-footer">
+      <p>SKE Interiors design system · tokens in <code>src/styles/tokens.css</code></p>
+    </footer>
+  </div>
+</BaseLayout>
+
+<style>
+  .ds-intro {
+    padding-block: var(--space-9) var(--space-7);
+  }
+  .ds-eyebrow,
+  .ds-surface__label {
+    margin: 0 0 1rem;
+    font-size: var(--step-n2);
+    font-weight: 500;
+    letter-spacing: var(--tracking-label);
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+  .ds-lead {
+    margin-top: var(--space-5);
+    color: var(--ink);
+  }
+  .ds-toc {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+    margin-top: var(--space-6);
+    font-size: var(--step-n1);
+    font-weight: 500;
+  }
+  .ds-toc a {
+    text-decoration-color: var(--accent);
+    padding-block: 0.4rem;
+  }
+
+  .ds-section {
+    padding-block: var(--section-y) 0;
+  }
+  .ds-h2 {
+    padding-top: var(--space-5);
+    border-top: 1px solid var(--hairline);
+  }
+  .ds-note {
+    margin: var(--space-4) 0 var(--space-7);
+    color: var(--ink-muted);
+  }
+  .ds-mt {
+    margin-top: var(--space-7);
+  }
+  code {
+    font-size: 0.9em;
+  }
+
+  /* Colour */
+  .ds-swatches {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-6) var(--grid-gap);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  @media (min-width: 768px) {
+    .ds-swatches {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  @media (min-width: 1024px) {
+    .ds-swatches {
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+  }
+  .ds-swatch {
+    aspect-ratio: 4 / 3;
+    border: 1px solid var(--hairline);
+  }
+  .ds-swatch__name {
+    margin: 0.75rem 0 0;
+    font-weight: 500;
+  }
+  .ds-swatch__meta,
+  .ds-swatch__use {
+    margin: 0.15rem 0 0;
+    font-size: var(--step-n1);
+    color: var(--ink-muted);
+  }
+
+  /* Type */
+  .ds-type {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .ds-type__row {
+    display: grid;
+    gap: 0.5rem;
+    padding-block: var(--space-5);
+    border-bottom: 1px solid var(--hairline);
+  }
+  @media (min-width: 768px) {
+    .ds-type__row {
+      grid-template-columns: 13rem 1fr;
+      align-items: baseline;
+      gap: var(--grid-gap);
+    }
+  }
+  .ds-type__meta {
+    margin: 0;
+    font-size: var(--step-n1);
+    color: var(--ink-muted);
+    line-height: 1.5;
+  }
+  .ds-display {
+    margin: 0;
+    max-width: none;
+    font-family: var(--family-display);
+    font-weight: var(--weight-display);
+    line-height: var(--leading-display);
+    letter-spacing: var(--tracking-display);
+    text-transform: uppercase;
+  }
+  .ds-script {
+    margin: 0;
+    max-width: none;
+    font-size: calc(var(--step-8) * 1.15);
+    color: var(--gold-deep);
+  }
+  .ds-text {
+    margin: 0;
+  }
+
+  /* Buttons on surfaces */
+  .ds-surfaces {
+    display: grid;
+    max-width: var(--container-max);
+    margin-inline: auto;
+    padding-inline: var(--gutter);
+    gap: var(--grid-gap);
+  }
+  @media (min-width: 1024px) {
+    .ds-surfaces {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  .ds-surface {
+    position: relative;
+    padding: var(--space-6);
+    border: 1px solid var(--hairline);
+    overflow: hidden;
+    min-height: 16rem;
+  }
+  .ds-surface--photo {
+    padding: 0;
+    border: 0;
+  }
+  .ds-surface--photo :global(.ds-surface__bg) {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .ds-surface__content {
+    position: relative;
+    height: 100%;
+    padding: var(--space-6);
+    background: rgb(31 29 26 / 0.45); /* flat scrim: no gradients */
+  }
+  .ds-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-4) var(--space-5);
+    margin-bottom: var(--space-4);
+  }
+  .ds-inline-link a {
+    text-decoration-color: var(--accent);
+  }
+  .ds-states {
+    margin-top: var(--space-7);
+  }
+  /* Static previews of hover/focus for review */
+  .ds-states :global(.btn-primary.is-hover) {
+    background: var(--ink-strong);
+    border-color: var(--ink-strong);
+  }
+  .ds-states :global(.btn-secondary.is-hover) {
+    background: var(--ink);
+    color: var(--on-ink);
+  }
+  .ds-states :global(.is-focus) {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+  }
+
+  /* Forms */
+  .ds-form {
+    display: grid;
+    gap: var(--space-8) var(--space-7);
+  }
+  @media (min-width: 1024px) {
+    .ds-form {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  .ds-form__col {
+    display: grid;
+    align-content: start;
+    gap: var(--space-5);
+    max-width: 34rem;
+  }
+  .ds-form-error {
+    padding: var(--space-4) var(--space-5);
+    border-left: 3px solid var(--error);
+    background: rgb(140 47 36 / 0.06);
+    color: var(--ink);
+    font-size: var(--step-n1);
+  }
+  .ds-choices {
+    display: grid;
+    gap: var(--space-6);
+    margin-top: var(--space-8);
+  }
+
+  /* Cards */
+  .ds-cards {
+    display: grid;
+    gap: var(--space-7) var(--grid-gap);
+  }
+  @media (min-width: 768px) {
+    .ds-cards {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .ds-cards :global(.ds-cards__wide) {
+      grid-column: 1 / -1;
+    }
+  }
+  @media (min-width: 1024px) {
+    .ds-cards {
+      grid-template-columns: 2fr 1fr 1fr;
+      align-items: start;
+    }
+    .ds-cards :global(.ds-cards__wide) {
+      grid-column: auto;
+    }
+  }
+
+  /* Header demo */
+  .ds-header-demo {
+    position: relative;
+    height: 22rem;
+    overflow: hidden;
+  }
+  .ds-header-demo :global(.ds-header-demo__bg) {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 35%;
+  }
+  .ds-header-demo__scrim {
+    position: absolute;
+    inset: 0;
+    background: rgb(31 29 26 / 0.35);
+  }
+  .ds-header-demo :global(.ds-header-demo__header) {
+    position: relative;
+  }
+
+  .ds-footer {
+    padding-block: var(--space-9);
+    font-size: var(--step-n1);
+    color: var(--ink-muted);
+  }
+</style>

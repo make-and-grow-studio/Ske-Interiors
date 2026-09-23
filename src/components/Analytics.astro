@@ -1,0 +1,58 @@
+---
+/**
+ * GA4 + Meta Pixel, loaded late so they never slow the page:
+ * the real scripts load on the first scroll/tap/keypress, or after the
+ * browser goes idle (max ~4s), whichever comes first.
+ * IDs come from .env (PUBLIC_GA4_ID, PUBLIC_META_PIXEL_ID); with no IDs
+ * nothing loads, but events still work safely.
+ *
+ * Events (CLAUDE.md): any element with data-track="click_call" or
+ * data-track="click_whatsapp" sends that GA4 event when clicked.
+ * Forms call window.skeTrack('generate_lead', {...}); the thank-you page
+ * also fires Meta Pixel "Lead".
+ */
+const ga4 = import.meta.env.PUBLIC_GA4_ID || '';
+const pixel = import.meta.env.PUBLIC_META_PIXEL_ID || '';
+---
+
+<script is:inline define:vars={{ ga4, pixel }}>
+  (function () {
+    var w = window;
+    // Queues: events sent before the real scripts arrive are kept, not lost
+    w.dataLayer = w.dataLayer || [];
+    w.gtag = w.gtag || function () { w.dataLayer.push(arguments); };
+    if (ga4) { w.gtag('js', new Date()); w.gtag('config', ga4); }
+    if (pixel && !w.fbq) {
+      var q = (w.fbq = function () { q.callMethod ? q.callMethod.apply(q, arguments) : q.queue.push(arguments); });
+      w._fbq = q; q.push = q; q.loaded = true; q.version = '2.0'; q.queue = [];
+      w.fbq('init', pixel);
+      w.fbq('track', 'PageView');
+    }
+
+    // One helper for all tracking: GA4 event (+ Meta Pixel Lead for leads)
+    w.skeTrack = function (name, params) {
+      if (ga4) w.gtag('event', name, params || {});
+      if (pixel && name === 'generate_lead') w.fbq('track', 'Lead');
+    };
+    document.addEventListener('click', function (e) {
+      var el = e.target.closest && e.target.closest('[data-track]');
+      if (el) w.skeTrack(el.getAttribute('data-track'), { link_url: el.href || '' });
+    });
+
+    if (!ga4 && !pixel) return;
+    var loaded = false;
+    function load() {
+      if (loaded) return;
+      loaded = true;
+      ['scroll', 'pointerdown', 'keydown', 'touchstart'].forEach(function (t) { removeEventListener(t, load); });
+      function add(src) { var s = document.createElement('script'); s.async = true; s.src = src; document.head.appendChild(s); }
+      if (ga4) add('https://www.googletagmanager.com/gtag/js?id=' + ga4);
+      if (pixel) add('https://connect.facebook.net/en_US/fbevents.js');
+    }
+    ['scroll', 'pointerdown', 'keydown', 'touchstart'].forEach(function (t) { addEventListener(t, load, { once: true, passive: true }); });
+    addEventListener('load', function () {
+      if ('requestIdleCallback' in w) requestIdleCallback(load, { timeout: 4000 });
+      else setTimeout(load, 3000);
+    });
+  })();
+</script>

@@ -1,0 +1,18 @@
+# build output
+dist/
+.astro/
+
+# dependencies
+node_modules/
+
+# environment variables (IDs and keys live here; copy .env.example)
+.env
+.env.*
+!.env.example
+
+# screenshots from `npm run shots` (review locally, don't commit)
+screenshots/
+
+# logs and OS files
+npm-debug.log*
+.DS_Store

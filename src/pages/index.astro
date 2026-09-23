@@ -1,0 +1,104 @@
+---
+/**
+ * TEMPORARY setup check (prompt 00). Not the Home page.
+ * Confirms fonts, colour tokens, the type scale and Tailwind are wired up.
+ * Replaced by the real Home page in prompt 04.
+ */
+import { Font } from 'astro:assets';
+import '../styles/global.css';
+
+const colours = [
+  { name: 'Teak', token: '--teak', hex: '#5B3E2A', cls: 'bg-teak', dark: true },
+  { name: 'Lime plaster', token: '--lime-plaster', hex: '#ECE6DC', cls: 'bg-plaster', dark: false },
+  { name: 'Stone', token: '--stone', hex: '#BDB3A4', cls: 'bg-stone', dark: false },
+  { name: 'Charcoal', token: '--charcoal', hex: '#1F1D1A', cls: 'bg-charcoal', dark: true },
+  { name: 'Brass', token: '--brass', hex: '#A5854F', cls: 'bg-brass', dark: true },
+  { name: 'White', token: '--white', hex: '#FFFFFF', cls: 'bg-white', dark: false },
+];
+
+// Largest to smallest, with the role each step plays
+const steps = [
+  { cls: 'text-step-8', label: 'step 8 · home hero', serif: true },
+  { cls: 'text-step-6', label: 'step 6 · page H1', serif: true },
+  { cls: 'text-step-4', label: 'step 4 · H2', serif: true },
+  { cls: 'text-step-2', label: 'step 2 · H3', serif: false },
+  { cls: 'text-step-1', label: 'step 1 · lead text', serif: false },
+  { cls: 'text-step-0', label: 'step 0 · body', serif: false },
+  { cls: 'text-step-n1', label: 'step −1 · labels', serif: false },
+];
+---
+
+<!doctype html>
+<html lang="en-IN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Setup check | SKE Interiors</title>
+    <Font cssVariable="--font-bodoni" preload />
+    <Font cssVariable="--font-hanken" preload />
+  </head>
+  <body>
+    <main class="container-page py-16">
+      <p class="text-step-n1 text-teak/70">Setup check: temporary page, replaced in prompt 04</p>
+      <h1 class="text-step-7 mt-4 mb-12">Spaces crafted for the way you live</h1>
+
+      <section aria-labelledby="colours">
+        <h2 id="colours" class="text-step-4 mb-6">Colour tokens</h2>
+        <ul class="grid-12 gap-y-6">
+          {
+            colours.map((c) => (
+              <li class="col-span-6 md:col-span-4 lg:col-span-2">
+                <div class:list={[c.cls, 'h-24 rounded-sm border border-stone']} />
+                <p class="mt-2 text-step-n1">
+                  <strong class="font-medium">{c.name}</strong>
+                  <br />
+                  {c.hex} · <code>{c.token}</code>
+                </p>
+              </li>
+            ))
+          }
+        </ul>
+      </section>
+
+      <section aria-labelledby="type" class="mt-16">
+        <h2 id="type" class="text-step-4 mb-6">Type scale (1.25)</h2>
+        <ul class="space-y-6 border-t border-stone pt-6">
+          {
+            steps.map((s) => (
+              <li class="grid gap-2 md:grid-cols-[12rem_1fr] md:items-baseline">
+                <span class="text-step-n1 text-teak/70">{s.label}</span>
+                <span
+                  class:list={[
+                    s.cls,
+                    s.serif ? 'font-display leading-[1.05] tracking-[-0.02em]' : 'font-sans',
+                  ]}
+                >
+                  {s.serif ? 'Designed in 3D, built by hand' : 'Homes, offices and shops across Coimbatore'}
+                </span>
+              </li>
+            ))
+          }
+        </ul>
+      </section>
+
+      <section aria-labelledby="body-copy" class="mt-16">
+        <h2 id="body-copy" class="text-step-4 mb-6">Body copy</h2>
+        <p>
+          SKE Interiors is a Coimbatore interior design and execution studio. We plan, design and build
+          residential and commercial interiors, and we handle flooring too. Every project starts with a
+          conversation about how you live or work, becomes a 3D design you can see and change, and ends
+          with a space handed over on the date we agreed.
+        </p>
+        <p class="mt-4">
+          <a href="#" class="text-brass underline">A brass text link</a>
+        </p>
+      </section>
+
+      <section class="mt-16 bg-charcoal text-plaster p-8 rounded-sm">
+        <p class="font-display text-step-6 leading-none tracking-[-0.02em]">SKE</p>
+        <p class="mt-2 text-step-n1 text-stone">Charcoal section with the display wordmark</p>
+      </section>
+    </main>
+  </body>
+</html>

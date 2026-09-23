@@ -1,0 +1,77 @@
+/*
+ * SKE Interiors design tokens.
+ * Change colours, type and spacing here only. Tailwind reads these through
+ * src/styles/global.css, so a change here updates every page.
+ */
+
+:root {
+  /* ---- Colour (from CLAUDE.md). Brass is the single accent. ---- */
+  --teak: #5b3e2a; /* primary dark, text on light */
+  --lime-plaster: #ece6dc; /* main background */
+  --stone: #bdb3a4; /* lines, muted UI */
+  --charcoal: #1f1d1a; /* dark sections, footer */
+  --brass: #a5854f; /* links, focus, active states */
+  --white: #ffffff; /* cards on dark */
+
+  /* ---- Fonts ----
+   * --font-bodoni and --font-hanken are created by Astro's fonts API
+   * (astro.config.mjs) and already include metric-matched fallbacks. */
+  --family-display: var(--font-bodoni);
+  --family-text: var(--font-hanken);
+
+  /* ---- Type scale: 1.25 ratio at desktop ----
+   * Fluid between a 375px and a 1440px screen. Body is 17px on phones and
+   * 18px on desktop. On phones the ratio tightens to 1.2 so display
+   * headlines still fit a narrow screen; at 1440px it is exactly 1.25. */
+  --step-n2: 0.75rem; /* 12px: legal small print only */
+  --step-n1: clamp(0.8854rem, 0.8803rem + 0.0219vw, 0.9rem); /* 14px: labels, captions */
+  --step-0: clamp(1.0625rem, 1.0405rem + 0.0939vw, 1.125rem); /* 17 → 18px: body */
+  --step-1: clamp(1.275rem, 1.2288rem + 0.1972vw, 1.4062rem); /* 20 → 22px: lead text, H4 */
+  --step-2: clamp(1.53rem, 1.4498rem + 0.3423vw, 1.7578rem); /* 24 → 28px: H3 */
+  --step-3: clamp(1.836rem, 1.7088rem + 0.5427vw, 2.1973rem); /* 29 → 35px */
+  --step-4: clamp(2.2032rem, 2.0119rem + 0.8163vw, 2.7466rem); /* 35 → 44px: H2 */
+  --step-5: clamp(2.6438rem, 2.3659rem + 1.1859vw, 3.4332rem); /* 42 → 55px: large H2 */
+  --step-6: clamp(3.1726rem, 2.7786rem + 1.681vw, 4.2915rem); /* 51 → 69px: page H1 */
+  --step-7: clamp(3.8071rem, 3.2588rem + 2.3396vw, 5.3644rem); /* 61 → 86px */
+  --step-8: clamp(4.5686rem, 3.8161rem + 3.2105vw, 6.7055rem); /* 73 → 107px: home hero */
+
+  --leading-body: 1.6;
+  --leading-display: 1.05; /* display headings: tight (1.0–1.1) */
+  --tracking-display: -0.02em; /* slight negative tracking on display type */
+  --measure: 70ch; /* body copy stays under 75 characters per line */
+
+  /* ---- Layout: 12-column grid, max 1440px ---- */
+  --container-max: 1440px;
+  --gutter: 24px; /* side padding on mobile */
+  --grid-gap: 16px;
+
+  /* ---- Spacing (8px base) ---- */
+  --space-1: 0.25rem; /* 4 */
+  --space-2: 0.5rem; /* 8 */
+  --space-3: 0.75rem; /* 12 */
+  --space-4: 1rem; /* 16 */
+  --space-5: 1.5rem; /* 24 */
+  --space-6: 2rem; /* 32 */
+  --space-7: 3rem; /* 48 */
+  --space-8: 4rem; /* 64 */
+  --space-9: 6rem; /* 96 */
+  --space-10: 8rem; /* 128 */
+  --section-y: clamp(4rem, 2.6rem + 6vw, 8rem); /* vertical space between sections */
+
+  /* ---- Shape: kept minimal ---- */
+  --corner-sm: 2px;
+  --corner-md: 4px;
+  --line: 1px solid var(--stone);
+
+  /* ---- Motion ---- */
+  --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration-fast: 200ms;
+  --duration-base: 400ms;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --gutter: 48px; /* side padding on desktop */
+    --grid-gap: 24px;
+  }
+}

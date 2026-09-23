@@ -1,0 +1,2986 @@
+{
+  "generated_by": "scripts/scrape/05-manifest-and-report.py",
+  "source": "https://skeinteriors.com",
+  "totals": {
+    "image_urls_found": 229,
+    "downloaded": 78,
+    "missing_on_server": 147,
+    "exact_duplicates_removed": 4
+  },
+  "images": [
+    {
+      "filename": "process-bg.jpg",
+      "path": "scrape/images/home/process-bg.jpg",
+      "thumb": "scrape/thumbs/home/process-bg.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/themes/skt-interiors/assets/images/process-bg.jpg",
+      "other_urls": [],
+      "pages": [
+        "home"
+      ],
+      "in_media_library": false,
+      "width": 1920,
+      "height": 614,
+      "file_size_bytes": 62227,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "other",
+      "project": "theme graphic",
+      "render_or_photo": "graphic",
+      "stock": false,
+      "quality": "unusable",
+      "notes": "Dark line-drawing background texture from the WordPress theme.",
+      "sha256": "083252fa2dff8ce23463137d6373f824e09d0b060f8b6c4152041c7969eec930"
+    },
+    {
+      "filename": "profile1.png",
+      "path": "scrape/images/home/profile1.png",
+      "thumb": "scrape/thumbs/home/profile1.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/profile1.png",
+      "other_urls": [
+        "https://skeinteriors.com/wp-content/uploads/2023/04/profile1-120x120.png"
+      ],
+      "pages": [
+        "home"
+      ],
+      "in_media_library": false,
+      "width": 160,
+      "height": 160,
+      "file_size_bytes": 37236,
+      "format": "png",
+      "orientation": "square",
+      "subject": "other",
+      "project": "stock",
+      "render_or_photo": "real photo",
+      "stock": true,
+      "quality": "unusable",
+      "notes": "Testimonial avatar. Stock model portrait, not a real client. Do not use.",
+      "sha256": "ae909d95761fd48796f4ba6d8ebffc9a8a2a2d47f13729191c7ad12569622fbb"
+    },
+    {
+      "filename": "profile2.png",
+      "path": "scrape/images/home/profile2.png",
+      "thumb": "scrape/thumbs/home/profile2.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/profile2.png",
+      "other_urls": [
+        "https://skeinteriors.com/wp-content/uploads/2023/04/profile2-120x120.png"
+      ],
+      "pages": [
+        "home"
+      ],
+      "in_media_library": false,
+      "width": 160,
+      "height": 160,
+      "file_size_bytes": 32623,
+      "format": "png",
+      "orientation": "square",
+      "subject": "other",
+      "project": "stock",
+      "render_or_photo": "real photo",
+      "stock": true,
+      "quality": "unusable",
+      "notes": "Testimonial avatar. Stock model portrait, not a real client. Do not use.",
+      "sha256": "c16941cdb760f35055b3f59497e61b246d26566b6a27f7b8b989dbaa68ff86f8"
+    },
+    {
+      "filename": "profile3.png",
+      "path": "scrape/images/home/profile3.png",
+      "thumb": "scrape/thumbs/home/profile3.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/profile3.png",
+      "other_urls": [
+        "https://skeinteriors.com/wp-content/uploads/2023/04/profile3-120x120.png"
+      ],
+      "pages": [
+        "home"
+      ],
+      "in_media_library": false,
+      "width": 160,
+      "height": 160,
+      "file_size_bytes": 39653,
+      "format": "png",
+      "orientation": "square",
+      "subject": "other",
+      "project": "stock",
+      "render_or_photo": "real photo",
+      "stock": true,
+      "quality": "unusable",
+      "notes": "Testimonial avatar. Stock model portrait, not a real client. Do not use.",
+      "sha256": "3b8ad7c08894cf4e486824e569e9e1d1d45d08a32fc2f3affcc5981bbc6cf4cb"
+    },
+    {
+      "filename": "profile4.png",
+      "path": "scrape/images/home/profile4.png",
+      "thumb": "scrape/thumbs/home/profile4.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/profile4.png",
+      "other_urls": [
+        "https://skeinteriors.com/wp-content/uploads/2023/04/profile4-120x120.png"
+      ],
+      "pages": [
+        "home"
+      ],
+      "in_media_library": false,
+      "width": 160,
+      "height": 160,
+      "file_size_bytes": 40664,
+      "format": "png",
+      "orientation": "square",
+      "subject": "other",
+      "project": "stock",
+      "render_or_photo": "real photo",
+      "stock": true,
+      "quality": "unusable",
+      "notes": "Testimonial avatar. Stock model portrait, not a real client. Do not use.",
+      "sha256": "b556b0cd553ed7feab1a8b639d90e19906c2d65b5b47ce81956573ce5cc10fcb"
+    },
+    {
+      "filename": "slider2.jpg",
+      "path": "scrape/images/home/slider2.jpg",
+      "thumb": "scrape/thumbs/home/slider2.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/slider2.jpg",
+      "other_urls": [],
+      "pages": [
+        "home"
+      ],
+      "in_media_library": true,
+      "width": 1920,
+      "height": 800,
+      "file_size_bytes": 222126,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "kitchen",
+      "project": "stock",
+      "render_or_photo": "real photo",
+      "stock": true,
+      "quality": "unusable",
+      "notes": "Current home hero slide. Stock photo (Scandinavian kitchen), not SKE's work. The content file plans to use it for the hero: don't.",
+      "sha256": "39f466d8bccc6875529823fc94e1c9218a36a256a16c0daee0a640c93495a405"
+    },
+    {
+      "filename": "slider3.jpg",
+      "path": "scrape/images/home/slider3.jpg",
+      "thumb": "scrape/thumbs/home/slider3.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/slider3.jpg",
+      "other_urls": [],
+      "pages": [
+        "home"
+      ],
+      "in_media_library": true,
+      "width": 1920,
+      "height": 800,
+      "file_size_bytes": 202913,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "bedroom",
+      "project": "stock",
+      "render_or_photo": "real photo",
+      "stock": true,
+      "quality": "unusable",
+      "notes": "Current home hero slide. Stock photo (hotel-style bedroom), not SKE's work. Don't use for the hero.",
+      "sha256": "6f5f0b91ddc49cfd4ede9de9300fbefb7e41fce46421c65d2fa9e6b03c3bee29"
+    },
+    {
+      "filename": "slider5.jpg",
+      "path": "scrape/images/home/slider5.jpg",
+      "thumb": "scrape/thumbs/home/slider5.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/slider5.jpg",
+      "other_urls": [],
+      "pages": [
+        "home"
+      ],
+      "in_media_library": true,
+      "width": 1920,
+      "height": 800,
+      "file_size_bytes": 286300,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "office",
+      "project": "stock",
+      "render_or_photo": "real photo",
+      "stock": true,
+      "quality": "unusable",
+      "notes": "Current home hero slide. Stock photo (European open office), not SKE's work.",
+      "sha256": "12e7786635f477f6e411a5e111081284b0a7743e4c336c59f7e88ca51b94b962"
+    },
+    {
+      "filename": "slider6.jpg",
+      "path": "scrape/images/home/slider6.jpg",
+      "thumb": "scrape/thumbs/home/slider6.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/slider6.jpg",
+      "other_urls": [],
+      "pages": [
+        "home"
+      ],
+      "in_media_library": true,
+      "width": 1920,
+      "height": 800,
+      "file_size_bytes": 397451,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "office",
+      "project": "stock",
+      "render_or_photo": "real photo",
+      "stock": true,
+      "quality": "unusable",
+      "notes": "Current home hero slide. Stock photo (same office as slider5), not SKE's work.",
+      "sha256": "6c8ece08222dd2540c582f2289ca66d16d503578ce3f644888ea746c3700768d"
+    },
+    {
+      "filename": "3d-rendering-modern-design-marble-tile-toilet-bathroom-with-shelf.jpg",
+      "path": "scrape/images/media-library/3d-rendering-modern-design-marble-tile-toilet-bathroom-with-shelf.jpg",
+      "thumb": "scrape/thumbs/media-library/3d-rendering-modern-design-marble-tile-toilet-bathroom-with-shelf.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/3d-rendering-modern-design-marble-tile-toilet-bathroom-with-shelf.jpg",
+      "other_urls": [],
+      "pages": [],
+      "in_media_library": true,
+      "width": 1000,
+      "height": 833,
+      "file_size_bytes": 537331,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "other",
+      "project": "stock",
+      "render_or_photo": "3D render",
+      "stock": true,
+      "quality": "unusable",
+      "notes": "Stock (Freepik-style filename) bathroom render. Not SKE's work.",
+      "sha256": "4a7500e59ab5b95ae324dd398dc923f37ab343252f77c24bf2d5fb3daf8d8bf0"
+    },
+    {
+      "filename": "SKE-Interior-1.png",
+      "path": "scrape/images/media-library/SKE-Interior-1.png",
+      "thumb": "scrape/thumbs/media-library/SKE-Interior-1.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/SKE-Interior-1.png",
+      "other_urls": [
+        "https://skeinteriors.com/wp-content/uploads/2023/04/SKE-Interior-2.png",
+        "https://skeinteriors.com/wp-content/uploads/2023/04/SKE-Interior-3.png"
+      ],
+      "pages": [],
+      "in_media_library": true,
+      "width": 250,
+      "height": 68,
+      "file_size_bytes": 11861,
+      "format": "png",
+      "orientation": "landscape",
+      "subject": "logo",
+      "project": "brand",
+      "render_or_photo": "graphic",
+      "stock": false,
+      "quality": "low-res",
+      "notes": "Logo, 250px, light version on transparent. SKE-Interior-2/3.png were byte-identical copies (removed).",
+      "sha256": "c1051807761b2a1983ee08e5fa3f69cf7a97f3645f63bea1de1c7fd9fbf5ead2"
+    },
+    {
+      "filename": "SKE-Interior-new1.png",
+      "path": "scrape/images/media-library/SKE-Interior-new1.png",
+      "thumb": "scrape/thumbs/media-library/SKE-Interior-new1.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/SKE-Interior-new1.png",
+      "other_urls": [],
+      "pages": [],
+      "in_media_library": true,
+      "width": 1041,
+      "height": 280,
+      "file_size_bytes": 15093,
+      "format": "png",
+      "orientation": "landscape",
+      "subject": "logo",
+      "project": "brand",
+      "render_or_photo": "graphic",
+      "stock": false,
+      "quality": "good",
+      "notes": "Black logo with 'Residential & Commercial Interior' tagline, 1041px. Best raster logo for light backgrounds until SKE sends an SVG.",
+      "sha256": "e3a02f8f3a40f86add6f12d6299f4294007157f030e480fc6cca0cc5eb42c9f8"
+    },
+    {
+      "filename": "SKE-Interior.png",
+      "path": "scrape/images/media-library/SKE-Interior.png",
+      "thumb": "scrape/thumbs/media-library/SKE-Interior.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/SKE-Interior.png",
+      "other_urls": [],
+      "pages": [],
+      "in_media_library": true,
+      "width": 1972,
+      "height": 530,
+      "file_size_bytes": 30405,
+      "format": "png",
+      "orientation": "landscape",
+      "subject": "logo",
+      "project": "brand",
+      "render_or_photo": "graphic",
+      "stock": false,
+      "quality": "good",
+      "notes": "Black logo with tagline, 1972px. Largest version.",
+      "sha256": "b6378ac4e2ada72b4f32404433f014982703a41ee2df6cf7e0bb6aa0d7562cb2"
+    },
+    {
+      "filename": "Ske.png",
+      "path": "scrape/images/media-library/Ske.png",
+      "thumb": "scrape/thumbs/media-library/Ske.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/Ske.png",
+      "other_urls": [],
+      "pages": [],
+      "in_media_library": true,
+      "width": 1042,
+      "height": 278,
+      "file_size_bytes": 14737,
+      "format": "png",
+      "orientation": "landscape",
+      "subject": "logo",
+      "project": "brand",
+      "render_or_photo": "graphic",
+      "stock": false,
+      "quality": "good",
+      "notes": "Black logo, tagline 'Residential & Commercial', 1042px.",
+      "sha256": "9c020428393686cf9ff904bf45f7cd7aec26cf26d026acbc593c5b5028569764"
+    },
+    {
+      "filename": "about-img.jpg",
+      "path": "scrape/images/media-library/about-img.jpg",
+      "thumb": "scrape/thumbs/media-library/about-img.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/about-img.jpg",
+      "other_urls": [],
+      "pages": [],
+      "in_media_library": true,
+      "width": 800,
+      "height": 889,
+      "file_size_bytes": 110568,
+      "format": "jpg",
+      "orientation": "portrait",
+      "subject": "exterior",
+      "project": "stock",
+      "render_or_photo": "3D render",
+      "stock": true,
+      "quality": "unusable",
+      "notes": "Theme-demo stock render of a modern gabled house. Not SKE's work.",
+      "sha256": "209f69eabf0bf0af6043ede39e040c68799d7d8258b89c5c93b3664bff824a3c"
+    },
+    {
+      "filename": "ancient-chinise-room.jpg",
+      "path": "scrape/images/media-library/ancient-chinise-room.jpg",
+      "thumb": "scrape/thumbs/media-library/ancient-chinise-room.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/ancient-chinise-room.jpg",
+      "other_urls": [],
+      "pages": [],
+      "in_media_library": true,
+      "width": 1000,
+      "height": 667,
+      "file_size_bytes": 1034759,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "retail",
+      "project": "stock",
+      "render_or_photo": "real photo",
+      "stock": true,
+      "quality": "unusable",
+      "notes": "Stock photo of a Chinese restaurant. Not SKE's work.",
+      "sha256": "e48df9fa34ff94b2eacce6c6b7dc5c07400cf871f3c34a45957923419c86f0c9"
+    },
+    {
+      "filename": "business-meeting-working-room-office-building-1.jpg",
+      "path": "scrape/images/media-library/business-meeting-working-room-office-building-1.jpg",
+      "thumb": "scrape/thumbs/media-library/business-meeting-working-room-office-building-1.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/business-meeting-working-room-office-building-1.jpg",
+      "other_urls": [],
+      "pages": [],
+      "in_media_library": true,
+      "width": 1000,
+      "height": 667,
+      "file_size_bytes": 639920,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "office",
+      "project": "stock",
+      "render_or_photo": "3D render",
+      "stock": true,
+      "quality": "unusable",
+      "notes": "Stock office render. Not SKE's work.",
+      "sha256": "2d17028b9ff5c3ed3a4ddcd4717074125928dffd67c4e1d8047da2ce051ef14b"
+    },
+    {
+      "filename": "cropped-SKE-Interior-new1.png",
+      "path": "scrape/images/media-library/cropped-SKE-Interior-new1.png",
+      "thumb": "scrape/thumbs/media-library/cropped-SKE-Interior-new1.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/cropped-SKE-Interior-new1.png",
+      "other_urls": [],
+      "pages": [],
+      "in_media_library": true,
+      "width": 250,
+      "height": 68,
+      "file_size_bytes": 6324,
+      "format": "png",
+      "orientation": "landscape",
+      "subject": "logo",
+      "project": "brand",
+      "render_or_photo": "graphic",
+      "stock": false,
+      "quality": "low-res",
+      "notes": "Light logo variant, 250px.",
+      "sha256": "026ebf4cbc3988b3dbc158c3230f7fedeb5fc66962b2da4ddc03138365cad434"
+    },
+    {
+      "filename": "cropped-SKE-Interior.png",
+      "path": "scrape/images/media-library/cropped-SKE-Interior.png",
+      "thumb": "scrape/thumbs/media-library/cropped-SKE-Interior.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/cropped-SKE-Interior.png",
+      "other_urls": [],
+      "pages": [],
+      "in_media_library": true,
+      "width": 1972,
+      "height": 528,
+      "file_size_bytes": 30767,
+      "format": "png",
+      "orientation": "landscape",
+      "subject": "logo",
+      "project": "brand",
+      "render_or_photo": "graphic",
+      "stock": false,
+      "quality": "good",
+      "notes": "Light logo variant on transparent, 1972px (for dark backgrounds).",
+      "sha256": "692aca648626f4779ef710eff9c438f31efb28e343f75196bce13ec394529156"
+    },
+    {
+      "filename": "cropped-cropped-SKE-Interior.png",
+      "path": "scrape/images/media-library/cropped-cropped-SKE-Interior.png",
+      "thumb": "scrape/thumbs/media-library/cropped-cropped-SKE-Interior.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/cropped-cropped-SKE-Interior.png",
+      "other_urls": [],
+      "pages": [],
+      "in_media_library": true,
+      "width": 1972,
+      "height": 526,
+      "file_size_bytes": 30752,
+      "format": "png",
+      "orientation": "landscape",
+      "subject": "logo",
+      "project": "brand",
+      "render_or_photo": "graphic",
+      "stock": false,
+      "quality": "good",
+      "notes": "Same as cropped-SKE-Interior.png, 2px shorter.",
+      "sha256": "1c0c3b9b7a44d42cdeeb70f700080df8dbdc3bceb7c1fea97fc7720c799fb322"
+    },
+    {
+      "filename": "image-windows-morden-office-building.jpg",
+      "path": "scrape/images/media-library/image-windows-morden-office-building.jpg",
+      "thumb": "scrape/thumbs/media-library/image-windows-morden-office-building.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/image-windows-morden-office-building.jpg",
+      "other_urls": [],
+      "pages": [],
+      "in_media_library": true,
+      "width": 1000,
+      "height": 668,
+      "file_size_bytes": 540204,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "office",
+      "project": "stock",
+      "render_or_photo": "real photo",
+      "stock": true,
+      "quality": "unusable",
+      "notes": "Stock photo of an office atrium. Not SKE's work.",
+      "sha256": "6fc18d6f8e0d00f336ec74129027c10492462dfd12920bd203c00e5d24f015b3"
+    },
+    {
+      "filename": "lobby-condominium-building.jpg",
+      "path": "scrape/images/media-library/lobby-condominium-building.jpg",
+      "thumb": "scrape/thumbs/media-library/lobby-condominium-building.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/lobby-condominium-building.jpg",
+      "other_urls": [],
+      "pages": [],
+      "in_media_library": true,
+      "width": 1000,
+      "height": 667,
+      "file_size_bytes": 530627,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "office",
+      "project": "stock",
+      "render_or_photo": "real photo",
+      "stock": true,
+      "quality": "unusable",
+      "notes": "Stock photo of a building lobby. Not SKE's work.",
+      "sha256": "346c8c013bfc994ff96c775e8b12bba723b28282182ff896a323b2d3bdb46d9b"
+    },
+    {
+      "filename": "margo-brodowicz-183156-unsplash.jpg",
+      "path": "scrape/images/media-library/margo-brodowicz-183156-unsplash.jpg",
+      "thumb": "scrape/thumbs/media-library/margo-brodowicz-183156-unsplash.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/margo-brodowicz-183156-unsplash.jpg",
+      "other_urls": [],
+      "pages": [],
+      "in_media_library": true,
+      "width": 1400,
+      "height": 933,
+      "file_size_bytes": 94987,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "other",
+      "project": "stock",
+      "render_or_photo": "real photo",
+      "stock": true,
+      "quality": "unusable",
+      "notes": "Unsplash photo (plane wing). Unrelated to interiors.",
+      "sha256": "f4d40e0fee73106130bd171d01da62ceffa5511768d63dc628db6cc5dcbb9b33"
+    },
+    {
+      "filename": "modern-beauty-salon-interior.jpg",
+      "path": "scrape/images/media-library/modern-beauty-salon-interior.jpg",
+      "thumb": "scrape/thumbs/media-library/modern-beauty-salon-interior.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/modern-beauty-salon-interior.jpg",
+      "other_urls": [],
+      "pages": [],
+      "in_media_library": true,
+      "width": 1000,
+      "height": 667,
+      "file_size_bytes": 629276,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "retail",
+      "project": "stock",
+      "render_or_photo": "real photo",
+      "stock": true,
+      "quality": "unusable",
+      "notes": "Stock photo of a beauty salon. Not SKE's work.",
+      "sha256": "5b612ac8f00b98fb43dd69c3652b35c9f007353fb17582a7a06e53bb48ed528c"
+    },
+    {
+      "filename": "room-interior-design-1.jpg",
+      "path": "scrape/images/media-library/room-interior-design-1.jpg",
+      "thumb": "scrape/thumbs/media-library/room-interior-design-1.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/room-interior-design-1.jpg",
+      "other_urls": [],
+      "pages": [],
+      "in_media_library": true,
+      "width": 1000,
+      "height": 667,
+      "file_size_bytes": 719443,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "other",
+      "project": "stock",
+      "render_or_photo": "real photo",
+      "stock": true,
+      "quality": "unusable",
+      "notes": "Stock photo of a library. Not SKE's work.",
+      "sha256": "be39bdc3bbda90a8a799ac91cad444532966d354054b486c57bb894dd3cf213f"
+    },
+    {
+      "filename": "school-is-closed-due-covid19-pandemic.jpg",
+      "path": "scrape/images/media-library/school-is-closed-due-covid19-pandemic.jpg",
+      "thumb": "scrape/thumbs/media-library/school-is-closed-due-covid19-pandemic.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/school-is-closed-due-covid19-pandemic.jpg",
+      "other_urls": [],
+      "pages": [],
+      "in_media_library": true,
+      "width": 1000,
+      "height": 667,
+      "file_size_bytes": 368226,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "other",
+      "project": "stock",
+      "render_or_photo": "real photo",
+      "stock": true,
+      "quality": "unusable",
+      "notes": "Stock photo of a classroom. Not SKE's work.",
+      "sha256": "506fa02f395b6660fe20c7c657390ad605844bb7b598467e994026ac25c47073"
+    },
+    {
+      "filename": "service1.jpg",
+      "path": "scrape/images/media-library/service1.jpg",
+      "thumb": "scrape/thumbs/media-library/service1.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/service1.jpg",
+      "other_urls": [],
+      "pages": [],
+      "in_media_library": true,
+      "width": 1200,
+      "height": 774,
+      "file_size_bytes": 125125,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "living room",
+      "project": "stock",
+      "render_or_photo": "real photo",
+      "stock": true,
+      "quality": "unusable",
+      "notes": "Theme-demo stock photo (Halloween decor). Not SKE's work.",
+      "sha256": "fa433ae2f12eb39fe21e0f712366a307d0c35048dfff4e5aa4edf388fe644738"
+    },
+    {
+      "filename": "service2.jpg",
+      "path": "scrape/images/media-library/service2.jpg",
+      "thumb": "scrape/thumbs/media-library/service2.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/service2.jpg",
+      "other_urls": [],
+      "pages": [],
+      "in_media_library": true,
+      "width": 1200,
+      "height": 801,
+      "file_size_bytes": 302172,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "other",
+      "project": "stock",
+      "render_or_photo": "real photo",
+      "stock": true,
+      "quality": "unusable",
+      "notes": "Theme-demo stock photo (library/cafe). Not SKE's work.",
+      "sha256": "413a000f3a7a52eab8bd5aa729c92f7a5f75b87b49761dfc8677456d463c1680"
+    },
+    {
+      "filename": "service3.jpg",
+      "path": "scrape/images/media-library/service3.jpg",
+      "thumb": "scrape/thumbs/media-library/service3.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/service3.jpg",
+      "other_urls": [],
+      "pages": [],
+      "in_media_library": true,
+      "width": 1200,
+      "height": 800,
+      "file_size_bytes": 290906,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "other",
+      "project": "stock",
+      "render_or_photo": "real photo",
+      "stock": true,
+      "quality": "unusable",
+      "notes": "Theme-demo stock photo (industrial hall). Not SKE's work.",
+      "sha256": "beca6ea89cfb23267eab40118a784a2fc2e3a7a869b6f75725ca723255d0fd37"
+    },
+    {
+      "filename": "slider1.jpg",
+      "path": "scrape/images/media-library/slider1.jpg",
+      "thumb": "scrape/thumbs/media-library/slider1.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/slider1.jpg",
+      "other_urls": [],
+      "pages": [],
+      "in_media_library": true,
+      "width": 1920,
+      "height": 800,
+      "file_size_bytes": 197444,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "living room",
+      "project": "stock",
+      "render_or_photo": "3D render",
+      "stock": true,
+      "quality": "unusable",
+      "notes": "Theme-demo stock render (lilac living room). Not SKE's work. In the media library, not on the live site.",
+      "sha256": "9288de70ef3ba1dbdd14c610c2a804102e7e443aae60738d03947612a4b19dcc"
+    },
+    {
+      "filename": "slider4.jpg",
+      "path": "scrape/images/media-library/slider4.jpg",
+      "thumb": "scrape/thumbs/media-library/slider4.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/slider4.jpg",
+      "other_urls": [],
+      "pages": [],
+      "in_media_library": true,
+      "width": 1920,
+      "height": 800,
+      "file_size_bytes": 326022,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "office",
+      "project": "stock",
+      "render_or_photo": "3D render",
+      "stock": true,
+      "quality": "unusable",
+      "notes": "Theme-demo stock office render. Not SKE's work.",
+      "sha256": "60f21ddb6131ed3c1efa63e7cbfc9a5292c25fcc54666b38445022606a289076"
+    },
+    {
+      "filename": "tim-peterson-1099515-unsplash.jpg",
+      "path": "scrape/images/media-library/tim-peterson-1099515-unsplash.jpg",
+      "thumb": "scrape/thumbs/media-library/tim-peterson-1099515-unsplash.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/tim-peterson-1099515-unsplash.jpg",
+      "other_urls": [],
+      "pages": [],
+      "in_media_library": true,
+      "width": 1080,
+      "height": 720,
+      "file_size_bytes": 163489,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "other",
+      "project": "stock",
+      "render_or_photo": "real photo",
+      "stock": true,
+      "quality": "unusable",
+      "notes": "Unsplash photo (bison landscape). Unrelated to interiors.",
+      "sha256": "4a1eb2ec8a41bdc8316a7993cb91ff6e74e6643ab4a6015a790ceaa0bc0124b2"
+    },
+    {
+      "filename": "unoccupied-modern-clinic-workspace-with-nobody-it-having-turned-computer-screen-showing-medical-report-medical-room-having-firstaid-kit-contemporary-hospital-furniture-patients-documents.jpg",
+      "path": "scrape/images/media-library/unoccupied-modern-clinic-workspace-with-nobody-it-having-turned-computer-screen-showing-medical-report-medical-room-having-firstaid-kit-contemporary-hospital-furniture-patients-documents.jpg",
+      "thumb": "scrape/thumbs/media-library/unoccupied-modern-clinic-workspace-with-nobody-it-having-turned-computer-screen-showing-medical-report-medical-room-having-firstaid-kit-contemporary-hospital-furniture-patients-documents.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/unoccupied-modern-clinic-workspace-with-nobody-it-having-turned-computer-screen-showing-medical-report-medical-room-having-firstaid-kit-contemporary-hospital-furniture-patients-documents.jpg",
+      "other_urls": [],
+      "pages": [],
+      "in_media_library": true,
+      "width": 1000,
+      "height": 667,
+      "file_size_bytes": 303597,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "office",
+      "project": "stock",
+      "render_or_photo": "real photo",
+      "stock": true,
+      "quality": "unusable",
+      "notes": "Stock photo of a clinic room. Not SKE's work.",
+      "sha256": "3da02291a8cc337b56938de8d396b7e3b11c237849e905919c23921e28bf3f56"
+    },
+    {
+      "filename": "wabi-jayme-578762-unsplash.jpg",
+      "path": "scrape/images/media-library/wabi-jayme-578762-unsplash.jpg",
+      "thumb": "scrape/thumbs/media-library/wabi-jayme-578762-unsplash.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/wabi-jayme-578762-unsplash.jpg",
+      "other_urls": [],
+      "pages": [],
+      "in_media_library": true,
+      "width": 1400,
+      "height": 933,
+      "file_size_bytes": 87468,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "other",
+      "project": "stock",
+      "render_or_photo": "real photo",
+      "stock": true,
+      "quality": "unusable",
+      "notes": "Unsplash photo (night road). Unrelated to interiors.",
+      "sha256": "342deed4015fabd8a6fd4844075b3c89b9f1637adb696940f92a7637fa68b951"
+    },
+    {
+      "filename": "yoann-siloine-532511-unsplash.jpg",
+      "path": "scrape/images/media-library/yoann-siloine-532511-unsplash.jpg",
+      "thumb": "scrape/thumbs/media-library/yoann-siloine-532511-unsplash.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/yoann-siloine-532511-unsplash.jpg",
+      "other_urls": [],
+      "pages": [],
+      "in_media_library": true,
+      "width": 1024,
+      "height": 610,
+      "file_size_bytes": 12767,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "other",
+      "project": "stock",
+      "render_or_photo": "real photo",
+      "stock": true,
+      "quality": "unusable",
+      "notes": "Unsplash photo (Polaroid camera). Unrelated to interiors.",
+      "sha256": "d9f3190e417ea654ed831e0b44f11453dc6fd3a88a79b0ef2ecbf94c3fa5d7e5"
+    },
+    {
+      "filename": "20220209_230625_IMG_3870.jpg",
+      "path": "scrape/images/residential-interiors/20220209_230625_IMG_3870.jpg",
+      "thumb": "scrape/thumbs/residential-interiors/20220209_230625_IMG_3870.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/20220209_230625_IMG_3870.jpg",
+      "other_urls": [
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/20220209_230625_IMG_3870/3611192888.jpg"
+      ],
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true,
+      "width": 960,
+      "height": 720,
+      "file_size_bytes": 138079,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "pooja unit",
+      "project": "unassigned (residential gallery)",
+      "render_or_photo": "3D render",
+      "stock": false,
+      "quality": "low-res",
+      "notes": "Pooja room with wooden doors, jaali panel and marble floor. 960x720. Only pooja image on the site.",
+      "sha256": "c1d992d070a0e85c4a537dbccbe28d87a52e477104955868146b3d595d0576c2"
+    },
+    {
+      "filename": "20181002_095954_IMG_8260.jpg",
+      "path": "scrape/images/shared/20181002_095954_IMG_8260.jpg",
+      "thumb": "scrape/thumbs/shared/20181002_095954_IMG_8260.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/20181002_095954_IMG_8260.jpg",
+      "other_urls": [
+        "https://skeinteriors.com/wp-content/uploads/2023/04/20181002_095954_IMG_8260-300x228.jpg",
+        "https://skeinteriors.com/wp-content/uploads/2023/04/20181002_095954_IMG_8260-768x583.jpg",
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/20181002_095954_IMG_8260/3992158537.jpg"
+      ],
+      "pages": [
+        "home",
+        "residential",
+        "residential-interiors"
+      ],
+      "in_media_library": true,
+      "width": 790,
+      "height": 600,
+      "file_size_bytes": 85505,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "living room",
+      "project": "unassigned (residential gallery)",
+      "render_or_photo": "3D render",
+      "stock": false,
+      "quality": "low-res",
+      "notes": "Living room with grey sofas, wood slat partition, open kitchen behind. 790x600.",
+      "sha256": "ec26610e6b5a4bc7182f393a729abc5724e978bc80e14add138bd7d478a96867"
+    },
+    {
+      "filename": "20190131_190709_5ce9bae3-d83b-4728-af5e-0cfe4f01126b.jpg",
+      "path": "scrape/images/shared/20190131_190709_5ce9bae3-d83b-4728-af5e-0cfe4f01126b.jpg",
+      "thumb": "scrape/thumbs/shared/20190131_190709_5ce9bae3-d83b-4728-af5e-0cfe4f01126b.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/20190131_190709_5ce9bae3-d83b-4728-af5e-0cfe4f01126b.jpg",
+      "other_urls": [
+        "https://skeinteriors.com/wp-content/uploads/2023/04/20190131_190709_5ce9bae3-d83b-4728-af5e-0cfe4f01126b-1024x692.jpg",
+        "https://skeinteriors.com/wp-content/uploads/2023/04/20190131_190709_5ce9bae3-d83b-4728-af5e-0cfe4f01126b-300x203.jpg",
+        "https://skeinteriors.com/wp-content/uploads/2023/04/20190131_190709_5ce9bae3-d83b-4728-af5e-0cfe4f01126b-768x519.jpg",
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/20190131_190709_5ce9bae3-d83b-4728-af5e-0cfe4f01126b/610212450.jpg"
+      ],
+      "pages": [
+        "commercial",
+        "home",
+        "residential-interiors"
+      ],
+      "in_media_library": true,
+      "width": 1247,
+      "height": 843,
+      "file_size_bytes": 151776,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "office",
+      "project": "unassigned (residential gallery)",
+      "render_or_photo": "3D render",
+      "stock": false,
+      "quality": "good",
+      "notes": "Home study / small office with twin desks and wall storage. Also used on home and 'commercial' pages.",
+      "sha256": "e2089cf5413e7bfea8882633a7b3d36ff403dcbb1469ec43549bca56b0f1b46f"
+    },
+    {
+      "filename": "20190131_190713_ddcd44fa-d3d1-49bb-9aa6-96c1a1847715.jpg",
+      "path": "scrape/images/shared/20190131_190713_ddcd44fa-d3d1-49bb-9aa6-96c1a1847715.jpg",
+      "thumb": "scrape/thumbs/shared/20190131_190713_ddcd44fa-d3d1-49bb-9aa6-96c1a1847715.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/20190131_190713_ddcd44fa-d3d1-49bb-9aa6-96c1a1847715.jpg",
+      "other_urls": [
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/20190131_190713_ddcd44fa-d3d1-49bb-9aa6-96c1a1847715/1321063097.jpg",
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/20190131_190713_ddcd44fa-d3d1-49bb-9aa6-96c1a1847715/1366205429.jpg"
+      ],
+      "pages": [
+        "3bhk-home-interior",
+        "residential-interiors"
+      ],
+      "in_media_library": true,
+      "width": 1280,
+      "height": 853,
+      "file_size_bytes": 189899,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "bedroom",
+      "project": "3BHK Home Interior",
+      "render_or_photo": "3D render",
+      "stock": false,
+      "quality": "good",
+      "notes": "Bedroom with pink bedspread, wardrobe and study niche. Same room as 190717_8322be1c.",
+      "sha256": "adb80f157f68574a76be3ac18add8133eee225046dc87785aaa100b6f0487510"
+    },
+    {
+      "filename": "20190131_190713_e5677a83-7a94-4ec1-a94a-bd1a4a35a97c.jpg",
+      "path": "scrape/images/shared/20190131_190713_e5677a83-7a94-4ec1-a94a-bd1a4a35a97c.jpg",
+      "thumb": "scrape/thumbs/shared/20190131_190713_e5677a83-7a94-4ec1-a94a-bd1a4a35a97c.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/20190131_190713_e5677a83-7a94-4ec1-a94a-bd1a4a35a97c.jpg",
+      "other_urls": [
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/20190131_190713_e5677a83-7a94-4ec1-a94a-bd1a4a35a97c/2405507057.jpg",
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/20190131_190713_e5677a83-7a94-4ec1-a94a-bd1a4a35a97c/2427612861.jpg"
+      ],
+      "pages": [
+        "3bhk-home-interior",
+        "residential-interiors"
+      ],
+      "in_media_library": true,
+      "width": 1280,
+      "height": 861,
+      "file_size_bytes": 229089,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "bedroom",
+      "project": "3BHK Home Interior",
+      "render_or_photo": "3D render",
+      "stock": false,
+      "quality": "good",
+      "notes": "Bedroom with TV unit, textured wallpaper and wall clock.",
+      "sha256": "aea787a218a0d60b042d44bb00bb12382410659667495efb8d76d6defc3e7650"
+    },
+    {
+      "filename": "20190131_190715_5c7214a7-65a8-4dc0-9547-690a4395b35d.jpg",
+      "path": "scrape/images/shared/20190131_190715_5c7214a7-65a8-4dc0-9547-690a4395b35d.jpg",
+      "thumb": "scrape/thumbs/shared/20190131_190715_5c7214a7-65a8-4dc0-9547-690a4395b35d.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/20190131_190715_5c7214a7-65a8-4dc0-9547-690a4395b35d.jpg",
+      "other_urls": [
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/20190131_190715_5c7214a7-65a8-4dc0-9547-690a4395b35d/1217359281.jpg",
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/20190131_190715_5c7214a7-65a8-4dc0-9547-690a4395b35d/1465654525.jpg"
+      ],
+      "pages": [
+        "3bhk-home-interior",
+        "residential-interiors"
+      ],
+      "in_media_library": true,
+      "width": 1280,
+      "height": 868,
+      "file_size_bytes": 189438,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "living room",
+      "project": "3BHK Home Interior",
+      "render_or_photo": "3D render",
+      "stock": false,
+      "quality": "good",
+      "notes": "Living room with staircase, TV partition unit and cream sofas.",
+      "sha256": "a63bfcd544209340570d2c52636a7641055ca6feae488c9857c2cabd9097ccfb"
+    },
+    {
+      "filename": "20190131_190716_51d626d3-a2e4-48ed-92ad-6f74e72b0090.jpg",
+      "path": "scrape/images/shared/20190131_190716_51d626d3-a2e4-48ed-92ad-6f74e72b0090.jpg",
+      "thumb": "scrape/thumbs/shared/20190131_190716_51d626d3-a2e4-48ed-92ad-6f74e72b0090.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/20190131_190716_51d626d3-a2e4-48ed-92ad-6f74e72b0090.jpg",
+      "other_urls": [
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/20190131_190716_51d626d3-a2e4-48ed-92ad-6f74e72b0090/1711028419.jpg",
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/20190131_190716_51d626d3-a2e4-48ed-92ad-6f74e72b0090/2049919375.jpg"
+      ],
+      "pages": [
+        "3bhk-home-interior",
+        "residential-interiors"
+      ],
+      "in_media_library": true,
+      "width": 1280,
+      "height": 853,
+      "file_size_bytes": 209639,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "bedroom",
+      "project": "3BHK Home Interior",
+      "render_or_photo": "3D render",
+      "stock": false,
+      "quality": "good",
+      "notes": "Master bedroom with glossy wardrobe and TV unit.",
+      "sha256": "2f0abe4d9851becff62e7a56514896cde5b53560d37fe2259ea5d9628cdfa8ac"
+    },
+    {
+      "filename": "20190131_190716_6c612b6a-b7c3-4886-9258-8336a29b1a6e.jpg",
+      "path": "scrape/images/shared/20190131_190716_6c612b6a-b7c3-4886-9258-8336a29b1a6e.jpg",
+      "thumb": "scrape/thumbs/shared/20190131_190716_6c612b6a-b7c3-4886-9258-8336a29b1a6e.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/20190131_190716_6c612b6a-b7c3-4886-9258-8336a29b1a6e.jpg",
+      "other_urls": [
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/20190131_190716_6c612b6a-b7c3-4886-9258-8336a29b1a6e/2394668234.jpg",
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/20190131_190716_6c612b6a-b7c3-4886-9258-8336a29b1a6e/2439564678.jpg"
+      ],
+      "pages": [
+        "3bhk-home-interior",
+        "residential-interiors"
+      ],
+      "in_media_library": true,
+      "width": 1280,
+      "height": 781,
+      "file_size_bytes": 163931,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "living room",
+      "project": "3BHK Home Interior",
+      "render_or_photo": "3D render",
+      "stock": false,
+      "quality": "good",
+      "notes": "Living room, cream sofas, TV partition. Near-duplicate of 190717_4c9f42c4 (same render, tiny change).",
+      "sha256": "1aa79ebe4339833f08e95a605acfa75cc304ad6b2cc544cef196321abcc342d5"
+    },
+    {
+      "filename": "20190131_190716_8eecb74a-f4b3-44ea-997a-e2ce0bf858b2.jpg",
+      "path": "scrape/images/shared/20190131_190716_8eecb74a-f4b3-44ea-997a-e2ce0bf858b2.jpg",
+      "thumb": "scrape/thumbs/shared/20190131_190716_8eecb74a-f4b3-44ea-997a-e2ce0bf858b2.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/20190131_190716_8eecb74a-f4b3-44ea-997a-e2ce0bf858b2.jpg",
+      "other_urls": [
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/20190131_190716_8eecb74a-f4b3-44ea-997a-e2ce0bf858b2/48839773.jpg",
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/20190131_190716_8eecb74a-f4b3-44ea-997a-e2ce0bf858b2/490360081.jpg"
+      ],
+      "pages": [
+        "3bhk-home-interior",
+        "residential-interiors"
+      ],
+      "in_media_library": true,
+      "width": 1280,
+      "height": 853,
+      "file_size_bytes": 174485,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "living room",
+      "project": "3BHK Home Interior",
+      "render_or_photo": "3D render",
+      "stock": false,
+      "quality": "good",
+      "notes": "Upper living / family area with glass stair rail, false ceiling.",
+      "sha256": "a0c9771ec1725ffe9ea31fb8435aa570b06d0faf7417cf17df7e9ed90baf679e"
+    },
+    {
+      "filename": "20190131_190716_f87a3dc2-192a-4283-b47d-40500725f282.jpg",
+      "path": "scrape/images/shared/20190131_190716_f87a3dc2-192a-4283-b47d-40500725f282.jpg",
+      "thumb": "scrape/thumbs/shared/20190131_190716_f87a3dc2-192a-4283-b47d-40500725f282.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/20190131_190716_f87a3dc2-192a-4283-b47d-40500725f282.jpg",
+      "other_urls": [
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/20190131_190716_f87a3dc2-192a-4283-b47d-40500725f282/1075998799.jpg",
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/20190131_190716_f87a3dc2-192a-4283-b47d-40500725f282/1609629955.jpg"
+      ],
+      "pages": [
+        "3bhk-home-interior",
+        "residential-interiors"
+      ],
+      "in_media_library": true,
+      "width": 1280,
+      "height": 905,
+      "file_size_bytes": 184931,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "bedroom",
+      "project": "3BHK Home Interior",
+      "render_or_photo": "3D render",
+      "stock": false,
+      "quality": "good",
+      "notes": "Kids' / teen bedroom with study desk and sofa.",
+      "sha256": "935b9d20264a5edeeaa4901ff608fbfc0d03db336cfc372a3c47b5c9509be129"
+    },
+    {
+      "filename": "20190131_190717_153528da-cd8d-431c-849f-7317bd5e206a.jpg",
+      "path": "scrape/images/shared/20190131_190717_153528da-cd8d-431c-849f-7317bd5e206a.jpg",
+      "thumb": "scrape/thumbs/shared/20190131_190717_153528da-cd8d-431c-849f-7317bd5e206a.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/20190131_190717_153528da-cd8d-431c-849f-7317bd5e206a.jpg",
+      "other_urls": [
+        "https://skeinteriors.com/wp-content/uploads/2023/04/20190131_190717_153528da-cd8d-431c-849f-7317bd5e206a-1024x696.jpg",
+        "https://skeinteriors.com/wp-content/uploads/2023/04/20190131_190717_153528da-cd8d-431c-849f-7317bd5e206a-300x204.jpg",
+        "https://skeinteriors.com/wp-content/uploads/2023/04/20190131_190717_153528da-cd8d-431c-849f-7317bd5e206a-768x522.jpg",
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/20190131_190717_153528da-cd8d-431c-849f-7317bd5e206a/1798379247.jpg",
+        "https://skeinteriors.com/wp-content/uploads/2023/04/20190131_190717_153528da-cd8d-431c-849f-7317bd5e206a-1.jpg"
+      ],
+      "pages": [
+        "3bhk-home-interior",
+        "home",
+        "our-works",
+        "residential-interiors"
+      ],
+      "in_media_library": true,
+      "width": 1280,
+      "height": 870,
+      "file_size_bytes": 167028,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "living room",
+      "project": "3BHK Home Interior",
+      "render_or_photo": "3D render",
+      "stock": false,
+      "quality": "good",
+      "notes": "Project cover. Family lounge with glass balustrade and false ceiling cove lighting. A '-1' copy was byte-identical (removed).",
+      "sha256": "870e78de83ad828f7ab1a23c580b6f790978a2eed4cbeb908e8bfcced54a2fbf"
+    },
+    {
+      "filename": "20190131_190717_4c9f42c4-5a8d-4bac-8974-8e9cca5e37fc.jpg",
+      "path": "scrape/images/shared/20190131_190717_4c9f42c4-5a8d-4bac-8974-8e9cca5e37fc.jpg",
+      "thumb": "scrape/thumbs/shared/20190131_190717_4c9f42c4-5a8d-4bac-8974-8e9cca5e37fc.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/20190131_190717_4c9f42c4-5a8d-4bac-8974-8e9cca5e37fc.jpg",
+      "other_urls": [
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/20190131_190717_4c9f42c4-5a8d-4bac-8974-8e9cca5e37fc/2704137971.jpg",
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/20190131_190717_4c9f42c4-5a8d-4bac-8974-8e9cca5e37fc/3204362175.jpg"
+      ],
+      "pages": [
+        "3bhk-home-interior",
+        "residential-interiors"
+      ],
+      "in_media_library": true,
+      "width": 1280,
+      "height": 781,
+      "file_size_bytes": 165113,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "living room",
+      "project": "3BHK Home Interior",
+      "render_or_photo": "3D render",
+      "stock": false,
+      "quality": "good",
+      "notes": "Near-duplicate of 190716_6c612b6a.",
+      "sha256": "c914333820afc287a1c264aff01ccb292e95f9b1e0fcafdb427ae2dcac3e28ea"
+    },
+    {
+      "filename": "20190131_190717_8322be1c-7c13-41eb-bb4c-a851138eac56.jpg",
+      "path": "scrape/images/shared/20190131_190717_8322be1c-7c13-41eb-bb4c-a851138eac56.jpg",
+      "thumb": "scrape/thumbs/shared/20190131_190717_8322be1c-7c13-41eb-bb4c-a851138eac56.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/20190131_190717_8322be1c-7c13-41eb-bb4c-a851138eac56.jpg",
+      "other_urls": [
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/20190131_190717_8322be1c-7c13-41eb-bb4c-a851138eac56/1270202116.jpg",
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/20190131_190717_8322be1c-7c13-41eb-bb4c-a851138eac56/1416023624.jpg"
+      ],
+      "pages": [
+        "3bhk-home-interior",
+        "residential-interiors"
+      ],
+      "in_media_library": true,
+      "width": 1280,
+      "height": 853,
+      "file_size_bytes": 173568,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "bedroom",
+      "project": "3BHK Home Interior",
+      "render_or_photo": "3D render",
+      "stock": false,
+      "quality": "good",
+      "notes": "Same bedroom as 190713_ddcd44fa from the other side: wardrobe, dresser, TV unit.",
+      "sha256": "287f8201b6902e903ad5f3b4a463c9c6827ef8b4590d595cab177b4d7aacc326"
+    },
+    {
+      "filename": "20190131_190718_61abca03-514e-4748-ae8a-347b4f593de4.jpg",
+      "path": "scrape/images/shared/20190131_190718_61abca03-514e-4748-ae8a-347b4f593de4.jpg",
+      "thumb": "scrape/thumbs/shared/20190131_190718_61abca03-514e-4748-ae8a-347b4f593de4.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/20190131_190718_61abca03-514e-4748-ae8a-347b4f593de4.jpg",
+      "other_urls": [
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/20190131_190718_61abca03-514e-4748-ae8a-347b4f593de4/28284737.jpg",
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/20190131_190718_61abca03-514e-4748-ae8a-347b4f593de4/511501837.jpg"
+      ],
+      "pages": [
+        "3bhk-home-interior",
+        "residential-interiors"
+      ],
+      "in_media_library": true,
+      "width": 1280,
+      "height": 860,
+      "file_size_bytes": 181598,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "bedroom",
+      "project": "3BHK Home Interior",
+      "render_or_photo": "3D render",
+      "stock": false,
+      "quality": "good",
+      "notes": "Bedroom with patterned wallpaper, bed back panel, wardrobe.",
+      "sha256": "a204b6558f03854b1c5af0e7d41170ef0ddbf894d21ce00f04f6f3197a408217"
+    },
+    {
+      "filename": "20190131_190719_60a5f79f-2278-44dd-98ea-cc9e42d547da.jpg",
+      "path": "scrape/images/shared/20190131_190719_60a5f79f-2278-44dd-98ea-cc9e42d547da.jpg",
+      "thumb": "scrape/thumbs/shared/20190131_190719_60a5f79f-2278-44dd-98ea-cc9e42d547da.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/20190131_190719_60a5f79f-2278-44dd-98ea-cc9e42d547da.jpg",
+      "other_urls": [
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/20190131_190719_60a5f79f-2278-44dd-98ea-cc9e42d547da/1097675197.jpg",
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/20190131_190719_60a5f79f-2278-44dd-98ea-cc9e42d547da/1589526769.jpg"
+      ],
+      "pages": [
+        "3bhk-home-interior",
+        "residential-interiors"
+      ],
+      "in_media_library": true,
+      "width": 1280,
+      "height": 914,
+      "file_size_bytes": 155526,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "bedroom",
+      "project": "3BHK Home Interior",
+      "render_or_photo": "3D render",
+      "stock": false,
+      "quality": "good",
+      "notes": "Same bedroom as 190718_61abca03, wider angle with wall clock decal.",
+      "sha256": "ed1a91562c1a56ebe281d53a36cc6b5c9d9da95d0d07fdc8eae409efd2bc11f4"
+    },
+    {
+      "filename": "20191204_195552_IMG_1414.jpg",
+      "path": "scrape/images/shared/20191204_195552_IMG_1414.jpg",
+      "thumb": "scrape/thumbs/shared/20191204_195552_IMG_1414.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/20191204_195552_IMG_1414.jpg",
+      "other_urls": [
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/20191204_195552_IMG_1414/4069093277.jpg"
+      ],
+      "pages": [
+        "home",
+        "residential-interiors"
+      ],
+      "in_media_library": true,
+      "width": 960,
+      "height": 720,
+      "file_size_bytes": 186042,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "bedroom",
+      "project": "unassigned (residential gallery)",
+      "render_or_photo": "3D render",
+      "stock": false,
+      "quality": "low-res",
+      "notes": "Bedroom with sliding wardrobe, textured feature wall, wooden floor. 960x720. Small watermark bottom-right.",
+      "sha256": "5170439c8eb0dde30904046270ac43c81a1c2e3f09f412538f4fdd71e4c3e7ec"
+    },
+    {
+      "filename": "20220209_230628_IMG_3871.jpg",
+      "path": "scrape/images/shared/20220209_230628_IMG_3871.jpg",
+      "thumb": "scrape/thumbs/shared/20220209_230628_IMG_3871.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/20220209_230628_IMG_3871.jpg",
+      "other_urls": [
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/20220209_230628_IMG_3871/3334572911.jpg",
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/20220209_230628_IMG_3871/4041676339.jpg"
+      ],
+      "pages": [
+        "2bhk-house-interior",
+        "residential-interiors"
+      ],
+      "in_media_library": true,
+      "width": 800,
+      "height": 600,
+      "file_size_bytes": 121727,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "kitchen",
+      "project": "2BHK House Interior",
+      "render_or_photo": "3D render",
+      "stock": false,
+      "quality": "low-res",
+      "notes": "L-shaped kitchen, wood + grey gloss, tall unit and microwave. 800x600.",
+      "sha256": "ed0372d1461f1e0831684e727f9efcc6ccf0436b982b72bb0ebaf9f43466c7ac"
+    },
+    {
+      "filename": "20220209_230633_IMG_3872.jpg",
+      "path": "scrape/images/shared/20220209_230633_IMG_3872.jpg",
+      "thumb": "scrape/thumbs/shared/20220209_230633_IMG_3872.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/20220209_230633_IMG_3872.jpg",
+      "other_urls": [
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/20220209_230633_IMG_3872/2338598812.jpg",
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/20220209_230633_IMG_3872/3175264960.jpg"
+      ],
+      "pages": [
+        "2bhk-house-interior",
+        "residential-interiors"
+      ],
+      "in_media_library": true,
+      "width": 800,
+      "height": 600,
+      "file_size_bytes": 96709,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "kitchen",
+      "project": "2BHK House Interior",
+      "render_or_photo": "3D render",
+      "stock": false,
+      "quality": "low-res",
+      "notes": "Same kitchen, hob side with diamond-pattern backsplash. 800x600.",
+      "sha256": "985b2f98c2ad0b775925844a4a7e171f26921b642c593bb69125efa3e55de5f3"
+    },
+    {
+      "filename": "20220209_230642_IMG_3873.jpg",
+      "path": "scrape/images/shared/20220209_230642_IMG_3873.jpg",
+      "thumb": "scrape/thumbs/shared/20220209_230642_IMG_3873.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/20220209_230642_IMG_3873.jpg",
+      "other_urls": [
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/20220209_230642_IMG_3873/1013764321.jpg",
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/20220209_230642_IMG_3873/172641725.jpg"
+      ],
+      "pages": [
+        "2bhk-house-interior",
+        "residential-interiors"
+      ],
+      "in_media_library": true,
+      "width": 690,
+      "height": 597,
+      "file_size_bytes": 83148,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "bedroom",
+      "project": "2BHK House Interior",
+      "render_or_photo": "3D render",
+      "stock": false,
+      "quality": "low-res",
+      "notes": "Bedroom with false ceiling pattern, wardrobe and dresser. 690x597.",
+      "sha256": "1b3de11e46456c0ae83f2f08f991a22d77aa4ba08dde505cfc9da74f90f282c1"
+    },
+    {
+      "filename": "20220209_230645_IMG_3874.jpg",
+      "path": "scrape/images/shared/20220209_230645_IMG_3874.jpg",
+      "thumb": "scrape/thumbs/shared/20220209_230645_IMG_3874.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/20220209_230645_IMG_3874.jpg",
+      "other_urls": [
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/20220209_230645_IMG_3874/2412356696.jpg",
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/20220209_230645_IMG_3874/3119462660.jpg"
+      ],
+      "pages": [
+        "2bhk-house-interior",
+        "residential-interiors"
+      ],
+      "in_media_library": true,
+      "width": 800,
+      "height": 600,
+      "file_size_bytes": 110337,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "bedroom",
+      "project": "2BHK House Interior",
+      "render_or_photo": "3D render",
+      "stock": false,
+      "quality": "low-res",
+      "notes": "Bedroom with white gloss wardrobe, clock wall, dresser. 800x600.",
+      "sha256": "b65c182756e58bf1a92202e2b7288f21abc473e696f05390379621dfba011899"
+    },
+    {
+      "filename": "20220209_230649_IMG_3875.jpg",
+      "path": "scrape/images/shared/20220209_230649_IMG_3875.jpg",
+      "thumb": "scrape/thumbs/shared/20220209_230649_IMG_3875.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/20220209_230649_IMG_3875.jpg",
+      "other_urls": [
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/20220209_230649_IMG_3875/1363534191.jpg",
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/20220209_230649_IMG_3875/1734573107.jpg"
+      ],
+      "pages": [
+        "2bhk-house-interior",
+        "residential-interiors"
+      ],
+      "in_media_library": true,
+      "width": 960,
+      "height": 720,
+      "file_size_bytes": 101168,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "bedroom",
+      "project": "2BHK House Interior",
+      "render_or_photo": "3D render",
+      "stock": false,
+      "quality": "low-res",
+      "notes": "Bedroom with walnut wall panelling and shag rug. 960x720.",
+      "sha256": "775e58f9d330197ffa77ae40954612226cf16b91f2bd0d69f2da24b6e2c358cb"
+    },
+    {
+      "filename": "20220209_230652_IMG_3876.jpg",
+      "path": "scrape/images/shared/20220209_230652_IMG_3876.jpg",
+      "thumb": "scrape/thumbs/shared/20220209_230652_IMG_3876.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/20220209_230652_IMG_3876.jpg",
+      "other_urls": [
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/20220209_230652_IMG_3876/484459932.jpg",
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/20220209_230652_IMG_3876/717674688.jpg"
+      ],
+      "pages": [
+        "2bhk-house-interior",
+        "residential-interiors"
+      ],
+      "in_media_library": true,
+      "width": 800,
+      "height": 600,
+      "file_size_bytes": 107036,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "bedroom",
+      "project": "2BHK House Interior",
+      "render_or_photo": "3D render",
+      "stock": false,
+      "quality": "low-res",
+      "notes": "Bedroom with smoked-glass wardrobe and framed quote. 800x600.",
+      "sha256": "fc6ea271cba1445e324c5079a620cf1ed8a83638aa164563696627b5e44943f2"
+    },
+    {
+      "filename": "20220211_171055_IMG_3952.jpg",
+      "path": "scrape/images/shared/20220211_171055_IMG_3952.jpg",
+      "thumb": "scrape/thumbs/shared/20220211_171055_IMG_3952.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/20220211_171055_IMG_3952.jpg",
+      "other_urls": [
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/20220211_171055_IMG_3952/1497225712.jpg",
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/20220211_171055_IMG_3952/1864058028.jpg"
+      ],
+      "pages": [
+        "2bhk-house-interior",
+        "residential-interiors"
+      ],
+      "in_media_library": true,
+      "width": 750,
+      "height": 740,
+      "file_size_bytes": 116679,
+      "format": "jpg",
+      "orientation": "square",
+      "subject": "living room",
+      "project": "2BHK House Interior",
+      "render_or_photo": "3D render",
+      "stock": false,
+      "quality": "low-res",
+      "notes": "Foyer console with vertical wood battens and planters. 750x740.",
+      "sha256": "089453705a27309f672ccf4596fc8f6943d1286ccd733484d0e55db51987a0e7"
+    },
+    {
+      "filename": "20220212_183806_IMG_3975.jpg",
+      "path": "scrape/images/shared/20220212_183806_IMG_3975.jpg",
+      "thumb": "scrape/thumbs/shared/20220212_183806_IMG_3975.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/20220212_183806_IMG_3975.jpg",
+      "other_urls": [
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/20220212_183806_IMG_3975/2230882024.jpg",
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/20220212_183806_IMG_3975/3000898484.jpg"
+      ],
+      "pages": [
+        "2bhk-house-interior",
+        "residential-interiors"
+      ],
+      "in_media_library": true,
+      "width": 2048,
+      "height": 1152,
+      "file_size_bytes": 565964,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "living room",
+      "project": "2BHK House Interior",
+      "render_or_photo": "3D render",
+      "stock": false,
+      "quality": "good",
+      "notes": "Living room with L-sofa and metal lattice partition, 2048x1152. WARNING: faint third-party watermark ('monnfie') on the sofa. Confirm SKE owns this render before using it.",
+      "sha256": "1445a3adb3a28c931aed5153420fb0c5209815014e5ec7b7efd57136fb2a3821"
+    },
+    {
+      "filename": "20220212_183809_IMG_3976.jpg",
+      "path": "scrape/images/shared/20220212_183809_IMG_3976.jpg",
+      "thumb": "scrape/thumbs/shared/20220212_183809_IMG_3976.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/20220212_183809_IMG_3976.jpg",
+      "other_urls": [
+        "https://skeinteriors.com/wp-content/uploads/2023/04/20220212_183809_IMG_3976-1024x576.jpg",
+        "https://skeinteriors.com/wp-content/uploads/2023/04/20220212_183809_IMG_3976-1536x864.jpg",
+        "https://skeinteriors.com/wp-content/uploads/2023/04/20220212_183809_IMG_3976-300x169.jpg",
+        "https://skeinteriors.com/wp-content/uploads/2023/04/20220212_183809_IMG_3976-768x432.jpg",
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/20220212_183809_IMG_3976/2497495582.jpg",
+        "https://skeinteriors.com/wp-content/uploads/2023/04/20220212_183809_IMG_3976-1.jpg"
+      ],
+      "pages": [
+        "2bhk-house-interior",
+        "home",
+        "industries",
+        "residential-interiors"
+      ],
+      "in_media_library": true,
+      "width": 2048,
+      "height": 1152,
+      "file_size_bytes": 431508,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "living room",
+      "project": "2BHK House Interior",
+      "render_or_photo": "3D render",
+      "stock": false,
+      "quality": "good",
+      "notes": "Living room with olive sofa and slatted planter partition, 2048x1152. WARNING: same faint third-party watermark at right edge. Confirm ownership. A '-1' copy was byte-identical (removed).",
+      "sha256": "6ee980a91dfb1225bf2c28b2cfc0878b7477837da27a7d9c45d01320746fa36f"
+    },
+    {
+      "filename": "FB_IMG_1668356007269.jpg",
+      "path": "scrape/images/shared/FB_IMG_1668356007269.jpg",
+      "thumb": "scrape/thumbs/shared/FB_IMG_1668356007269.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1668356007269.jpg",
+      "other_urls": [
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/FB_IMG_1668356007269/3192899205.jpg",
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/FB_IMG_1668356007269/4120535066.jpg"
+      ],
+      "pages": [
+        "1bhk-house-interior",
+        "residential-interiors"
+      ],
+      "in_media_library": true,
+      "width": 1080,
+      "height": 608,
+      "file_size_bytes": 42202,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "kitchen",
+      "project": "1BHK House Interior",
+      "render_or_photo": "3D render",
+      "stock": false,
+      "quality": "low-res",
+      "notes": "Island kitchen, oak tall units, white gloss. Heavy Facebook compression (41 KB). European styling (wood stove, island); confirm this is an SKE design.",
+      "sha256": "a7ecf45a7f439188c48adccbcacc19abe5e695be289341580a0d02eb9a6166db"
+    },
+    {
+      "filename": "FB_IMG_1668356010527.jpg",
+      "path": "scrape/images/shared/FB_IMG_1668356010527.jpg",
+      "thumb": "scrape/thumbs/shared/FB_IMG_1668356010527.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1668356010527.jpg",
+      "other_urls": [
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/FB_IMG_1668356010527/2655903411.jpg",
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/FB_IMG_1668356010527/3583539244.jpg"
+      ],
+      "pages": [
+        "1bhk-house-interior",
+        "residential-interiors"
+      ],
+      "in_media_library": true,
+      "width": 1080,
+      "height": 608,
+      "file_size_bytes": 47762,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "living room",
+      "project": "1BHK House Interior",
+      "render_or_photo": "3D render",
+      "stock": false,
+      "quality": "low-res",
+      "notes": "Dining area with dark stone table and boucle chairs. Facebook compression. European styling (wood stove, island); confirm this is an SKE design.",
+      "sha256": "079ffd24bffab687043f30c0f3ff25eadd612891ee2e6f556e0eb6fddf0d0425"
+    },
+    {
+      "filename": "FB_IMG_1668356013184.jpg",
+      "path": "scrape/images/shared/FB_IMG_1668356013184.jpg",
+      "thumb": "scrape/thumbs/shared/FB_IMG_1668356013184.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1668356013184.jpg",
+      "other_urls": [
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/FB_IMG_1668356013184/2900669992.jpg",
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/FB_IMG_1668356013184/3878752439.jpg"
+      ],
+      "pages": [
+        "1bhk-house-interior",
+        "residential-interiors"
+      ],
+      "in_media_library": true,
+      "width": 1080,
+      "height": 608,
+      "file_size_bytes": 49689,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "kitchen",
+      "project": "1BHK House Interior",
+      "render_or_photo": "3D render",
+      "stock": false,
+      "quality": "low-res",
+      "notes": "Kitchen island with hob, view to dining. Facebook compression. European styling (wood stove, island); confirm this is an SKE design.",
+      "sha256": "2aa4a4ed92edb77d4aeed2789169286bd9f445f59c8ab15b4ffb96eff46ae62f"
+    },
+    {
+      "filename": "FB_IMG_1668356018768.jpg",
+      "path": "scrape/images/shared/FB_IMG_1668356018768.jpg",
+      "thumb": "scrape/thumbs/shared/FB_IMG_1668356018768.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1668356018768.jpg",
+      "other_urls": [
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/FB_IMG_1668356018768/1175538575.jpg",
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/FB_IMG_1668356018768/231009552.jpg"
+      ],
+      "pages": [
+        "1bhk-house-interior",
+        "residential-interiors"
+      ],
+      "in_media_library": true,
+      "width": 1080,
+      "height": 608,
+      "file_size_bytes": 43053,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "kitchen",
+      "project": "1BHK House Interior",
+      "render_or_photo": "3D render",
+      "stock": false,
+      "quality": "low-res",
+      "notes": "Kitchen island from the plant side. Facebook compression. European styling (wood stove, island); confirm this is an SKE design.",
+      "sha256": "fb526d2ef7e84812cffe759f3a2b8fc93f76e9b66712968b59f468ccfda55e48"
+    },
+    {
+      "filename": "FB_IMG_1668356021070.jpg",
+      "path": "scrape/images/shared/FB_IMG_1668356021070.jpg",
+      "thumb": "scrape/thumbs/shared/FB_IMG_1668356021070.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1668356021070.jpg",
+      "other_urls": [
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/FB_IMG_1668356021070/2656319095.jpg",
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/FB_IMG_1668356021070/3582038248.jpg"
+      ],
+      "pages": [
+        "1bhk-house-interior",
+        "residential-interiors"
+      ],
+      "in_media_library": true,
+      "width": 1080,
+      "height": 608,
+      "file_size_bytes": 43371,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "kitchen",
+      "project": "1BHK House Interior",
+      "render_or_photo": "3D render",
+      "stock": false,
+      "quality": "low-res",
+      "notes": "Kitchen with built-in ovens and oak panelling. Facebook compression. European styling (wood stove, island); confirm this is an SKE design.",
+      "sha256": "ec76e363ffa1100f4e8beec424b19674d7d9d047a75c6d7f14fa32dbc9b28b41"
+    },
+    {
+      "filename": "FB_IMG_1668356023735.jpg",
+      "path": "scrape/images/shared/FB_IMG_1668356023735.jpg",
+      "thumb": "scrape/thumbs/shared/FB_IMG_1668356023735.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1668356023735.jpg",
+      "other_urls": [
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/FB_IMG_1668356023735/2819436022.jpg",
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/FB_IMG_1668356023735/3822619497.jpg"
+      ],
+      "pages": [
+        "1bhk-house-interior",
+        "residential-interiors"
+      ],
+      "in_media_library": true,
+      "width": 1080,
+      "height": 608,
+      "file_size_bytes": 42633,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "kitchen",
+      "project": "1BHK House Interior",
+      "render_or_photo": "3D render",
+      "stock": false,
+      "quality": "low-res",
+      "notes": "Kitchen island, wider view. Facebook compression. European styling (wood stove, island); confirm this is an SKE design.",
+      "sha256": "88b11be2c3401e717a970c5242f83f137ef1893d2c2789578d58070e9ae6d178"
+    },
+    {
+      "filename": "FB_IMG_1668356027417.jpg",
+      "path": "scrape/images/shared/FB_IMG_1668356027417.jpg",
+      "thumb": "scrape/thumbs/shared/FB_IMG_1668356027417.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1668356027417.jpg",
+      "other_urls": [
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/FB_IMG_1668356027417/1843679118.jpg",
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/FB_IMG_1668356027417/640805137.jpg"
+      ],
+      "pages": [
+        "1bhk-house-interior",
+        "residential-interiors"
+      ],
+      "in_media_library": true,
+      "width": 1080,
+      "height": 608,
+      "file_size_bytes": 43093,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "living room",
+      "project": "1BHK House Interior",
+      "render_or_photo": "3D render",
+      "stock": false,
+      "quality": "low-res",
+      "notes": "Dining with wood stove and pendant lights. Facebook compression. European styling (wood stove, island); confirm this is an SKE design.",
+      "sha256": "e6ed0bc6476f9cd6587e8c7b7711c0af8bea0421fce32ce38817383e4e3c6c3e"
+    },
+    {
+      "filename": "FB_IMG_1668356030086.jpg",
+      "path": "scrape/images/shared/FB_IMG_1668356030086.jpg",
+      "thumb": "scrape/thumbs/shared/FB_IMG_1668356030086.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1668356030086.jpg",
+      "other_urls": [
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/FB_IMG_1668356030086/2800378427.jpg",
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/FB_IMG_1668356030086/3980379300.jpg"
+      ],
+      "pages": [
+        "1bhk-house-interior",
+        "residential-interiors"
+      ],
+      "in_media_library": true,
+      "width": 1080,
+      "height": 608,
+      "file_size_bytes": 41466,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "living room",
+      "project": "1BHK House Interior",
+      "render_or_photo": "3D render",
+      "stock": false,
+      "quality": "low-res",
+      "notes": "Dining room, frontal view. Facebook compression. European styling (wood stove, island); confirm this is an SKE design.",
+      "sha256": "434573a0af6769bb06a52cacc2e998cf7edb9a5ad389255cb711d897255cd42a"
+    },
+    {
+      "filename": "FB_IMG_1669397475101.jpg",
+      "path": "scrape/images/shared/FB_IMG_1669397475101.jpg",
+      "thumb": "scrape/thumbs/shared/FB_IMG_1669397475101.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1669397475101.jpg",
+      "other_urls": [
+        "https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1669397475101-267x300.jpg",
+        "https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1669397475101-768x864.jpg",
+        "https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1669397475101-910x1024.jpg",
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/FB_IMG_1669397475101/2894135267.jpg",
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/FB_IMG_1669397475101/3881130364.jpg"
+      ],
+      "pages": [
+        "1bhk-house-interior",
+        "home",
+        "our-works",
+        "residential-interiors"
+      ],
+      "in_media_library": true,
+      "width": 1080,
+      "height": 1215,
+      "file_size_bytes": 112150,
+      "format": "jpg",
+      "orientation": "portrait",
+      "subject": "bedroom",
+      "project": "1BHK House Interior",
+      "render_or_photo": "3D render",
+      "stock": false,
+      "quality": "good",
+      "notes": "Project cover. Bedroom seating corner with bookshelf and cove ceiling. Portrait 1080x1215.",
+      "sha256": "5a975ad5f5cdffaf2750888c0adeebd8ca6ccdc775b3b1c2e321f8201a6b0cf8"
+    },
+    {
+      "filename": "FB_IMG_1669397482531.jpg",
+      "path": "scrape/images/shared/FB_IMG_1669397482531.jpg",
+      "thumb": "scrape/thumbs/shared/FB_IMG_1669397482531.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1669397482531.jpg",
+      "other_urls": [
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/FB_IMG_1669397482531/2532442320.jpg",
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/FB_IMG_1669397482531/3710363215.jpg"
+      ],
+      "pages": [
+        "1bhk-house-interior",
+        "residential-interiors"
+      ],
+      "in_media_library": true,
+      "width": 1080,
+      "height": 1218,
+      "file_size_bytes": 80466,
+      "format": "jpg",
+      "orientation": "portrait",
+      "subject": "wardrobe",
+      "project": "1BHK House Interior",
+      "render_or_photo": "3D render",
+      "stock": false,
+      "quality": "good",
+      "notes": "Open + hinged walnut wardrobe with dresser. Portrait.",
+      "sha256": "bfae96fda28f3189333dff52638d9599720a6a649f7e49150968ca5ddf7629d0"
+    },
+    {
+      "filename": "FB_IMG_1669397487697.jpg",
+      "path": "scrape/images/shared/FB_IMG_1669397487697.jpg",
+      "thumb": "scrape/thumbs/shared/FB_IMG_1669397487697.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1669397487697.jpg",
+      "other_urls": [
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/FB_IMG_1669397487697/2902921610.jpg",
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/FB_IMG_1669397487697/3872569109.jpg"
+      ],
+      "pages": [
+        "1bhk-house-interior",
+        "residential-interiors"
+      ],
+      "in_media_library": true,
+      "width": 1080,
+      "height": 1218,
+      "file_size_bytes": 107445,
+      "format": "jpg",
+      "orientation": "portrait",
+      "subject": "other",
+      "project": "1BHK House Interior",
+      "render_or_photo": "3D render",
+      "stock": false,
+      "quality": "good",
+      "notes": "Bathroom vanity with dark marble wall and round mirror. Portrait.",
+      "sha256": "e315a3d0e11d31cfe1a03ea8b90e84e0fa7bbef5fec512ac99dc37f0d8c75f70"
+    },
+    {
+      "filename": "FB_IMG_1669397490899.jpg",
+      "path": "scrape/images/shared/FB_IMG_1669397490899.jpg",
+      "thumb": "scrape/thumbs/shared/FB_IMG_1669397490899.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1669397490899.jpg",
+      "other_urls": [
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/FB_IMG_1669397490899/2690059792.jpg",
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/FB_IMG_1669397490899/3951208591.jpg"
+      ],
+      "pages": [
+        "1bhk-house-interior",
+        "residential-interiors"
+      ],
+      "in_media_library": true,
+      "width": 1080,
+      "height": 1219,
+      "file_size_bytes": 113034,
+      "format": "jpg",
+      "orientation": "portrait",
+      "subject": "bedroom",
+      "project": "1BHK House Interior",
+      "render_or_photo": "3D render",
+      "stock": false,
+      "quality": "good",
+      "notes": "Bedroom with walnut headboard wall, study desk. Portrait.",
+      "sha256": "9170d22d6be2f4c32a4468f03cfc7976f6c03788eb9241caaf871ff0ae50f8c6"
+    },
+    {
+      "filename": "FB_IMG_1671554675670.jpg",
+      "path": "scrape/images/shared/FB_IMG_1671554675670.jpg",
+      "thumb": "scrape/thumbs/shared/FB_IMG_1671554675670.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1671554675670.jpg",
+      "other_urls": [
+        "https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1671554675670-240x300.jpg",
+        "https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1671554675670-768x960.jpg",
+        "https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1671554675670-819x1024.jpg",
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/FB_IMG_1671554675670/1857500965.jpg",
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/FB_IMG_1671554675670/840156792.jpg"
+      ],
+      "pages": [
+        "2bhk-house-interior",
+        "home",
+        "our-works",
+        "residential-interiors"
+      ],
+      "in_media_library": true,
+      "width": 1080,
+      "height": 1350,
+      "file_size_bytes": 115435,
+      "format": "jpg",
+      "orientation": "portrait",
+      "subject": "living room",
+      "project": "2BHK House Interior",
+      "render_or_photo": "real photo",
+      "stock": false,
+      "quality": "good",
+      "notes": "Project cover. REAL PHOTO: living room with brass-chain oonjal swing, wood slat ceiling, TV wall. Portrait 1080x1350, Facebook-compressed. Best real photo on the site; ask for the camera original. Shown in the 2BHK gallery, but the style doesn't match the 2BHK renders, so it may be a different home: confirm with SKE.",
+      "sha256": "18959d5b405c39c1fd7e173957482a6a872550edc091255a6fb0d7cd62e984fc"
+    },
+    {
+      "filename": "FB_IMG_1671554681269.jpg",
+      "path": "scrape/images/shared/FB_IMG_1671554681269.jpg",
+      "thumb": "scrape/thumbs/shared/FB_IMG_1671554681269.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1671554681269.jpg",
+      "other_urls": [
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/FB_IMG_1671554681269/1751409608.jpg",
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/FB_IMG_1671554681269/885035669.jpg"
+      ],
+      "pages": [
+        "2bhk-house-interior",
+        "residential-interiors"
+      ],
+      "in_media_library": true,
+      "width": 1080,
+      "height": 1349,
+      "file_size_bytes": 93931,
+      "format": "jpg",
+      "orientation": "portrait",
+      "subject": "kitchen",
+      "project": "2BHK House Interior",
+      "render_or_photo": "real photo",
+      "stock": false,
+      "quality": "good",
+      "notes": "REAL PHOTO: kitchen counter with white quartz, walnut slats, floating shelves. Portrait, Facebook-compressed. Shown in the 2BHK gallery, but the style doesn't match the 2BHK renders, so it may be a different home: confirm with SKE.",
+      "sha256": "e802b61f03012ce94a1d4fb38ff5952c31216e11df466d5148adfefe042625c8"
+    },
+    {
+      "filename": "FB_IMG_1671554686721.jpg",
+      "path": "scrape/images/shared/FB_IMG_1671554686721.jpg",
+      "thumb": "scrape/thumbs/shared/FB_IMG_1671554686721.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1671554686721.jpg",
+      "other_urls": [
+        "https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1671554686721-240x300.jpg",
+        "https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1671554686721-768x960.jpg",
+        "https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1671554686721-819x1024.jpg",
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/FB_IMG_1671554686721/2424230955.jpg",
+        "https://skeinteriors.com/wp-content/uploads/cache/2023/04/FB_IMG_1671554686721/3436848502.jpg"
+      ],
+      "pages": [
+        "2bhk-house-interior",
+        "about-us",
+        "residential-interiors"
+      ],
+      "in_media_library": true,
+      "width": 1080,
+      "height": 1350,
+      "file_size_bytes": 148908,
+      "format": "jpg",
+      "orientation": "portrait",
+      "subject": "false ceiling",
+      "project": "2BHK House Interior",
+      "render_or_photo": "real photo",
+      "stock": false,
+      "quality": "good",
+      "notes": "REAL PHOTO: corridor with lit wood-slat ceiling, wall panelling and open staircase. Portrait, Facebook-compressed. Shown in the 2BHK gallery, but the style doesn't match the 2BHK renders, so it may be a different home: confirm with SKE.",
+      "sha256": "8a7c5c8cae3f5623aad7935139a3aa341b3efad0b1812d68c2e02409f8e6a683"
+    },
+    {
+      "filename": "Ske-1.png",
+      "path": "scrape/images/shared/Ske-1.png",
+      "thumb": "scrape/thumbs/shared/Ske-1.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/uploads/2023/04/Ske-1.png",
+      "other_urls": [],
+      "pages": [
+        "1bhk-house-interior",
+        "2bhk-house-interior",
+        "3bhk-home-interior",
+        "about-us",
+        "commercial",
+        "commercial-interiors",
+        "contact-us",
+        "flooring",
+        "get-a-quote",
+        "home",
+        "industries",
+        "our-works",
+        "residential",
+        "residential-interiors",
+        "sample-page"
+      ],
+      "in_media_library": true,
+      "width": 250,
+      "height": 67,
+      "file_size_bytes": 9306,
+      "format": "png",
+      "orientation": "landscape",
+      "subject": "logo",
+      "project": "brand",
+      "render_or_photo": "graphic",
+      "stock": false,
+      "quality": "low-res",
+      "notes": "Live header logo, 250px wide, grey/white on transparent (for dark backgrounds). Request an SVG.",
+      "sha256": "dfe71dc82e852bb6b76e616e1859e120d9f5ddd30b9c50ca18c022cefdd76291"
+    },
+    {
+      "filename": "footer-bg.jpg",
+      "path": "scrape/images/shared/footer-bg.jpg",
+      "thumb": "scrape/thumbs/shared/footer-bg.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/themes/skt-interiors/assets/images/footer-bg.jpg",
+      "other_urls": [],
+      "pages": [
+        "1bhk-house-interior",
+        "2bhk-house-interior",
+        "3bhk-home-interior",
+        "about-us",
+        "commercial",
+        "commercial-interiors",
+        "contact-us",
+        "flooring",
+        "get-a-quote",
+        "home",
+        "industries",
+        "our-works",
+        "residential",
+        "residential-interiors",
+        "sample-page"
+      ],
+      "in_media_library": false,
+      "width": 1920,
+      "height": 420,
+      "file_size_bytes": 63639,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "other",
+      "project": "theme graphic",
+      "render_or_photo": "graphic",
+      "stock": false,
+      "quality": "unusable",
+      "notes": "Dark footer texture from the WordPress theme.",
+      "sha256": "ea4489b6b0d3a4dba0488271f5e6a532c4e279e6a0f0dbe2ac154c2513b73530"
+    },
+    {
+      "filename": "works-bg2.jpg",
+      "path": "scrape/images/shared/works-bg2.jpg",
+      "thumb": "scrape/thumbs/shared/works-bg2.jpg",
+      "original_url": "https://skeinteriors.com/wp-content/themes/skt-interiors/assets/images/works-bg2.jpg",
+      "other_urls": [],
+      "pages": [
+        "1bhk-house-interior",
+        "2bhk-house-interior",
+        "3bhk-home-interior",
+        "home",
+        "our-works"
+      ],
+      "in_media_library": false,
+      "width": 1920,
+      "height": 840,
+      "file_size_bytes": 60975,
+      "format": "jpg",
+      "orientation": "landscape",
+      "subject": "other",
+      "project": "theme graphic",
+      "render_or_photo": "graphic",
+      "stock": false,
+      "quality": "unusable",
+      "notes": "Faint architectural sketch background from the WordPress theme.",
+      "sha256": "1443e398c66b26ddf6a11a8eaa679f5436aae0b034bc81613477c2637d3456dd"
+    }
+  ],
+  "missing_on_server": [
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/20190901_221450_IMG_0159.jpg",
+      "pages": [],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/20190901_221454_IMG_0160.jpg",
+      "pages": [],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/20190902_114402_IMG_0168.heic",
+      "pages": [],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/20190904_200904_IMG_0188.heic",
+      "pages": [],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/20190904_200915_IMG_0189.heic",
+      "pages": [],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/20190904_200931_IMG_0190.heic",
+      "pages": [],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/20190904_200956_IMG_0191.heic",
+      "pages": [],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/20190904_201119_IMG_0192.heic",
+      "pages": [],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/20190904_201122_IMG_0193.heic",
+      "pages": [],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/20190904_201138_IMG_0194.heic",
+      "pages": [],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/20190904_201142_IMG_0195.heic",
+      "pages": [],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/20190904_201155_IMG_0196.heic",
+      "pages": [],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/20190904_201235_IMG_0197.heic",
+      "pages": [],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1681237841047.jpg",
+      "pages": [
+        "flooring"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1681237844091.jpg",
+      "pages": [
+        "flooring"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1681237846781.jpg",
+      "pages": [
+        "flooring"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1681237849275.jpg",
+      "pages": [
+        "flooring"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1681237851977.jpg",
+      "pages": [
+        "flooring"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1681237854473.jpg",
+      "pages": [
+        "flooring"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1681237857057.jpg",
+      "pages": [
+        "flooring"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1681237860080.jpg",
+      "pages": [
+        "flooring"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/commercial.jpg",
+      "pages": [
+        "commercial-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/commercial_10.jpg",
+      "pages": [
+        "commercial-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/commercial_11.jpg",
+      "pages": [
+        "commercial-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/commercial_12.jpg",
+      "pages": [
+        "commercial-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/commercial_13.jpg",
+      "pages": [
+        "commercial-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/commercial_2.jpg",
+      "pages": [
+        "commercial-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/commercial_3.jpg",
+      "pages": [
+        "commercial-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/commercial_4.jpg",
+      "pages": [
+        "commercial-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/commercial_5.jpg",
+      "pages": [
+        "commercial-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/commercial_6.jpg",
+      "pages": [
+        "commercial-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/commercial_7.jpg",
+      "pages": [
+        "commercial-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/commercial_8.jpg",
+      "pages": [
+        "commercial-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/commercial_9.jpg",
+      "pages": [
+        "commercial-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/cropped-fav.png",
+      "pages": [
+        "1bhk-house-interior",
+        "2bhk-house-interior",
+        "3bhk-home-interior",
+        "about-us",
+        "commercial",
+        "commercial-interiors",
+        "contact-us",
+        "flooring",
+        "get-a-quote",
+        "home",
+        "industries",
+        "our-works",
+        "residential",
+        "residential-interiors",
+        "sample-page"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/fav.png",
+      "pages": [],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial1.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_10.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_11.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_12.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_13.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_14.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_15.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_16.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_17.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_18.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_19.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_2.jpg",
+      "pages": [
+        "home",
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_20.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_21.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_22.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_23.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_24.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_25.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_26.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_27.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_28.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_29.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_3.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_30.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_31.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_32.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_33.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_34.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_35.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_36.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_37.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_38.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_39.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_4.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_40.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_41.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_42.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_43.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_44.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_45.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_46.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_47.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_5.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_6.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_7.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_8.jpg",
+      "pages": [
+        "home",
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_9.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial3.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial3_2.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial3_3.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial3_4.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial3_5.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial3_6.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial3_7.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial3_8.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial_10.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial_11.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial_12.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial_13.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial_14.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial_15.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial_16.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial_17.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial_18.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial_19.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial_2.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial_20.jpg",
+      "pages": [
+        "home",
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial_21.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial_22.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial_23.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial_24.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial_25.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial_26.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial_27.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial_28.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial_29.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial_3.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial_30.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial_31.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial_32-1.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial_32.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial_33.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial_34.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial_35.jpg",
+      "pages": [
+        "home",
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial_36.jpg",
+      "pages": [
+        "home",
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial_4.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial_5.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial_6.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial_7.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial_8.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/residencial_9.jpg",
+      "pages": [
+        "residential-interiors"
+      ],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2024/12/20190713_105858_IMG_0497.HEIC.heic",
+      "pages": [],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2024/12/20190713_105937_IMG_0499.HEIC.heic",
+      "pages": [],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2024/12/20190713_110401_IMG_0511.HEIC.heic",
+      "pages": [],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2024/12/20190713_110414_IMG_0512.HEIC.heic",
+      "pages": [],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2024/12/20190803_115731_IMG_0841.HEIC.heic",
+      "pages": [],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2024/12/20190803_132130_IMG_0844.HEIC.heic",
+      "pages": [],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2024/12/20190803_132146_IMG_0845.HEIC.heic",
+      "pages": [],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2024/12/20190803_132221_IMG_0847.HEIC.heic",
+      "pages": [],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2024/12/20190803_132241_IMG_0848.HEIC.heic",
+      "pages": [],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2024/12/20190803_132304_IMG_0849.HEIC.heic",
+      "pages": [],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2024/12/20190803_132311_IMG_0850.HEIC.heic",
+      "pages": [],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2024/12/20190803_132351_IMG_0852.HEIC.heic",
+      "pages": [],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2024/12/20241015_171112-scaled.jpg",
+      "pages": [],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2024/12/20241015_171231-scaled.jpg",
+      "pages": [],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2024/12/20241015_171247-scaled.jpg",
+      "pages": [],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2024/12/20241015_172747-scaled.jpg",
+      "pages": [],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2024/12/20241015_181830-scaled.jpg",
+      "pages": [],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2024/12/20241019_100607-scaled.jpg",
+      "pages": [],
+      "in_media_library": true
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2024/12/20241019_100640-scaled.jpg",
+      "pages": [],
+      "in_media_library": true
+    }
+  ],
+  "duplicates_removed": [
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/20190131_190717_153528da-cd8d-431c-849f-7317bd5e206a-1.jpg",
+      "kept": "scrape/images/shared/20190131_190717_153528da-cd8d-431c-849f-7317bd5e206a.jpg"
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/20220212_183809_IMG_3976-1.jpg",
+      "kept": "scrape/images/shared/20220212_183809_IMG_3976.jpg"
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/SKE-Interior-2.png",
+      "kept": "scrape/images/media-library/SKE-Interior-1.png"
+    },
+    {
+      "url": "https://skeinteriors.com/wp-content/uploads/2023/04/SKE-Interior-3.png",
+      "kept": "scrape/images/media-library/SKE-Interior-1.png"
+    }
+  ]
+}

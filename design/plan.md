@@ -415,6 +415,6 @@ I went back over the plan and checked each choice against the references and CLA
 
 ## 6. Open decisions
 
-- **Interim hero image.** It depends on SKE confirming ownership of the watermarked renders. Otherwise we use the 1280px 3BHK render and accept some softness until new photography arrives.
+- **Interim hero image: decided.** RJ chose the fallback: `20190131_190715_5c7214a7-65a8-4dc0-9547-690a4395b35d.jpg` (3BHK living room with staircase, 1280px). It will be soft at full width until SKE supplies new photography.
 - **Logo.** Only black PNGs exist (best: `SKE-Interior.png`, 1972px). For the header I made two versions from it in `src/assets/brand/`: the mark and "SKE Interiors" **without the tagline** (unreadable at header size), in black and in plaster (for use over photos). These are stand-ins until SKE sends an SVG. The logo's heavy geometric lettering sits apart from Bodoni; that's fine for a logo, but worth a conversation if SKE ever refreshes the brand.
 - **Error colour.** `#8C2F24` is outside the palette. The alternative is teak text plus an icon, but red is the convention people recognise.

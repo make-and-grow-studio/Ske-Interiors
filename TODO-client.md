@@ -33,6 +33,8 @@ Until an item is answered, the site shows a visible dev-only placeholder in its 
 - [ ] **Areas served**: full list beyond Coimbatore, Tiruppur and Pollachi. (line 42)
 - [ ] **Logo as SVG**, dark and light versions (section 14)
 - [ ] **Lead routing**: who receives enquiries (email address, WhatsApp number, Google Sheet?) (section 14)
+- [ ] **Privacy policy**: the footer links to `/privacy/` and the forms collect names and phone numbers. We need SKE's privacy policy text (or approval of a simple one we draft). Not in the content file yet.
+- [ ] **WhatsApp number**: the site sends WhatsApp messages to +91 98945 88673 (the number in the content file's error message). Confirm this is the right number for WhatsApp.
 
 ## 1. Home (`/`)
 

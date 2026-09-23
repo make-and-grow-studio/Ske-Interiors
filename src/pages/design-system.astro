@@ -4,7 +4,8 @@
  * Shows the real components so a change here is a change everywhere.
  */
 import { Picture } from 'astro:assets';
-import InternalLayout from '../layouts/InternalLayout.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CtaBlock from '../components/CtaBlock.astro';
 import Header from '../components/Header.astro';
 import Button from '../components/ui/Button.astro';
 import TextLink from '../components/ui/TextLink.astro';
@@ -44,8 +45,12 @@ const typeSteps = [
 const alt = (room: string, type: string) => `${room} of a ${type} in Coimbatore, designed by SKE Interiors`;
 ---
 
-<InternalLayout title="Design system">
-  <main>
+<BaseLayout
+  title="Design system | SKE Interiors"
+  description="Internal reference for the SKE Interiors website: colours, type and components."
+  noindex
+>
+  <div>
     <!-- Intro -->
     <header class="container-page ds-intro">
       <p class="ds-eyebrow">Internal · not indexed</p>
@@ -56,7 +61,7 @@ const alt = (room: string, type: string) => `${room} of a ${type} in Coimbatore,
       </p>
       <nav aria-label="On this page" class="ds-toc">
         <a href="#colour">Colour</a><a href="#type">Type</a><a href="#buttons">Buttons</a><a href="#forms">Forms</a
-        ><a href="#cards">Image cards</a><a href="#header">Header</a>
+        ><a href="#cards">Image cards</a><a href="#header">Header</a><a href="#cta">Call to action</a>
       </nav>
     </header>
 
@@ -303,19 +308,43 @@ const alt = (room: string, type: string) => `${room} of a ${type} in Coimbatore,
           class="ds-header-demo__bg"
         />
         <div class="ds-header-demo__scrim"></div>
-        <Header variant="overlay" current="/" class="ds-header-demo__header" />
+        <Header variant="overlay" current="/" static class="ds-header-demo__header" />
       </div>
       <div class="container-page">
         <p class="ds-surface__label ds-mt">Solid (inner pages, and after scrolling)</p>
       </div>
-      <Header variant="solid" current="/our-works/" />
+      <Header variant="solid" current="/our-works/" static />
+    </section>
+
+    <!-- CTA block -->
+    <section id="cta" class="ds-section" aria-labelledby="cta-h">
+      <div class="container-page">
+        <h2 id="cta-h" class="text-step-4 ds-h2">Call-to-action block</h2>
+        <p class="ds-note">
+          Heading, short text, two actions, optional full-bleed photo with a flat charcoal scrim. Used to close every
+          page. An optional aside holds contact details (Home closing section).
+        </p>
+      </div>
+      <CtaBlock
+        heading="Ready to start?"
+        primary={{ label: 'Get a free quote', href: '/get-a-quote/' }}
+        secondary={{ label: 'See our work', href: '/our-works/' }}
+        headingLevel="h3"
+      />
+      <CtaBlock
+        heading="Planning your new home?"
+        primary={{ label: 'Get a free quote', href: '/get-a-quote/' }}
+        secondary={{ label: 'WhatsApp us', href: '#', track: 'click_whatsapp' }}
+        tone="light"
+        headingLevel="h3"
+      />
     </section>
 
     <footer class="container-page ds-footer">
       <p>SKE Interiors design system · tokens in <code>src/styles/tokens.css</code></p>
     </footer>
-  </main>
-</InternalLayout>
+  </div>
+</BaseLayout>
 
 <style>
   .ds-intro {

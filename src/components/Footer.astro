@@ -1,0 +1,298 @@
+---
+/**
+ * Site footer (charcoal). Content from content/site-content.md, section 0.
+ * Layout after the Renova footer (references/renova-2.png): hairline-divided
+ * columns, a large phone line, then a giant "SKE" wordmark in Bodoni that
+ * spans the full container width.
+ */
+import Placeholder from './Placeholder.astro';
+import { business, services, footer, whatsappUrl, mapUrl } from '../data/site';
+
+const [mobile1, mobile2] = business.phones.mobile;
+const landline = business.phones.landline;
+const showPlaceholders = import.meta.env.DEV || import.meta.env.PUBLIC_SHOW_PLACEHOLDERS === 'true';
+---
+
+<footer class="site-footer surface-dark">
+  <div class="container-page">
+    <!-- Line + main phone -->
+    <div class="site-footer__top">
+      <p class="site-footer__line">{footer.line}</p>
+      <div class="site-footer__call">
+        <a href={`tel:${mobile1.tel}`} class="site-footer__phone" data-track="click_call">{mobile1.label}</a>
+        <a href={whatsappUrl()} target="_blank" rel="noopener" class="site-footer__wa" data-track="click_whatsapp">
+          WhatsApp us
+        </a>
+      </div>
+    </div>
+
+    <!-- Four columns -->
+    <div class="site-footer__cols">
+      <nav class="site-footer__col" aria-labelledby="f-services">
+        <h2 id="f-services" class="site-footer__h">Services</h2>
+        <ul>
+          {services.map((s) => <li><a href={s.href}>{s.short}</a></li>)}
+        </ul>
+      </nav>
+
+      <nav class="site-footer__col" aria-labelledby="f-studio">
+        <h2 id="f-studio" class="site-footer__h">Studio</h2>
+        <ul>
+          {footer.studio.map((l) => <li><a href={l.href}>{l.label}</a></li>)}
+        </ul>
+      </nav>
+
+      <div class="site-footer__col">
+        <h2 class="site-footer__h">Visit</h2>
+        <address>
+          {business.name}<br />
+          {business.address.street},<br />
+          {business.address.locality},<br />
+          {business.address.city} – {business.address.postcode}, {business.address.region}
+        </address>
+        <a href={mapUrl} target="_blank" rel="noopener" class="site-footer__more">Open in Google Maps</a>
+      </div>
+
+      <div class="site-footer__col">
+        <h2 class="site-footer__h">Talk</h2>
+        <ul>
+          <li><a href={`tel:${mobile1.tel}`} data-track="click_call">{mobile1.label}</a></li>
+          <li><a href={`tel:${mobile2.tel}`} data-track="click_call">{mobile2.label}</a></li>
+          <li><a href={`tel:${landline.tel}`} data-track="click_call">{landline.label}</a></li>
+          {
+            business.email ? (
+              <li>
+                <a href={`mailto:${business.email}`}>{business.email}</a>
+              </li>
+            ) : (
+              showPlaceholders && (
+                <li>
+                  <Placeholder>CONFIRM: one email address</Placeholder>
+                </li>
+              )
+            )
+          }
+          <li>
+            <a href={whatsappUrl()} target="_blank" rel="noopener" data-track="click_whatsapp">WhatsApp</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="site-footer__areas">
+      <span class="site-footer__h">Areas we serve</span>
+      {business.areasServed.join(', ')}
+      <Placeholder>CONFIRM: more areas</Placeholder>
+    </p>
+  </div>
+
+  <!-- Giant wordmark (decorative: the name is already in the logo and copyright) -->
+  <div class="site-footer__wordmark container-page" aria-hidden="true">
+    <span>SKE</span>
+  </div>
+
+  <div class="container-page site-footer__bottom">
+    <p>{footer.copyright} · <a href={footer.privacyHref}>Privacy</a></p>
+    <p class="site-footer__social">
+      <a href={business.social.instagram} target="_blank" rel="noopener">Instagram</a>
+      <a href={business.social.facebook} target="_blank" rel="noopener">Facebook</a>
+    </p>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    padding-top: var(--section-y);
+    font-size: var(--step-n1);
+    line-height: 1.6;
+  }
+  .site-footer a {
+    text-decoration: none;
+  }
+  .site-footer a:hover,
+  .site-footer a:focus-visible {
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+    text-underline-offset: 0.25em;
+  }
+
+  /* Top row: line left, phone right */
+  .site-footer__top {
+    display: grid;
+    gap: var(--space-6);
+    padding-bottom: var(--space-7);
+    border-bottom: 1px solid var(--hairline);
+  }
+  @media (min-width: 1024px) {
+    .site-footer__top {
+      grid-template-columns: 1fr auto;
+      align-items: end;
+    }
+  }
+  .site-footer__line {
+    margin: 0;
+    max-width: 22ch;
+    font-family: var(--family-display);
+    font-size: var(--step-4);
+    line-height: 1.1;
+    letter-spacing: var(--tracking-display);
+    text-wrap: balance;
+  }
+  .site-footer__call {
+    display: grid;
+    gap: 0.25rem;
+    justify-items: start;
+  }
+  @media (min-width: 1024px) {
+    .site-footer__call {
+      justify-items: end;
+    }
+  }
+  .site-footer__phone {
+    font-family: var(--family-display);
+    font-size: var(--step-4);
+    line-height: 1.1;
+    letter-spacing: var(--tracking-display);
+    white-space: nowrap;
+  }
+  .site-footer__wa,
+  .site-footer__more {
+    display: inline-block;
+    padding-block: 0.4rem;
+    font-weight: 500;
+    text-decoration: underline !important;
+    text-decoration-color: var(--accent) !important;
+    text-underline-offset: 0.25em;
+  }
+
+  /* Four columns divided by hairlines (Renova) */
+  .site-footer__cols {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    border-bottom: 1px solid var(--hairline);
+  }
+  @media (min-width: 1024px) {
+    .site-footer__cols {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+  .site-footer__col {
+    padding: var(--space-6) var(--space-5) var(--space-6) 0;
+  }
+  /* Phones: Services | Studio side by side, then Visit and Talk full width */
+  .site-footer__col:nth-child(2) {
+    padding-left: var(--space-5);
+    border-left: 1px solid var(--hairline);
+  }
+  .site-footer__col:nth-child(n + 3) {
+    grid-column: 1 / -1;
+    border-top: 1px solid var(--hairline);
+  }
+  /* Tablet: 2 × 2 grid */
+  @media (min-width: 640px) {
+    .site-footer__col:nth-child(n + 3) {
+      grid-column: auto;
+    }
+    .site-footer__col:nth-child(4) {
+      padding-left: var(--space-5);
+      border-left: 1px solid var(--hairline);
+    }
+  }
+  /* Desktop: four columns in a row */
+  @media (min-width: 1024px) {
+    .site-footer__col + .site-footer__col {
+      padding-left: var(--space-5);
+      border-left: 1px solid var(--hairline);
+    }
+    .site-footer__col:nth-child(n + 3) {
+      border-top: 0;
+    }
+  }
+  .site-footer__h {
+    display: block;
+    margin: 0 0 0.75rem;
+    font-family: var(--family-text);
+    font-size: var(--step-n1);
+    font-weight: 400;
+    letter-spacing: 0;
+    color: var(--ink-muted);
+  }
+  .site-footer ul {
+    display: grid;
+    gap: 0.35rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .site-footer ul a {
+    display: inline-block;
+    padding-block: 0.15rem;
+  }
+  .site-footer address {
+    font-style: normal;
+  }
+
+  .site-footer__areas {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.5rem 1rem;
+    margin: 0;
+    max-width: none;
+    padding-block: var(--space-5);
+  }
+  .site-footer__areas .site-footer__h {
+    display: inline;
+    margin: 0;
+  }
+
+  /* Giant "SKE": sized from the container width so the letters themselves
+     (not their invisible side spacing) run exactly edge to edge.
+     --wordmark-ratio = ink width ÷ font size for "SKE" in Bodoni Moda;
+     --wordmark-bearing = blank space before the S, as a fraction of the size.
+     Both measured in the browser (scripts/measure-wordmark.mjs). */
+  .site-footer__wordmark {
+    --wordmark-ratio: 1.7038;
+    --wordmark-bearing: 0.0445em;
+    container-type: inline-size;
+    overflow: hidden;
+    padding-top: var(--space-6);
+  }
+  .site-footer__wordmark span {
+    display: block;
+    font-family: var(--family-display);
+    font-weight: 400;
+    font-optical-sizing: auto;
+    font-size: calc(100cqi / var(--wordmark-ratio));
+    margin-left: calc(-1 * var(--wordmark-bearing));
+    line-height: 0.8;
+    letter-spacing: -0.02em;
+    color: var(--lime-plaster);
+    white-space: nowrap;
+    user-select: none;
+  }
+
+  .site-footer__bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.5rem 1.5rem;
+    padding-block: var(--space-5) calc(var(--space-5) + var(--mobile-bar-h, 0px));
+    margin-top: var(--space-5);
+    border-top: 1px solid var(--hairline);
+    color: var(--ink-muted);
+  }
+  .site-footer__bottom p {
+    margin: 0;
+  }
+  .site-footer__bottom a {
+    color: var(--ink);
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+    text-underline-offset: 0.25em;
+  }
+  .site-footer__social {
+    display: flex;
+    gap: 1.5rem;
+  }
+</style>

@@ -2,16 +2,17 @@
 /**
  * Site header: logo left, nav centre, "Get a free quote" right.
  *
- * Two looks:
- *  - overlay: transparent over the home hero photo, white text, light logo
- *  - solid:   plaster background with a hairline (inner pages, and the home
- *             page once you scroll)
+ *  - overlay: transparent over the home hero photo (white text, light logo),
+ *             turns solid once you scroll past the top of the page
+ *  - solid:   plaster with a hairline (inner pages)
  *
- * Prompt 00–02: visual only. Prompt 03 adds the sticky/scroll behaviour,
- * the Services dropdown and the full-screen mobile menu.
+ * Always visible (sticky), so "Get a free quote" is always on screen on
+ * desktop. Below 768px the quote button moves to the bottom bar.
+ * Behaviour lives in src/scripts/header.ts.
  */
 import { Image } from 'astro:assets';
 import Button from './ui/Button.astro';
+import { nav, quoteHref, business, whatsappUrl } from '../data/site';
 import logoDark from '../assets/brand/ske-logo-dark.png';
 import logoLight from '../assets/brand/ske-logo-light.png';
 
@@ -19,76 +20,176 @@ type Props = {
   variant?: 'overlay' | 'solid';
   /** Path of the current page, to mark the active nav item */
   current?: string;
+  /** Design-system demos: render in place, no sticky/fixed positioning */
+  static?: boolean;
   class?: string;
 };
 
-const { variant = 'solid', current = '/', class: className } = Astro.props;
+const { variant = 'solid', current = Astro.url.pathname, static: isStatic = false, class: className } = Astro.props;
 
-const nav = [
-  { label: 'Home', href: '/' },
-  { label: 'About', href: '/about-us/' },
-  { label: 'Services', href: '/residential-interiors/', hasMenu: true },
-  { label: 'Our work', href: '/our-works/' },
-  { label: 'Contact', href: '/contact-us/' },
-];
 const isActive = (href: string) => (href === '/' ? current === '/' : current.startsWith(href));
+const logoHeight = 34;
+const logoWidth = Math.round((logoHeight * logoDark.width) / logoDark.height);
+const idSuffix = `${variant}${isStatic ? '-demo' : ''}`;
+const menuId = `mobile-menu-${idSuffix}`;
 ---
 
-<header class:list={['site-header', `site-header--${variant}`, variant === 'overlay' && 'surface-photo', className]}>
+<header
+  class:list={[
+    'site-header',
+    `site-header--${variant}`,
+    variant === 'overlay' ? 'surface-photo' : 'is-solid',
+    isStatic && 'site-header--static',
+    className,
+  ]}
+  data-header={isStatic ? undefined : variant}
+>
   <div class="site-header__inner container-page">
     <a href="/" class="site-header__logo" aria-label="SKE Interiors, home">
-      <Image
-        src={variant === 'overlay' ? logoLight : logoDark}
-        alt=""
-        height={34}
-        width={Math.round((34 * logoDark.width) / logoDark.height)}
-        loading="eager"
-        densities={[1, 2]}
-      />
+      <Image src={logoLight} alt="" width={logoWidth} height={logoHeight} densities={[1, 2]} loading="eager" class="logo-light" />
+      <Image src={logoDark} alt="" width={logoWidth} height={logoHeight} densities={[1, 2]} loading="eager" class="logo-dark" />
     </a>
 
     <nav class="site-header__nav" aria-label="Main">
-      <ul>
+      <ul class="site-header__list">
         {
-          nav.map((item) => (
-            <li>
-              <a href={item.href} aria-current={isActive(item.href) ? 'page' : undefined}>
-                {item.label}
-                {item.hasMenu && (
+          nav.map((item) =>
+            item.children ? (
+              <li class="has-menu" data-dropdown>
+                <button
+                  type="button"
+                  class="site-header__link"
+                  aria-expanded="false"
+                  aria-controls={`services-menu-${idSuffix}`}
+                  data-current={item.children.some((c) => isActive(c.href)) ? 'true' : undefined}
+                >
+                  {item.label}
                   <svg viewBox="0 0 12 8" aria-hidden="true" class="site-header__caret">
                     <path d="M1 1.5l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.5" />
                   </svg>
-                )}
-              </a>
-            </li>
-          ))
+                </button>
+                <ul id={`services-menu-${idSuffix}`} class="dropdown" hidden>
+                  {item.children.map((c) => (
+                    <li>
+                      <a href={c.href} aria-current={isActive(c.href) ? 'page' : undefined}>
+                        {c.label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </li>
+            ) : (
+              <li>
+                <a href={item.href} class="site-header__link" aria-current={isActive(item.href) ? 'page' : undefined}>
+                  {item.label}
+                </a>
+              </li>
+            )
+          )
         }
       </ul>
     </nav>
 
     <div class="site-header__actions">
-      <Button href="/get-a-quote/" class="site-header__cta">Get a free quote</Button>
-      <button type="button" class="site-header__menu" aria-label="Open menu">
+      <Button href={quoteHref} class="site-header__cta">Get a free quote</Button>
+      <button
+        type="button"
+        class="site-header__menu-btn"
+        aria-haspopup="dialog"
+        aria-controls={menuId}
+        data-menu-open
+      >
         <span>Menu</span>
         <svg viewBox="0 0 24 12" aria-hidden="true">
-          <path d="M0 1h24M0 11h24" stroke="currentColor" stroke-width="1.5" />
+          <path d="M0 1h24M0 11h24" stroke="currentColor" stroke-width="1.5"></path>
         </svg>
       </button>
     </div>
   </div>
+
+  <!-- Full-screen mobile menu. <dialog> gives focus trapping and Esc for free. -->
+  <dialog id={menuId} class="menu" aria-label="Menu" data-menu>
+    <div class="menu__top container-page">
+      <a href="/" class="site-header__logo" aria-label="SKE Interiors, home">
+        <Image src={logoDark} alt="" width={logoWidth} height={logoHeight} densities={[1, 2]} />
+      </a>
+      <button type="button" class="site-header__menu-btn" data-menu-close autofocus>
+        <span>Close</span>
+        <svg viewBox="0 0 16 16" aria-hidden="true">
+          <path d="M2 2l12 12M14 2L2 14" stroke="currentColor" stroke-width="1.5"></path>
+        </svg>
+      </button>
+    </div>
+
+    <nav class="menu__nav container-page" aria-label="Menu">
+      <ul class="menu__list">
+        {
+          nav.map((item) =>
+            item.children ? (
+              <li class="menu__group">
+                <p class="menu__label">{item.label}</p>
+                <ul>
+                  {item.children.map((c) => (
+                    <li>
+                      <a href={c.href} class="menu__link menu__link--sub" aria-current={isActive(c.href) ? 'page' : undefined}>
+                        {c.label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </li>
+            ) : (
+              <li>
+                <a href={item.href} class="menu__link" aria-current={isActive(item.href) ? 'page' : undefined}>
+                  {item.label}
+                </a>
+              </li>
+            )
+          )
+        }
+      </ul>
+      <Button href={quoteHref} block class="menu__cta">Get a free quote</Button>
+    </nav>
+
+    <div class="menu__contact container-page">
+      <a href={`tel:${business.phones.mobile[0].tel}`} data-track="click_call">
+        <span class="menu__contact-label">Call</span>
+        {business.phones.mobile[0].label}
+      </a>
+      <a href={whatsappUrl()} target="_blank" rel="noopener" data-track="click_whatsapp">
+        <span class="menu__contact-label">WhatsApp</span>
+        Message us
+      </a>
+    </div>
+  </dialog>
 </header>
+
+<script>
+  import '../scripts/header';
+</script>
 
 <style>
   .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
     color: var(--ink);
-  }
-  .site-header--solid {
-    background: var(--lime-plaster);
     border-bottom: 1px solid var(--hairline);
+    transition:
+      background-color var(--duration-fast) ease,
+      border-color var(--duration-fast) ease;
   }
+  /* Over the hero: fixed so the photo runs under it */
   .site-header--overlay {
+    position: fixed;
+    inset: 0 0 auto;
     background: transparent;
-    border-bottom: 1px solid var(--hairline);
+  }
+  .site-header.is-solid {
+    background: var(--lime-plaster);
+  }
+  .site-header--static {
+    position: relative;
   }
 
   .site-header__inner {
@@ -104,19 +205,29 @@ const isActive = (href: string) => (href === '/' ? current === '/' : current.sta
     }
   }
 
+  /* Logo: light over photos, dark on plaster */
   .site-header__logo {
     display: block;
     flex: none;
   }
   .site-header__logo :global(img) {
     display: block;
-    height: 28px;
+    height: 26px;
     width: auto;
   }
   @media (min-width: 1024px) {
     .site-header__logo :global(img) {
       height: 34px;
     }
+  }
+  .site-header :global(.logo-dark) {
+    display: none;
+  }
+  .site-header.is-solid :global(.logo-dark) {
+    display: block;
+  }
+  .site-header.is-solid :global(.logo-light) {
+    display: none;
   }
 
   /* Desktop nav */
@@ -128,36 +239,79 @@ const isActive = (href: string) => (href === '/' ? current === '/' : current.sta
       display: block;
     }
   }
-  .site-header__nav ul {
+  .site-header__list {
     display: flex;
     gap: 2.25rem;
     margin: 0;
     padding: 0;
     list-style: none;
   }
-  .site-header__nav a {
+  .site-header__link {
     display: inline-flex;
     align-items: center;
     gap: 0.35rem;
-    padding-block: 0.5rem;
+    padding: 0.5rem 0;
+    background: none;
+    border: 0;
+    color: inherit;
+    font: inherit;
     font-size: var(--step-n1);
     font-weight: 500;
+    cursor: pointer;
     text-decoration: underline;
     text-decoration-color: transparent;
     text-decoration-thickness: 1px;
     text-underline-offset: 0.45em;
     transition: text-decoration-color var(--duration-fast) ease;
   }
-  .site-header__nav a:hover,
-  .site-header__nav a[aria-current='page'] {
+  .site-header__link:hover,
+  .site-header__link[aria-current='page'],
+  .site-header__link[data-current='true'],
+  .site-header__link[aria-expanded='true'] {
     text-decoration-color: var(--accent);
   }
-  .site-header__nav a[aria-current='page'] {
+  .site-header__link[aria-current='page'],
+  .site-header__link[data-current='true'] {
     text-decoration-thickness: 2px;
   }
   .site-header__caret {
     width: 10px;
     height: 7px;
+    transition: rotate var(--duration-fast) ease;
+  }
+  [aria-expanded='true'] > .site-header__caret {
+    rotate: 180deg;
+  }
+
+  /* Services dropdown: a plaster panel, whatever the header colour */
+  .has-menu {
+    position: relative;
+  }
+  .dropdown {
+    position: absolute;
+    top: calc(100% + 1rem);
+    left: -1.25rem;
+    min-width: 16rem;
+    margin: 0;
+    padding: 0.5rem 0;
+    list-style: none;
+    background: var(--lime-plaster);
+    border: 1px solid var(--stone);
+    color: var(--teak);
+    --accent: var(--brass-deep);
+  }
+  .dropdown a {
+    display: block;
+    padding: 0.75rem 1.25rem;
+    font-size: var(--step-n1);
+    font-weight: 500;
+    text-decoration: none;
+  }
+  .dropdown a:hover,
+  .dropdown a[aria-current='page'] {
+    text-decoration: underline;
+    text-decoration-color: var(--brass-deep);
+    text-underline-offset: 0.3em;
   }
 
   .site-header__actions {
@@ -165,8 +319,6 @@ const isActive = (href: string) => (href === '/' ? current === '/' : current.sta
     align-items: center;
     gap: 1rem;
   }
-
-  /* The quote button lives in the mobile bottom bar below 768px */
   .site-header__actions :global(.site-header__cta) {
     display: none;
   }
@@ -176,7 +328,7 @@ const isActive = (href: string) => (href === '/' ? current === '/' : current.sta
     }
   }
 
-  .site-header__menu {
+  .site-header__menu-btn {
     display: inline-flex;
     align-items: center;
     gap: 0.6rem;
@@ -190,13 +342,127 @@ const isActive = (href: string) => (href === '/' ? current === '/' : current.sta
     font-weight: 500;
     cursor: pointer;
   }
-  .site-header__menu svg {
+  .site-header__menu-btn svg {
     width: 24px;
     height: 12px;
   }
+  .site-header__menu-btn svg[viewBox='0 0 16 16'] {
+    width: 16px;
+    height: 16px;
+  }
   @media (min-width: 1024px) {
-    .site-header__menu {
+    .site-header__actions > .site-header__menu-btn {
       display: none;
     }
+  }
+
+  /* ---- Full-screen mobile menu ---- */
+  .menu {
+    /* reset the light/photo tokens: the menu is always plaster */
+    --ink: var(--teak);
+    --ink-muted: var(--teak-muted);
+    --ink-strong: var(--charcoal);
+    --accent: var(--brass-deep);
+    --hairline: var(--stone);
+    --on-ink: var(--lime-plaster);
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    max-height: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: var(--lime-plaster);
+    color: var(--teak);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+  .menu[open] {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu::backdrop {
+    background: var(--charcoal);
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    .menu[open] {
+      animation: menu-in var(--duration-fast) ease both;
+    }
+  }
+  @keyframes menu-in {
+    from {
+      opacity: 0;
+    }
+  }
+  .menu__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 72px;
+    border-bottom: 1px solid var(--stone);
+  }
+  .menu__nav {
+    flex: 1;
+    padding-block: var(--space-6);
+  }
+  .menu__list {
+    display: grid;
+    gap: 0.25rem;
+    margin: 0 0 var(--space-6);
+    padding: 0;
+    list-style: none;
+  }
+  .menu__list ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .menu__link {
+    display: block;
+    padding-block: 0.3rem;
+    font-family: var(--family-display);
+    font-size: var(--step-4);
+    line-height: 1.15;
+    letter-spacing: var(--tracking-display);
+    text-decoration: none;
+  }
+  .menu__link--sub {
+    padding-left: 1rem;
+    font-size: var(--step-3);
+  }
+  .menu__link[aria-current='page'] {
+    text-decoration: underline;
+    text-decoration-color: var(--brass-deep);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.15em;
+  }
+  .menu__group {
+    padding-block: 0.25rem;
+  }
+  .menu__label {
+    margin: 0.5rem 0 0.25rem;
+    font-size: var(--step-n1);
+    font-weight: 500;
+    color: var(--teak-muted);
+  }
+  .menu__contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--grid-gap);
+    padding-block: var(--space-5) calc(var(--space-5) + env(safe-area-inset-bottom));
+    border-top: 1px solid var(--stone);
+  }
+  .menu__contact a {
+    display: grid;
+    gap: 0.15rem;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  .menu__contact-label {
+    font-size: var(--step-n1);
+    font-weight: 400;
+    color: var(--teak-muted);
   }
 </style>

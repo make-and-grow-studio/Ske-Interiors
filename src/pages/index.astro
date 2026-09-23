@@ -1,104 +1,116 @@
 ---
 /**
- * TEMPORARY setup check (prompt 00). Not the Home page.
- * Confirms fonts, colour tokens, the type scale and Tailwind are wired up.
- * Replaced by the real Home page in prompt 04.
+ * TEMPORARY: layout shell preview (prompt 03). Not the Home page yet.
+ * Shows the overlay header over the hero photo, the closing CTA block and
+ * the footer. The real Home sections are built in prompts 04–07.
  */
-import { Font } from 'astro:assets';
-import '../styles/global.css';
-
-const colours = [
-  { name: 'Teak', token: '--teak', hex: '#5B3E2A', cls: 'bg-teak', dark: true },
-  { name: 'Lime plaster', token: '--lime-plaster', hex: '#ECE6DC', cls: 'bg-plaster', dark: false },
-  { name: 'Stone', token: '--stone', hex: '#BDB3A4', cls: 'bg-stone', dark: false },
-  { name: 'Charcoal', token: '--charcoal', hex: '#1F1D1A', cls: 'bg-charcoal', dark: true },
-  { name: 'Brass', token: '--brass', hex: '#A5854F', cls: 'bg-brass', dark: true },
-  { name: 'White', token: '--white', hex: '#FFFFFF', cls: 'bg-white', dark: false },
-];
-
-// Largest to smallest, with the role each step plays
-const steps = [
-  { cls: 'text-step-8', label: 'step 8 · home hero', serif: true },
-  { cls: 'text-step-6', label: 'step 6 · page H1', serif: true },
-  { cls: 'text-step-4', label: 'step 4 · H2', serif: true },
-  { cls: 'text-step-2', label: 'step 2 · H3', serif: false },
-  { cls: 'text-step-1', label: 'step 1 · lead text', serif: false },
-  { cls: 'text-step-0', label: 'step 0 · body', serif: false },
-  { cls: 'text-step-n1', label: 'step −1 · labels', serif: false },
-];
+import { Picture } from 'astro:assets';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CtaBlock from '../components/CtaBlock.astro';
+import TextLink from '../components/ui/TextLink.astro';
+import { business, mapUrl, whatsappUrl } from '../data/site';
+// Interim hero chosen in design/plan.md (3BHK living room render, 1280px)
+import heroImage from '../../scrape/images/shared/20190131_190715_5c7214a7-65a8-4dc0-9547-690a4395b35d.jpg';
+import ctaImage from '../../scrape/images/shared/20190131_190716_8eecb74a-f4b3-44ea-997a-e2ce0bf858b2.jpg';
 ---
 
-<!doctype html>
-<html lang="en-IN">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="robots" content="noindex" />
-    <title>Setup check | SKE Interiors</title>
-    <Font cssVariable="--font-bodoni" preload />
-    <Font cssVariable="--font-hanken" preload />
-  </head>
-  <body>
-    <main class="container-page py-16">
-      <p class="text-step-n1 text-ink-muted">Setup check: temporary page, replaced in prompt 04</p>
-      <h1 class="text-step-7 mt-4 mb-12">Spaces crafted for the way you live</h1>
+<BaseLayout
+  title="Interior Designers in Coimbatore | SKE Interiors"
+  description="Home and commercial interiors in Coimbatore since 2011. See your space in 3D before we build, with on-time handover. Get a free quote today."
+  headerVariant="overlay"
+  noindex
+>
+  <section class="shell-hero" aria-label="Hero (built in prompt 04)">
+    <Picture
+      src={heroImage}
+      alt="Living room with staircase and TV partition unit in a 3BHK in Coimbatore, designed by SKE Interiors"
+      formats={['avif', 'webp']}
+      widths={[640, 960, 1280]}
+      sizes="100vw"
+      loading="eager"
+      fetchpriority="high"
+      class="shell-hero__img"
+    />
+    <div class="shell-hero__scrim"></div>
+    <div class="container-page shell-hero__note">
+      <p>Layout shell preview. The hero content arrives in prompt 04.</p>
+    </div>
+  </section>
 
-      <section aria-labelledby="colours">
-        <h2 id="colours" class="text-step-4 mb-6">Colour tokens</h2>
-        <ul class="grid-12 gap-y-6">
-          {
-            colours.map((c) => (
-              <li class="col-span-6 md:col-span-4 lg:col-span-2">
-                <div class:list={[c.cls, 'h-24 rounded-sm border border-stone']} />
-                <p class="mt-2 text-step-n1">
-                  <strong class="font-medium">{c.name}</strong>
-                  <br />
-                  {c.hex} · <code>{c.token}</code>
-                </p>
-              </li>
-            ))
-          }
-        </ul>
-      </section>
+  <section class="container-page shell-body">
+    <h1 class="text-step-6">Layout shell</h1>
+    <p class="text-step-1">
+      Scroll down: the header turns solid once you leave the top of the page. On phones, the bottom bar keeps Call,
+      WhatsApp and Get a quote on screen.
+    </p>
+  </section>
 
-      <section aria-labelledby="type" class="mt-16">
-        <h2 id="type" class="text-step-4 mb-6">Type scale (1.25)</h2>
-        <ul class="space-y-6 border-t border-stone pt-6">
-          {
-            steps.map((s) => (
-              <li class="grid gap-2 md:grid-cols-[12rem_1fr] md:items-baseline">
-                <span class="text-step-n1 text-ink-muted">{s.label}</span>
-                <span
-                  class:list={[
-                    s.cls,
-                    s.serif ? 'font-display leading-[1.05] tracking-[-0.02em]' : 'font-sans',
-                  ]}
-                >
-                  {s.serif ? 'Designed in 3D, built by hand' : 'Homes, offices and shops across Coimbatore'}
-                </span>
-              </li>
-            ))
-          }
-        </ul>
-      </section>
+  <CtaBlock
+    heading="Let's plan your space."
+    text="Tell us about your home or office. We'll call you back within one working day."
+    primary={{ label: 'Get a free quote', href: '/get-a-quote/' }}
+    secondary={{ label: 'WhatsApp us', href: whatsappUrl(), track: 'click_whatsapp', external: true }}
+    secondaryAsLink
+    image={ctaImage}
+    imagePosition="center 60%"
+  >
+    <div slot="aside" class="shell-aside">
+      <p class="shell-aside__label">Visit</p>
+      <address>{business.address.full}</address>
+      <p class="shell-aside__label">Call</p>
+      <p>
+        {business.phones.mobile.map((p) => <a href={`tel:${p.tel}`} data-track="click_call">{p.label}</a>)}
+      </p>
+      <TextLink href={mapUrl} arrow target="_blank" rel="noopener">Open in Google Maps</TextLink>
+    </div>
+  </CtaBlock>
+</BaseLayout>
 
-      <section aria-labelledby="body-copy" class="mt-16">
-        <h2 id="body-copy" class="text-step-4 mb-6">Body copy</h2>
-        <p>
-          SKE Interiors is a Coimbatore interior design and execution studio. We plan, design and build
-          residential and commercial interiors, and we handle flooring too. Every project starts with a
-          conversation about how you live or work, becomes a 3D design you can see and change, and ends
-          with a space handed over on the date we agreed.
-        </p>
-        <p class="mt-4">
-          <a href="#" class="text-brass underline">A brass text link</a>
-        </p>
-      </section>
-
-      <section class="mt-16 bg-charcoal text-plaster p-8 rounded-sm">
-        <p class="font-display text-step-6 leading-none tracking-[-0.02em]">SKE</p>
-        <p class="mt-2 text-step-n1 text-stone">Charcoal section with the display wordmark</p>
-      </section>
-    </main>
-  </body>
-</html>
+<style>
+  .shell-hero {
+    position: relative;
+    height: 100svh;
+    min-height: 32rem;
+    background: var(--charcoal);
+    overflow: hidden;
+  }
+  .shell-hero :global(.shell-hero__img) {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .shell-hero__scrim {
+    position: absolute;
+    inset: 0;
+    background: rgb(31 29 26 / 0.3);
+  }
+  .shell-hero__note {
+    position: absolute;
+    inset: auto 0 2rem;
+    color: var(--white);
+    font-size: var(--step-n1);
+  }
+  .shell-body {
+    padding-block: var(--section-y);
+  }
+  .shell-body p {
+    margin-top: var(--space-5);
+  }
+  .shell-aside address {
+    font-style: normal;
+    margin-bottom: var(--space-4);
+  }
+  .shell-aside__label {
+    margin: 0 0 0.25rem;
+    color: var(--ink-muted);
+  }
+  .shell-aside a[href^='tel'] {
+    display: block;
+    text-decoration: none;
+  }
+  .shell-aside p {
+    margin: 0 0 var(--space-4);
+  }
+</style>

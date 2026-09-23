@@ -1,0 +1,38 @@
+---
+/**
+ * Visible marker for content still waiting on SKE (a [CONFIRM] item).
+ * Shows in development (and on staging with PUBLIC_SHOW_PLACEHOLDERS=true);
+ * renders nothing in a production build, so a bracket is never published.
+ * Every placeholder must also be listed in /TODO-client.md.
+ *
+ *   <Placeholder>CONFIRM: email address</Placeholder>
+ */
+type Props = { inline?: boolean };
+const { inline = true } = Astro.props;
+const show = import.meta.env.DEV || import.meta.env.PUBLIC_SHOW_PLACEHOLDERS === 'true';
+const Tag = inline ? 'span' : 'div';
+---
+
+{
+  show && (
+    <Tag class="placeholder" data-placeholder>
+      <slot />
+    </Tag>
+  )
+}
+
+<style>
+  .placeholder {
+    display: inline-block;
+    padding: 0.1em 0.5em;
+    border: 1px dashed var(--accent);
+    color: var(--ink);
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    letter-spacing: 0;
+  }
+  div.placeholder {
+    display: block;
+  }
+</style>

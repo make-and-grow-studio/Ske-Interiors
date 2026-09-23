@@ -89,11 +89,12 @@ if (import.meta.env.DEV) {
     <!-- Icons -->
     <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <meta name="theme-color" content="#ECE6DC" />
+    <meta name="theme-color" content="#F4F1EC" />
 
     <!-- Fonts: self-hosted, preloaded, with metric-matched fallbacks -->
-    <Font cssVariable="--font-bodoni" preload />
-    <Font cssVariable="--font-hanken" preload />
+    <Font cssVariable="--font-cormorant" preload />
+    <Font cssVariable="--font-jost" preload />
+    <Font cssVariable="--font-script" preload />
 
     <!-- Page-specific extras, e.g. the hero image preload -->
     <slot name="head" />
@@ -127,8 +128,8 @@ if (import.meta.env.DEV) {
     left: 0.75rem;
     z-index: 100;
     padding: 0.75rem 1rem;
-    background: var(--teak);
-    color: var(--lime-plaster);
+    background: var(--graphite);
+    color: var(--ivory);
     font-size: var(--step-n1);
     font-weight: 500;
     translate: 0 -200%;

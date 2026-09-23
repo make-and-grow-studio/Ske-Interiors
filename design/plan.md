@@ -4,6 +4,8 @@ Inputs: `CLAUDE.md`, the four screenshots in `/references/`, `scrape/image-repor
 
 The short version: **Modora's warmth and hero, Renova's restraint and structure, Next Concept's project depth**, set in Bodoni and Hanken on lime plaster and teak. The site is built around the few real SKE photographs we have (and the ones we're asking for), not around UI.
 
+> **Revision after prompt 04 (RJ):** the original colours and fonts read as generic. New references (`references/luxury-banner.webp`, `elite.png`, `aebele.webp`) set a quieter luxury look, and they **replace section 2's colours and type**. It is now ivory/paper grounds, graphite text, one gold accent (`#B8925A`, deep gold `#82643A` for small text on ivory), espresso dark sections; Cormorant Garamond Light headlines in capitals, Jost for body with small spaced-capital labels, and Herr Von Muellerhoff as a sparing signature script. Sentence-case and no-script rules are lifted: capitals come from CSS, and the script is limited to one accent per section. Layout, grid, motion and the reference-by-reference choices below still apply. Current values: `src/styles/tokens.css` and `CLAUDE.md`.
+
 ---
 
 ## 1. What we take from each reference

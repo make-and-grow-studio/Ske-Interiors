@@ -1,7 +1,7 @@
 ---
 /**
- * Text link with an always-visible accent underline (colour alone can't
- * mark a link: brass-deep and teak are too close). Optional arrow.
+ * Text link in small spaced capitals with an always-visible fine gold
+ * underline (colour alone can't mark a link). Optional arrow.
  *
  *   <TextLink href="/about-us/" arrow>More about us</TextLink>
  */
@@ -25,19 +25,23 @@ const { href, arrow = false, class: className, ...rest } = Astro.props;
   .text-link {
     display: inline-flex;
     align-items: baseline;
-    gap: 0.4em;
+    gap: 0.6em;
     color: var(--ink);
+    font-family: var(--family-text);
+    font-size: var(--step-n2);
     font-weight: 500;
+    letter-spacing: var(--tracking-label);
+    text-transform: uppercase;
     text-decoration: none;
     /* keeps a 44px-ish tap area without changing the visual */
-    padding-block: 0.5rem;
+    padding-block: 0.75rem;
   }
 
   .text-link__label {
     text-decoration: underline;
-    text-decoration-color: var(--accent);
+    text-decoration-color: var(--accent-line);
     text-decoration-thickness: 1px;
-    text-underline-offset: 0.25em;
+    text-underline-offset: 0.7em;
     transition: text-decoration-thickness var(--duration-fast) ease;
   }
 

@@ -2,7 +2,7 @@
  * Measures the footer wordmark ("SKE" in Bodoni Moda) so the footer can size
  * it to fill the container width exactly. Prints the text-box width ÷
  * font-size ratio. The footer uses the INK width instead (the letters
- * without their side spacing): 1.7038, with a 0.0445em left bearing, found by
+ * without their side spacing): 1.5111, with a 0.0672em left bearing, found by
  * screenshotting the wordmark and finding the first and last inked columns.
  * Re-check both values if the font or letter-spacing changes.
  * Needs a running server:  npm run preview  →  node scripts/measure-wordmark.mjs [url]

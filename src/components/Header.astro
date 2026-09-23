@@ -4,7 +4,7 @@
  *
  *  - overlay: transparent over the home hero photo (white text, light logo),
  *             turns solid once you scroll past the top of the page
- *  - solid:   plaster with a hairline (inner pages)
+ *  - solid:   ivory with a hairline (inner pages)
  *
  * Always visible (sticky), so "Get a free quote" is always on screen on
  * desktop. Below 768px the quote button moves to the bottom bar.
@@ -186,7 +186,7 @@ const menuId = `mobile-menu-${idSuffix}`;
     background: transparent;
   }
   .site-header.is-solid {
-    background: var(--lime-plaster);
+    background: var(--ivory);
   }
   .site-header--static {
     position: relative;
@@ -205,7 +205,7 @@ const menuId = `mobile-menu-${idSuffix}`;
     }
   }
 
-  /* Logo: light over photos, dark on plaster */
+  /* Logo: light over photos, dark on ivory */
   .site-header__logo {
     display: block;
     flex: none;
@@ -255,24 +255,22 @@ const menuId = `mobile-menu-${idSuffix}`;
     border: 0;
     color: inherit;
     font: inherit;
-    font-size: var(--step-n1);
+    font-size: var(--step-n2);
     font-weight: 500;
+    letter-spacing: var(--tracking-label);
+    text-transform: uppercase;
     cursor: pointer;
     text-decoration: underline;
     text-decoration-color: transparent;
     text-decoration-thickness: 1px;
-    text-underline-offset: 0.45em;
+    text-underline-offset: 0.8em;
     transition: text-decoration-color var(--duration-fast) ease;
   }
   .site-header__link:hover,
   .site-header__link[aria-current='page'],
   .site-header__link[data-current='true'],
   .site-header__link[aria-expanded='true'] {
-    text-decoration-color: var(--accent);
-  }
-  .site-header__link[aria-current='page'],
-  .site-header__link[data-current='true'] {
-    text-decoration-thickness: 2px;
+    text-decoration-color: var(--accent-line);
   }
   .site-header__caret {
     width: 10px;
@@ -283,7 +281,7 @@ const menuId = `mobile-menu-${idSuffix}`;
     rotate: 180deg;
   }
 
-  /* Services dropdown: a plaster panel, whatever the header colour */
+  /* Services dropdown: an ivory panel, whatever the header colour */
   .has-menu {
     position: relative;
   }
@@ -295,23 +293,25 @@ const menuId = `mobile-menu-${idSuffix}`;
     margin: 0;
     padding: 0.5rem 0;
     list-style: none;
-    background: var(--lime-plaster);
-    border: 1px solid var(--stone);
-    color: var(--teak);
-    --accent: var(--brass-deep);
+    background: var(--ivory);
+    border: 1px solid var(--sand);
+    color: var(--graphite);
+    --accent: var(--gold-deep);
   }
   .dropdown a {
     display: block;
-    padding: 0.75rem 1.25rem;
-    font-size: var(--step-n1);
+    padding: 0.8rem 1.25rem;
+    font-size: var(--step-n2);
     font-weight: 500;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
     text-decoration: none;
   }
   .dropdown a:hover,
   .dropdown a[aria-current='page'] {
     text-decoration: underline;
-    text-decoration-color: var(--brass-deep);
-    text-underline-offset: 0.3em;
+    text-decoration-color: var(--gold);
+    text-underline-offset: 0.5em;
   }
 
   .site-header__actions {
@@ -338,8 +338,10 @@ const menuId = `mobile-menu-${idSuffix}`;
     border: 0;
     color: inherit;
     font: inherit;
-    font-size: var(--step-n1);
+    font-size: var(--step-n2);
     font-weight: 500;
+    letter-spacing: var(--tracking-label);
+    text-transform: uppercase;
     cursor: pointer;
   }
   .site-header__menu-btn svg {
@@ -358,13 +360,13 @@ const menuId = `mobile-menu-${idSuffix}`;
 
   /* ---- Full-screen mobile menu ---- */
   .menu {
-    /* reset the light/photo tokens: the menu is always plaster */
-    --ink: var(--teak);
-    --ink-muted: var(--teak-muted);
-    --ink-strong: var(--charcoal);
-    --accent: var(--brass-deep);
-    --hairline: var(--stone);
-    --on-ink: var(--lime-plaster);
+    /* reset the light/photo tokens: the menu is always ivory */
+    --ink: var(--graphite);
+    --ink-muted: var(--graphite-muted);
+    --ink-strong: var(--espresso);
+    --accent: var(--gold-deep);
+    --hairline: var(--sand);
+    --on-ink: var(--ivory);
     position: fixed;
     inset: 0;
     width: 100%;
@@ -374,8 +376,8 @@ const menuId = `mobile-menu-${idSuffix}`;
     margin: 0;
     padding: 0;
     border: 0;
-    background: var(--lime-plaster);
-    color: var(--teak);
+    background: var(--ivory);
+    color: var(--graphite);
     overflow-y: auto;
     overscroll-behavior: contain;
   }
@@ -384,7 +386,7 @@ const menuId = `mobile-menu-${idSuffix}`;
     flex-direction: column;
   }
   .menu::backdrop {
-    background: var(--charcoal);
+    background: var(--espresso);
   }
   @media (prefers-reduced-motion: no-preference) {
     .menu[open] {
@@ -401,7 +403,7 @@ const menuId = `mobile-menu-${idSuffix}`;
     align-items: center;
     justify-content: space-between;
     min-height: 72px;
-    border-bottom: 1px solid var(--stone);
+    border-bottom: 1px solid var(--sand);
   }
   .menu__nav {
     flex: 1;
@@ -421,11 +423,13 @@ const menuId = `mobile-menu-${idSuffix}`;
   }
   .menu__link {
     display: block;
-    padding-block: 0.3rem;
+    padding-block: 0.35rem;
     font-family: var(--family-display);
     font-size: var(--step-4);
-    line-height: 1.15;
+    font-weight: var(--weight-display);
+    line-height: 1.1;
     letter-spacing: var(--tracking-display);
+    text-transform: uppercase;
     text-decoration: none;
   }
   .menu__link--sub {
@@ -434,25 +438,27 @@ const menuId = `mobile-menu-${idSuffix}`;
   }
   .menu__link[aria-current='page'] {
     text-decoration: underline;
-    text-decoration-color: var(--brass-deep);
-    text-decoration-thickness: 2px;
+    text-decoration-color: var(--gold);
+    text-decoration-thickness: 1px;
     text-underline-offset: 0.15em;
   }
   .menu__group {
     padding-block: 0.25rem;
   }
   .menu__label {
-    margin: 0.5rem 0 0.25rem;
-    font-size: var(--step-n1);
+    margin: 0.75rem 0 0.25rem;
+    font-size: var(--step-n2);
     font-weight: 500;
-    color: var(--teak-muted);
+    letter-spacing: var(--tracking-label);
+    text-transform: uppercase;
+    color: var(--gold-deep);
   }
   .menu__contact {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--grid-gap);
     padding-block: var(--space-5) calc(var(--space-5) + env(safe-area-inset-bottom));
-    border-top: 1px solid var(--stone);
+    border-top: 1px solid var(--sand);
   }
   .menu__contact a {
     display: grid;
@@ -461,8 +467,10 @@ const menuId = `mobile-menu-${idSuffix}`;
     text-decoration: none;
   }
   .menu__contact-label {
-    font-size: var(--step-n1);
-    font-weight: 400;
-    color: var(--teak-muted);
+    font-size: var(--step-n2);
+    font-weight: 500;
+    letter-spacing: var(--tracking-label);
+    text-transform: uppercase;
+    color: var(--gold-deep);
   }
 </style>

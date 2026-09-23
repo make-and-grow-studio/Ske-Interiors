@@ -22,6 +22,7 @@ import smallPhoto from '../../../scrape/images/shared/FB_IMG_1671554681269.jpg';
 <section class="intro container-page" aria-labelledby="intro-title">
   <div class="intro__grid">
     <div class="intro__text">
+      <p class="eyebrow intro__eyebrow">Studio</p>
       <h2 id="intro-title" class="intro__heading">
         {intro.heading}
       </h2>
@@ -85,14 +86,23 @@ import smallPhoto from '../../../scrape/images/shared/FB_IMG_1671554681269.jpg';
     row-gap: var(--space-6);
     column-gap: var(--grid-gap); /* 12 columns: a wide gap would overflow phones */
   }
+  .intro__eyebrow {
+    margin: 0 0 var(--space-5);
+  }
   .intro__heading {
     margin: 0;
-    max-width: 14ch;
+    max-width: 16ch;
     font-size: var(--step-5);
   }
   @media (min-width: 768px) {
     .intro__heading {
       font-size: var(--step-6);
+    }
+  }
+  @media (min-width: 1024px) {
+    .intro__heading {
+      max-width: 18ch;
+      font-size: var(--step-5);
     }
   }
   .intro__text {
@@ -122,11 +132,11 @@ import smallPhoto from '../../../scrape/images/shared/FB_IMG_1671554681269.jpg';
   .intro__tall {
     aspect-ratio: 4 / 5;
     overflow: hidden;
-    background: var(--stone);
+    background: var(--sand);
   }
   .intro__small {
     aspect-ratio: 3 / 4;
-    background: var(--stone);
+    background: var(--sand);
   }
 
   /* Phones and tablets: tall photo, small photo tucked over its lower-left corner */
@@ -147,7 +157,7 @@ import smallPhoto from '../../../scrape/images/shared/FB_IMG_1671554681269.jpg';
       grid-row: 2;
       align-self: end;
       margin-bottom: -12%;
-      border: 6px solid var(--lime-plaster);
+      border: 8px solid var(--ivory);
       border-left: 0;
       z-index: 1;
     }
@@ -232,22 +242,22 @@ import smallPhoto from '../../../scrape/images/shared/FB_IMG_1671554681269.jpg';
   }
   .intro__value {
     font-family: var(--family-display);
-    font-size: var(--step-6);
+    font-size: var(--step-7);
+    font-weight: var(--weight-display);
     line-height: 1;
-    letter-spacing: var(--tracking-display);
-    font-variant-numeric: lining-nums tabular-nums;
+    font-variant-numeric: lining-nums;
   }
-  /* Bodoni's "+" has a hairline cross-bar that disappears at this size */
   .intro__suffix {
-    margin-left: 0.05em;
-    font-family: var(--family-text);
-    font-size: 0.55em;
-    font-weight: 300;
-    vertical-align: 0.55em;
+    margin-left: 0.04em;
+    font-size: 0.6em;
+    vertical-align: 0.5em;
+    color: var(--gold);
   }
   .intro__label {
-    font-size: var(--step-n1);
+    font-size: var(--step-n2);
     font-weight: 500;
+    letter-spacing: var(--tracking-label);
+    text-transform: uppercase;
     color: var(--ink-muted);
   }
 </style>

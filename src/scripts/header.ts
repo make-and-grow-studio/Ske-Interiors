@@ -12,7 +12,7 @@ const overlay = document.querySelector<HTMLElement>('[data-header="overlay"]');
 if (overlay) {
   const setSolid = (solid: boolean) => {
     overlay.classList.toggle('is-solid', solid);
-    // over the photo the header uses white "photo" tokens; solid uses plaster ones
+    // over the photo the header uses white "photo" tokens; solid uses ivory ones
     overlay.classList.toggle('surface-photo', !solid);
   };
   // A 1px marker 80px down the page: once it scrolls out of view, go solid

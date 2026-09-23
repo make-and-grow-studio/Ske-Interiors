@@ -1,8 +1,8 @@
 ---
 /**
- * Site footer (charcoal). Content from content/site-content.md, section 0.
+ * Site footer (espresso). Content from content/site-content.md, section 0.
  * Layout after the Renova footer (references/renova-2.png): hairline-divided
- * columns, a large phone line, then a giant "SKE" wordmark in Bodoni that
+ * columns, a large phone line, then a giant "SKE" wordmark in Cormorant that
  * spans the full container width.
  */
 import Placeholder from './Placeholder.astro';
@@ -131,11 +131,14 @@ const showPlaceholders = import.meta.env.DEV || import.meta.env.PUBLIC_SHOW_PLAC
   }
   .site-footer__line {
     margin: 0;
-    max-width: 22ch;
+    max-width: 26ch;
     font-family: var(--family-display);
     font-size: var(--step-4);
-    line-height: 1.1;
+    font-weight: var(--weight-display);
+    line-height: 1.05;
     letter-spacing: var(--tracking-display);
+    text-transform: uppercase;
+    font-variant-numeric: lining-nums;
     text-wrap: balance;
   }
   .site-footer__call {
@@ -151,18 +154,23 @@ const showPlaceholders = import.meta.env.DEV || import.meta.env.PUBLIC_SHOW_PLAC
   .site-footer__phone {
     font-family: var(--family-display);
     font-size: var(--step-4);
+    font-weight: var(--weight-display);
     line-height: 1.1;
-    letter-spacing: var(--tracking-display);
+    letter-spacing: 0.02em;
+    font-variant-numeric: lining-nums;
     white-space: nowrap;
   }
   .site-footer__wa,
   .site-footer__more {
     display: inline-block;
-    padding-block: 0.4rem;
+    padding-block: 0.5rem;
+    font-size: var(--step-n2);
     font-weight: 500;
+    letter-spacing: var(--tracking-label);
+    text-transform: uppercase;
     text-decoration: underline !important;
-    text-decoration-color: var(--accent) !important;
-    text-underline-offset: 0.25em;
+    text-decoration-color: var(--accent-line) !important;
+    text-underline-offset: 0.6em;
   }
 
   /* Four columns divided by hairlines (Renova) */
@@ -210,12 +218,14 @@ const showPlaceholders = import.meta.env.DEV || import.meta.env.PUBLIC_SHOW_PLAC
   }
   .site-footer__h {
     display: block;
-    margin: 0 0 0.75rem;
+    margin: 0 0 1rem;
     font-family: var(--family-text);
-    font-size: var(--step-n1);
-    font-weight: 400;
-    letter-spacing: 0;
-    color: var(--ink-muted);
+    font-size: var(--step-n2);
+    font-weight: 500;
+    letter-spacing: var(--tracking-label);
+    line-height: 1.4;
+    text-transform: uppercase;
+    color: var(--accent);
   }
   .site-footer ul {
     display: grid;
@@ -248,12 +258,12 @@ const showPlaceholders = import.meta.env.DEV || import.meta.env.PUBLIC_SHOW_PLAC
 
   /* Giant "SKE": sized from the container width so the letters themselves
      (not their invisible side spacing) run exactly edge to edge.
-     --wordmark-ratio = ink width ÷ font size for "SKE" in Bodoni Moda;
+     --wordmark-ratio = ink width ÷ font size for "SKE" in Cormorant Garamond Light;
      --wordmark-bearing = blank space before the S, as a fraction of the size.
      Both measured in the browser (scripts/measure-wordmark.mjs). */
   .site-footer__wordmark {
-    --wordmark-ratio: 1.7038;
-    --wordmark-bearing: 0.0445em;
+    --wordmark-ratio: 1.5111;
+    --wordmark-bearing: 0.0672em;
     container-type: inline-size;
     overflow: hidden;
     padding-top: var(--space-6);
@@ -261,13 +271,12 @@ const showPlaceholders = import.meta.env.DEV || import.meta.env.PUBLIC_SHOW_PLAC
   .site-footer__wordmark span {
     display: block;
     font-family: var(--family-display);
-    font-weight: 400;
-    font-optical-sizing: auto;
+    font-weight: 300;
     font-size: calc(100cqi / var(--wordmark-ratio));
     margin-left: calc(-1 * var(--wordmark-bearing));
     line-height: 0.8;
     letter-spacing: -0.02em;
-    color: var(--lime-plaster);
+    color: var(--gold);
     white-space: nowrap;
     user-select: none;
   }

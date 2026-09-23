@@ -26,7 +26,7 @@ type Props = {
   image?: ImageMetadata;
   /** Where the photo's focal point sits, e.g. "center 40%" */
   imagePosition?: string;
-  /** Without an image: dark (charcoal) or light (plaster) */
+  /** Without an image: dark (espresso) or light (ivory) */
   tone?: 'dark' | 'light';
   headingLevel?: 'h2' | 'h3';
   id?: string;
@@ -106,19 +106,19 @@ const linkAttrs = (a: Action) => ({
     color: var(--ink);
   }
   .cta--dark {
-    background: var(--charcoal);
+    background: var(--espresso);
   }
   .cta--light {
-    background: var(--lime-plaster);
+    background: var(--ivory);
     border-block: 1px solid var(--hairline);
   }
 
-  /* Full-bleed photo with a flat charcoal scrim (no gradients) */
+  /* Full-bleed photo with a flat espresso scrim (no gradients) */
   .cta__media {
     position: absolute;
     inset: 0;
     z-index: -1;
-    background: var(--charcoal);
+    background: var(--espresso);
   }
   .cta__media :global(img) {
     width: 100%;
@@ -129,7 +129,7 @@ const linkAttrs = (a: Action) => ({
     content: '';
     position: absolute;
     inset: 0;
-    background: rgb(31 29 26 / 0.58);
+    background: rgb(34 29 24 / 0.6);
   }
 
   .cta__inner {
@@ -172,6 +172,7 @@ const linkAttrs = (a: Action) => ({
     padding-top: var(--space-5);
     border-top: 1px solid var(--hairline);
     font-size: var(--step-n1);
+    line-height: 1.6;
   }
   @media (min-width: 1024px) {
     .cta__aside {

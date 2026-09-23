@@ -2,8 +2,8 @@
 /**
  * Button: primary (solid) or secondary (outline).
  * Renders a link when `href` is given, otherwise a <button>.
- * Colours come from the surface tokens, so it works on plaster, charcoal
- * and over photos without extra props.
+ * Colours come from the surface tokens, so it works on ivory, espresso
+ * and over photos without extra props. Label in small spaced capitals.
  *
  *   <Button href="/get-a-quote/">Get a free quote</Button>
  *   <Button variant="secondary" type="submit">Send enquiry</Button>
@@ -41,14 +41,15 @@ const classes = ['btn', `btn-${variant}`, block && 'btn-block', className];
     align-items: center;
     justify-content: center;
     gap: 0.5em;
-    min-height: 48px; /* comfortable touch target */
-    padding: 0.75rem 1.5rem;
+    min-height: 50px; /* comfortable touch target */
+    padding: 0.9rem 1.9rem;
     border: 1px solid var(--ink);
     border-radius: var(--corner-sm);
     font-family: var(--family-text);
-    font-size: var(--step-n1);
+    font-size: var(--step-n2);
     font-weight: 500;
-    letter-spacing: 0.01em;
+    letter-spacing: var(--tracking-label);
+    text-transform: uppercase;
     line-height: 1.2;
     text-decoration: none;
     cursor: pointer;

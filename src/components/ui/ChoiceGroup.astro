@@ -58,9 +58,11 @@ const errorId = error ? `${name}-error` : undefined;
     min-width: 0;
   }
   .choices__legend {
-    margin-bottom: 0.6rem;
-    font-size: var(--step-n1);
+    margin-bottom: 0.8rem;
+    font-size: var(--step-n2);
     font-weight: 500;
+    letter-spacing: var(--tracking-label);
+    text-transform: uppercase;
   }
   .choices__options {
     display: flex;
@@ -82,11 +84,13 @@ const errorId = error ? `${name}-error` : undefined;
   .choice__label {
     display: inline-flex;
     align-items: center;
-    min-height: 44px;
-    padding: 0.5rem 1.1rem;
+    min-height: 46px;
+    padding: 0.5rem 1.25rem;
     border: 1px solid var(--field-line);
-    font-size: var(--step-n1);
+    font-size: var(--step-n2);
     font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
     color: var(--ink);
     transition:
       background-color var(--duration-fast) ease,

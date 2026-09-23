@@ -77,7 +77,7 @@ const Tag = href ? 'a' : 'div';
 
   .card__media {
     overflow: hidden;
-    background: var(--stone); /* shows while the image loads */
+    background: var(--sand); /* shows while the image loads */
   }
   .card--landscape .card__media {
     aspect-ratio: 4 / 3;
@@ -106,8 +106,12 @@ const Tag = href ? 'a' : 'div';
   }
   .card__title {
     margin: 0;
-    font-size: var(--step-1);
-    font-weight: 500;
+    font-family: var(--family-display);
+    font-size: var(--step-2);
+    font-weight: 400;
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
     text-decoration: underline;
     text-decoration-color: transparent;
     text-decoration-thickness: 1px;
@@ -116,12 +120,15 @@ const Tag = href ? 'a' : 'div';
   }
   .card__link:hover .card__title,
   .card__link:focus-visible .card__title {
-    text-decoration-color: var(--accent);
+    text-decoration-color: var(--accent-line);
   }
   .card__meta,
   .card__kind {
     margin: 0;
-    font-size: var(--step-n1);
+    font-size: var(--step-n2);
+    font-weight: 500;
+    letter-spacing: var(--tracking-label);
+    text-transform: uppercase;
     color: var(--ink-muted);
     white-space: nowrap;
   }

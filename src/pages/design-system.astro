@@ -20,26 +20,26 @@ import oneBhkBedroom from '../../scrape/images/shared/FB_IMG_1669397475101.jpg';
 import threeBhkStair from '../../scrape/images/shared/20190131_190715_5c7214a7-65a8-4dc0-9547-690a4395b35d.jpg';
 
 const colours = [
-  { name: 'Lime plaster', token: '--lime-plaster', hex: '#ECE6DC', use: 'Main background', swatch: 'bg-plaster' },
-  { name: 'Teak', token: '--teak', hex: '#5B3E2A', use: 'Text and primary buttons on light · 7.8:1', swatch: 'bg-teak' },
-  { name: 'Teak muted', token: '--teak-muted', hex: '#78604E', use: 'Secondary text, field borders · 4.7:1', swatch: 'bg-teak-muted' },
-  { name: 'Stone', token: '--stone', hex: '#BDB3A4', use: 'Hairlines only, never text', swatch: 'bg-stone' },
-  { name: 'Charcoal', token: '--charcoal', hex: '#1F1D1A', use: 'Dark sections and footer', swatch: 'bg-charcoal' },
-  { name: 'Brass', token: '--brass', hex: '#A5854F', use: 'Accent on dark · 4.9:1 on charcoal', swatch: 'bg-brass' },
-  { name: 'Brass deep', token: '--brass-deep', hex: '#7C643B', use: 'Accent on light · 4.5:1 on plaster', swatch: 'bg-brass-deep' },
-  { name: 'White', token: '--white', hex: '#FFFFFF', use: 'Cards on dark, text on photos', swatch: 'bg-white' },
-  { name: 'Error', token: '--error', hex: '#8C2F24', use: 'Form errors only · 6.6:1', swatch: 'bg-error' },
+  { name: 'Ivory', token: '--ivory', hex: '#F4F1EC', use: 'Main background', swatch: 'bg-ivory' },
+  { name: 'Paper', token: '--paper', hex: '#FBF9F6', use: 'Lighter panels and cards', swatch: 'bg-paper' },
+  { name: 'Graphite', token: '--graphite', hex: '#2E2C28', use: 'Text and primary buttons · 12.4:1', swatch: 'bg-graphite' },
+  { name: 'Graphite muted', token: '--graphite-muted', hex: '#6B655C', use: 'Secondary text · 5.1:1', swatch: 'bg-graphite-muted' },
+  { name: 'Sand', token: '--sand', hex: '#D9D1C4', use: 'Hairlines only, never text', swatch: 'bg-sand' },
+  { name: 'Espresso', token: '--espresso', hex: '#221D18', use: 'Dark sections, footer, scrims', swatch: 'bg-espresso' },
+  { name: 'Gold', token: '--gold', hex: '#B8925A', use: 'Rules, script, accents on dark · 5.8:1 on espresso', swatch: 'bg-gold' },
+  { name: 'Gold deep', token: '--gold-deep', hex: '#82643A', use: 'Small gold text on ivory · 4.9:1', swatch: 'bg-gold-deep' },
+  { name: 'Error', token: '--error', hex: '#8C2F24', use: 'Form errors only · 7.3:1', swatch: 'bg-error' },
 ];
 
 const typeSteps = [
-  { token: '--step-8', px: '73 → 107px', role: 'Home hero display line', sample: 'Spaces crafted', display: true, cls: 'text-step-8' },
-  { token: '--step-6', px: '51 → 69px', role: 'Page H1', sample: 'Let’s talk about your space.', display: true, cls: 'text-step-6' },
-  { token: '--step-5', px: '42 → 55px', role: 'Large H2', sample: 'What we design and build', display: true, cls: 'text-step-5' },
-  { token: '--step-4', px: '35 → 44px', role: 'H2', sample: 'Questions we get asked', display: true, cls: 'text-step-4' },
-  { token: '--step-2', px: '24 → 28px', role: 'H3, card titles · Hanken 500', sample: 'Modular kitchens', display: false, cls: 'text-step-2 font-medium' },
-  { token: '--step-1', px: '20 → 22px', role: 'Lead text', sample: 'Designed in 3D first, then built and fitted by our own carpenters.', display: false, cls: 'text-step-1' },
-  { token: '--step-0', px: '17 → 18px', role: 'Body', sample: 'Every project starts with a conversation about how you live or work.', display: false, cls: 'text-step-0' },
-  { token: '--step-n1', px: '14px', role: 'Labels, captions, buttons', sample: 'Since 2011 · Coimbatore, Tiruppur and Pollachi', display: false, cls: 'text-step-n1 font-medium' },
+  { token: '--step-8', px: '73 → 107px', role: 'Home hero · Cormorant Light, capitals', sample: 'Spaces crafted', kind: 'display', cls: 'text-step-8' },
+  { token: 'script', px: '84 → 123px', role: 'Signature accent · Herr Von Muellerhoff', sample: 'for the way you live', kind: 'script', cls: 'text-step-8' },
+  { token: '--step-6', px: '51 → 69px', role: 'Page H1', sample: 'Let’s talk about your space.', kind: 'display', cls: 'text-step-6' },
+  { token: '--step-4', px: '35 → 44px', role: 'H2', sample: 'Questions we get asked', kind: 'display', cls: 'text-step-4' },
+  { token: '--step-2', px: '24 → 28px', role: 'H3, card titles · Cormorant, capitals', sample: 'Modular kitchens', kind: 'display', cls: 'text-step-2' },
+  { token: '--step-1', px: '20 → 22px', role: 'Lead text · Jost Light', sample: 'Designed in 3D first, then built and fitted by our own carpenters.', kind: 'text', cls: 'text-step-1 font-light' },
+  { token: '--step-0', px: '17 → 18px', role: 'Body · Jost', sample: 'Every project starts with a conversation about how you live or work.', kind: 'text', cls: 'text-step-0' },
+  { token: 'eyebrow', px: '12px · 0.22em', role: 'Labels, nav, buttons · Jost, spaced capitals', sample: 'Interior designers in Coimbatore', kind: 'eyebrow', cls: '' },
 ];
 
 const alt = (room: string, type: string) => `${room} of a ${type} in Coimbatore, designed by SKE Interiors`;
@@ -69,8 +69,9 @@ const alt = (room: string, type: string) => `${room} of a ${type} in Coimbatore,
     <section id="colour" class="container-page ds-section" aria-labelledby="colour-h">
       <h2 id="colour-h" class="text-step-4 ds-h2">Colour</h2>
       <p class="ds-note">
-        Brass is the single accent. On plaster it becomes <strong>brass deep</strong>, the same hue made darker,
-        because brass itself is only 2.8:1 there. Ratios are WCAG contrast against plaster unless noted.
+        Ivory and paper grounds, warm graphite text, one gold accent. Gold is for rules, the script and dark
+        sections; small gold text on ivory uses <strong>gold deep</strong> (gold itself is only 2.6:1 there).
+        Ratios are WCAG contrast against ivory unless noted.
       </p>
       <ul class="ds-swatches">
         {
@@ -92,8 +93,9 @@ const alt = (room: string, type: string) => `${room} of a ${type} in Coimbatore,
     <section id="type" class="container-page ds-section" aria-labelledby="type-h">
       <h2 id="type-h" class="text-step-4 ds-h2">Type</h2>
       <p class="ds-note">
-        Bodoni Moda for display (35px and up), Hanken Grotesk for everything else. Ratio 1.25 at desktop, 1.2 on
-        phones. Sentence case, no all-caps, no italic accents.
+        Headlines in Cormorant Garamond Light, set in capitals. Body and interface in Jost; labels, nav and
+        buttons in small spaced capitals. A handwritten script (Herr Von Muellerhoff) as a signature accent, at
+        most once per section. Capitals are applied with CSS, so the HTML stays in sentence case.
       </p>
       <ul class="ds-type">
         {
@@ -106,7 +108,17 @@ const alt = (room: string, type: string) => `${room} of a ${type} in Coimbatore,
                 <br />
                 <span>{t.role}</span>
               </p>
-              <p class:list={[t.cls, t.display ? 'ds-display' : 'ds-text']}>{t.sample}</p>
+              <p
+                class:list={[
+                  t.cls,
+                  t.kind === 'display' && 'ds-display',
+                  t.kind === 'text' && 'ds-text',
+                  t.kind === 'script' && 'script ds-script',
+                  t.kind === 'eyebrow' && 'eyebrow ds-text',
+                ]}
+              >
+                {t.sample}
+              </p>
             </li>
           ))
         }
@@ -118,14 +130,14 @@ const alt = (room: string, type: string) => `${room} of a ${type} in Coimbatore,
       <div class="container-page">
         <h2 id="buttons-h" class="text-step-4 ds-h2">Buttons and links</h2>
         <p class="ds-note">
-          Square, 48px tall, sentence case. Hover changes colour only; nothing moves. Links always keep their
-          underline.
+          Square, 50px tall, small spaced capitals. Hover changes colour only; nothing moves. Text links keep a
+          fine gold underline.
         </p>
       </div>
 
       <div class="ds-surfaces">
         <div class="ds-surface">
-          <p class="ds-surface__label">On plaster</p>
+          <p class="ds-surface__label">On ivory</p>
           <div class="ds-row">
             <Button href="#">Get a free quote</Button>
             <Button href="#" variant="secondary">See our work</Button>
@@ -137,7 +149,7 @@ const alt = (room: string, type: string) => `${room} of a ${type} in Coimbatore,
         </div>
 
         <div class="ds-surface surface-dark">
-          <p class="ds-surface__label">On charcoal</p>
+          <p class="ds-surface__label">On espresso</p>
           <div class="ds-row">
             <Button href="#">Get a free quote</Button>
             <Button href="#" variant="secondary">WhatsApp us</Button>
@@ -169,7 +181,7 @@ const alt = (room: string, type: string) => `${room} of a ${type} in Coimbatore,
       </div>
 
       <div class="container-page ds-states">
-        <p class="ds-surface__label">States (plaster)</p>
+        <p class="ds-surface__label">States (ivory)</p>
         <div class="ds-row">
           <Button>Default</Button>
           <Button class="is-hover">Hover</Button>
@@ -188,8 +200,8 @@ const alt = (room: string, type: string) => `${room} of a ${type} in Coimbatore,
     <section id="forms" class="container-page ds-section" aria-labelledby="forms-h">
       <h2 id="forms-h" class="text-step-4 ds-h2">Form fields</h2>
       <p class="ds-note">
-        Labels always visible above the field. Phone is the only required contact field, with a +91 prefix and a
-        numeric keypad. Errors use an icon, words and a thicker border, never colour alone.
+        Underlined fields with labels always visible above. Phone is the only required contact field, with a +91
+        prefix and a numeric keypad. Errors use an icon, words and a thicker rule, never colour alone.
       </p>
 
       <form class="ds-form" novalidate onsubmit="return false">
@@ -293,7 +305,7 @@ const alt = (room: string, type: string) => `${room} of a ${type} in Coimbatore,
         <h2 id="header-h" class="text-step-4 ds-h2">Header</h2>
         <p class="ds-note">
           Over the home hero it's transparent with white text. Everywhere else, and once you scroll, it's solid
-          plaster with a hairline. Below 1024px the nav becomes "Menu"; below 768px "Get a free quote" moves to the
+          ivory with a hairline. Below 1024px the nav becomes "Menu"; below 768px "Get a free quote" moves to the
           bottom bar. Menu, dropdown and scroll behaviour come in prompt 03.
         </p>
         <p class="ds-surface__label">Over the hero photo</p>
@@ -321,7 +333,7 @@ const alt = (room: string, type: string) => `${room} of a ${type} in Coimbatore,
       <div class="container-page">
         <h2 id="cta-h" class="text-step-4 ds-h2">Call-to-action block</h2>
         <p class="ds-note">
-          Heading, short text, two actions, optional full-bleed photo with a flat charcoal scrim. Used to close every
+          Heading, short text, two actions, optional full-bleed photo with a flat espresso scrim. Used to close every
           page. An optional aside holds contact details (Home closing section).
         </p>
       </div>
@@ -352,10 +364,12 @@ const alt = (room: string, type: string) => `${room} of a ${type} in Coimbatore,
   }
   .ds-eyebrow,
   .ds-surface__label {
-    margin: 0 0 0.75rem;
-    font-size: var(--step-n1);
+    margin: 0 0 1rem;
+    font-size: var(--step-n2);
     font-weight: 500;
-    color: var(--ink-muted);
+    letter-spacing: var(--tracking-label);
+    text-transform: uppercase;
+    color: var(--accent);
   }
   .ds-lead {
     margin-top: var(--space-5);
@@ -455,9 +469,16 @@ const alt = (room: string, type: string) => `${room} of a ${type} in Coimbatore,
     margin: 0;
     max-width: none;
     font-family: var(--family-display);
+    font-weight: var(--weight-display);
     line-height: var(--leading-display);
     letter-spacing: var(--tracking-display);
-    font-optical-sizing: auto;
+    text-transform: uppercase;
+  }
+  .ds-script {
+    margin: 0;
+    max-width: none;
+    font-size: calc(var(--step-8) * 1.15);
+    color: var(--gold-deep);
   }
   .ds-text {
     margin: 0;

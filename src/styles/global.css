@@ -15,6 +15,15 @@
   --color-charcoal: var(--charcoal);
   --color-brass: var(--brass);
   --color-white: var(--white);
+  --color-brass-deep: var(--brass-deep);
+  --color-teak-muted: var(--teak-muted);
+  --color-error: var(--error);
+  /* semantic, follow the surface (light / dark / photo) */
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-accent: var(--accent);
+  --color-hairline: var(--hairline);
+  --color-surface: var(--surface);
   --color-transparent: transparent;
   --color-current: currentColor;
 
@@ -36,14 +45,15 @@
 
   --radius-sm: var(--corner-sm);
   --radius-md: var(--corner-md);
+  --radius-round: var(--corner-round);
   --ease-soft: var(--motion-ease);
   --container-page: var(--container-max);
 }
 
 @layer base {
   html {
-    background: var(--lime-plaster);
-    color: var(--teak);
+    background: var(--surface);
+    color: var(--ink);
     font-family: var(--family-text);
     font-size: 100%;
     -webkit-text-size-adjust: 100%;
@@ -84,9 +94,19 @@
     text-underline-offset: 0.2em;
   }
 
-  /* Brass focus ring on everything keyboard-focusable */
+  .surface-dark {
+    background: var(--surface);
+    color: var(--ink);
+  }
+
+  .surface-photo {
+    color: var(--ink);
+  }
+
+  /* Accent focus ring on everything keyboard-focusable
+     (brass-deep on light, brass on dark, white over photos) */
   :focus-visible {
-    outline: 2px solid var(--brass);
+    outline: 2px solid var(--accent);
     outline-offset: 3px;
   }
 

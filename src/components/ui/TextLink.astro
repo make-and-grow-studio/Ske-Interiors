@@ -1,0 +1,48 @@
+---
+/**
+ * Text link with an always-visible accent underline (colour alone can't
+ * mark a link: brass-deep and teak are too close). Optional arrow.
+ *
+ *   <TextLink href="/about-us/" arrow>More about us</TextLink>
+ */
+import type { HTMLAttributes } from 'astro/types';
+
+type Props = {
+  href: string;
+  /** Show a → after the text */
+  arrow?: boolean;
+  class?: string;
+} & HTMLAttributes<'a'>;
+
+const { href, arrow = false, class: className, ...rest } = Astro.props;
+---
+
+<a href={href} class:list={['text-link', className]} {...rest}>
+  <span class="text-link__label"><slot /></span>{arrow && <span class="text-link__arrow" aria-hidden="true">→</span>}
+</a>
+
+<style>
+  .text-link {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.4em;
+    color: var(--ink);
+    font-weight: 500;
+    text-decoration: none;
+    /* keeps a 44px-ish tap area without changing the visual */
+    padding-block: 0.5rem;
+  }
+
+  .text-link__label {
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.25em;
+    transition: text-decoration-thickness var(--duration-fast) ease;
+  }
+
+  .text-link:hover .text-link__label,
+  .text-link:focus-visible .text-link__label {
+    text-decoration-thickness: 2px;
+  }
+</style>

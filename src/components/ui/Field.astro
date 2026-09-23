@@ -1,0 +1,226 @@
+---
+/**
+ * Form field with label, optional hint and error message.
+ * Types: text, email, tel (shows a +91 prefix), select, textarea.
+ * Errors are announced properly: aria-invalid + aria-describedby, an icon
+ * and words (never colour alone).
+ *
+ *   <Field label="Phone (WhatsApp)" name="phone" type="tel" required />
+ *   <Field label="Property type" name="property" type="select" options={['1BHK', '2BHK']} />
+ */
+import type { HTMLAttributes } from 'astro/types';
+
+type Props = {
+  label: string;
+  name: string;
+  type?: 'text' | 'email' | 'tel' | 'select' | 'textarea';
+  required?: boolean;
+  hint?: string;
+  /** Error message; shows the error state when set */
+  error?: string;
+  value?: string;
+  placeholder?: string;
+  options?: string[];
+  autocomplete?: HTMLAttributes<'input'>['autocomplete'];
+  id?: string;
+  class?: string;
+};
+
+const {
+  label,
+  name,
+  type = 'text',
+  required = false,
+  hint,
+  error,
+  value,
+  placeholder,
+  options = [],
+  autocomplete,
+  id = `field-${name}`,
+  class: className,
+} = Astro.props;
+
+const hintId = hint ? `${id}-hint` : undefined;
+const errorId = error ? `${id}-error` : undefined;
+const describedBy = [hintId, errorId].filter(Boolean).join(' ') || undefined;
+const common = {
+  id,
+  name,
+  required,
+  'aria-invalid': error ? ('true' as const) : undefined,
+  'aria-describedby': describedBy,
+  autocomplete: autocomplete ?? undefined,
+};
+---
+
+<div class:list={['field', error && 'field--error', className]}>
+  <label for={id} class="field__label">
+    {label}
+    {required ? <span class="field__req">(required)</span> : <span class="field__opt">(optional)</span>}
+  </label>
+  {hint && <p id={hintId} class="field__hint">{hint}</p>}
+
+  {
+    type === 'textarea' ? (
+      <textarea class="field__control" rows="4" placeholder={placeholder} {...common}>
+        {value}
+      </textarea>
+    ) : type === 'select' ? (
+      <div class="field__select">
+        <select class="field__control" {...common}>
+          <option value="">Choose one</option>
+          {options.map((o) => (
+            <option value={o} selected={o === value}>
+              {o}
+            </option>
+          ))}
+        </select>
+        <svg class="field__chevron" viewBox="0 0 12 8" aria-hidden="true">
+          <path d="M1 1.5l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.5" />
+        </svg>
+      </div>
+    ) : type === 'tel' ? (
+      <div class="field__tel">
+        <span class="field__prefix" aria-hidden="true">+91</span>
+        <input
+          class="field__control"
+          type="tel"
+          inputmode="numeric"
+          value={value}
+          placeholder={placeholder ?? '98945 88673'}
+          {...common}
+          autocomplete={autocomplete ?? 'tel-national'}
+        />
+      </div>
+    ) : (
+      <input class="field__control" type={type} value={value} placeholder={placeholder} {...common} />
+    )
+  }
+
+  {
+    error && (
+      <p id={errorId} class="field__error">
+        <svg viewBox="0 0 16 16" aria-hidden="true" class="field__error-icon">
+          <circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5" />
+          <path d="M8 4.5v4.5M8 11v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+        </svg>
+        <span>{error}</span>
+      </p>
+    )
+  }
+</div>
+
+<style>
+  .field {
+    display: grid;
+    gap: 0.4rem;
+  }
+
+  .field__label {
+    font-size: var(--step-n1);
+    font-weight: 500;
+    color: var(--ink);
+  }
+  .field__req,
+  .field__opt {
+    margin-left: 0.35em;
+    font-weight: 400;
+    color: var(--ink-muted);
+  }
+
+  .field__hint {
+    margin: 0;
+    font-size: var(--step-n1);
+    color: var(--ink-muted);
+  }
+
+  .field__control {
+    width: 100%;
+    min-height: 52px;
+    padding: 0.75rem 1rem;
+    background: transparent;
+    color: var(--ink);
+    font: inherit;
+    font-size: var(--step-0);
+    border: 1px solid var(--field-line);
+    border-radius: var(--corner-sm);
+    transition: border-color var(--duration-fast) ease;
+  }
+  textarea.field__control {
+    min-height: 8rem;
+    resize: vertical;
+  }
+  .field__control::placeholder {
+    color: var(--ink-muted);
+    opacity: 0.8;
+  }
+  .field__control:hover {
+    border-color: var(--ink);
+  }
+  .field__control:focus-visible {
+    border-color: var(--ink);
+    outline-offset: 0;
+  }
+
+  /* +91 prefix for Indian mobile numbers */
+  .field__tel {
+    display: flex;
+  }
+  .field__prefix {
+    display: grid;
+    place-items: center;
+    padding-inline: 0.9rem;
+    border: 1px solid var(--field-line);
+    border-right: 0;
+    color: var(--ink-muted);
+    font-size: var(--step-0);
+  }
+
+  /* Native select with our own chevron */
+  .field__select {
+    position: relative;
+  }
+  .field__select select {
+    appearance: none;
+    padding-right: 2.75rem;
+  }
+  .field__chevron {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    width: 12px;
+    translate: 0 -50%;
+    pointer-events: none;
+    color: var(--ink);
+  }
+
+  /* Error state */
+  .field--error .field__control,
+  .field--error .field__prefix {
+    border-color: var(--error);
+    border-width: 2px;
+  }
+  .field__error {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.4rem;
+    margin: 0;
+    font-size: var(--step-n1);
+    font-weight: 500;
+    color: var(--error);
+  }
+  :global(.surface-dark) .field__error {
+    color: #f2b8a8; /* light brick for dark backgrounds: 9:1 on charcoal */
+  }
+  :global(.surface-dark) .field--error .field__control,
+  :global(.surface-dark) .field--error .field__prefix {
+    border-color: #f2b8a8;
+  }
+  .field__error-icon {
+    flex: none;
+    width: 16px;
+    height: 16px;
+    margin-top: 0.15em;
+  }
+</style>

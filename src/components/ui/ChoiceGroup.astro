@@ -1,0 +1,117 @@
+---
+/**
+ * A set of pill-style choices built on real radio buttons (or checkboxes
+ * when `multiple`), used by the estimator and the quote form.
+ * Keyboard: arrow keys move between radios, Space selects.
+ *
+ *   <ChoiceGroup legend="Property" name="property" options={['1BHK', '2BHK']} value="2BHK" />
+ */
+type Props = {
+  legend: string;
+  name: string;
+  options: string[];
+  /** Pre-selected value(s) */
+  value?: string | string[];
+  multiple?: boolean;
+  error?: string;
+  class?: string;
+};
+
+const { legend, name, options, value, multiple = false, error, class: className } = Astro.props;
+const selected = new Set(Array.isArray(value) ? value : value ? [value] : []);
+const errorId = error ? `${name}-error` : undefined;
+---
+
+<fieldset class:list={['choices', className]} aria-describedby={errorId} aria-invalid={error ? 'true' : undefined}>
+  <legend class="choices__legend">{legend}</legend>
+  <div class="choices__options">
+    {
+      options.map((o, i) => (
+        <label class="choice">
+          <input
+            class="choice__input"
+            type={multiple ? 'checkbox' : 'radio'}
+            name={name}
+            value={o}
+            checked={selected.has(o)}
+            id={`${name}-${i}`}
+          />
+          <span class="choice__label">{o}</span>
+        </label>
+      ))
+    }
+  </div>
+  {
+    error && (
+      <p id={errorId} class="choices__error">
+        {error}
+      </p>
+    )
+  }
+</fieldset>
+
+<style>
+  .choices {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    min-width: 0;
+  }
+  .choices__legend {
+    margin-bottom: 0.6rem;
+    font-size: var(--step-n1);
+    font-weight: 500;
+  }
+  .choices__options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .choice {
+    position: relative;
+  }
+  /* Visually hidden but still focusable and announced */
+  .choice__input {
+    position: absolute;
+    opacity: 0;
+    inset: 0;
+    margin: 0;
+    cursor: pointer;
+  }
+  .choice__label {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0.5rem 1.1rem;
+    border: 1px solid var(--field-line);
+    font-size: var(--step-n1);
+    font-weight: 500;
+    color: var(--ink);
+    transition:
+      background-color var(--duration-fast) ease,
+      color var(--duration-fast) ease;
+  }
+  .choice:hover .choice__label {
+    border-color: var(--ink);
+  }
+  .choice__input:checked + .choice__label {
+    background: var(--ink);
+    border-color: var(--ink);
+    color: var(--on-ink);
+  }
+  .choice__input:focus-visible + .choice__label {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+  }
+
+  .choices[aria-invalid='true'] .choice__label {
+    border-color: var(--error);
+  }
+  .choices__error {
+    margin: 0.5rem 0 0;
+    font-size: var(--step-n1);
+    font-weight: 500;
+    color: var(--error);
+  }
+</style>

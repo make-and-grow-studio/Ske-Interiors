@@ -13,6 +13,24 @@
   --brass: #a5854f; /* links, focus, active states */
   --white: #ffffff; /* cards on dark */
 
+  /* Derived for accessibility (see design/plan.md, section 2) */
+  --brass-deep: #7c643b; /* the brass accent on LIGHT backgrounds: 4.5:1 on plaster (brass is only 2.8:1) */
+  --teak-muted: #78604e; /* secondary text and form field borders on light: 4.7:1 on plaster */
+  --error: #8c2f24; /* form errors only, always with an icon and words: 6.6:1 on plaster */
+
+  /* ---- Surfaces ----
+   * Components use these semantic tokens, never raw colours, so the same
+   * component works on light and dark backgrounds. Light is the default;
+   * add class "surface-dark" (or "surface-photo" over images) to switch. */
+  --surface: var(--lime-plaster);
+  --ink: var(--teak); /* main text */
+  --ink-muted: var(--teak-muted); /* secondary text */
+  --ink-strong: var(--charcoal); /* hover state for solid buttons */
+  --accent: var(--brass-deep); /* links, focus ring, active states */
+  --hairline: var(--stone); /* decorative dividers */
+  --field-line: var(--teak-muted); /* edge of form fields (needs 3:1) */
+  --on-ink: var(--lime-plaster); /* text on a solid --ink button */
+
   /* ---- Fonts ----
    * --font-bodoni and --font-hanken are created by Astro's fonts API
    * (astro.config.mjs) and already include metric-matched fallbacks. */
@@ -58,10 +76,11 @@
   --space-10: 8rem; /* 128 */
   --section-y: clamp(4rem, 2.6rem + 6vw, 8rem); /* vertical space between sections */
 
-  /* ---- Shape: kept minimal ---- */
-  --corner-sm: 2px;
-  --corner-md: 4px;
-  --line: 1px solid var(--stone);
+  /* ---- Shape: square and architectural, like the references ---- */
+  --corner-sm: 0px; /* images, cards, buttons, fields */
+  --corner-md: 0px;
+  --corner-round: 999px; /* only the slider handle and carousel arrows */
+  --line: 1px solid var(--hairline);
 
   /* ---- Motion ---- */
   --motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
@@ -75,3 +94,26 @@
     --grid-gap: 24px;
   }
 }
+
+/* Dark sections and footer (charcoal) */
+.surface-dark {
+  --surface: var(--charcoal);
+  --ink: var(--lime-plaster);
+  --ink-muted: #aeaaa2; /* plaster at 70% on charcoal: 7.3:1 */
+  --ink-strong: var(--white);
+  --accent: var(--brass); /* brass is 4.9:1 on charcoal */
+  --hairline: rgb(236 230 220 / 0.18);
+  --field-line: rgb(236 230 220 / 0.55);
+  --on-ink: var(--charcoal);
+}
+
+/* Text over photography (e.g. header over the home hero) */
+.surface-photo {
+  --ink: var(--white);
+  --ink-muted: rgb(255 255 255 / 0.85);
+  --ink-strong: var(--lime-plaster);
+  --accent: var(--white);
+  --hairline: rgb(255 255 255 / 0.4);
+  --on-ink: var(--charcoal);
+}
+

@@ -41,7 +41,8 @@ Until an item is answered, the site shows a visible dev-only placeholder in its 
 - [ ] **Hero fact strip**: "Handover in about 30 days after design approval". Is that right? (line 62)
 - [ ] **Studio intro heading** says "Fifteen years", which assumes founding in 2011. (line 67)
 - [ ] **Numbers**: 15+ years (line 76), 100+ projects (line 77, a 2023 figure), 90+ happy clients (line 78), 40 people on the team (line 79). Please give current figures.
-- [ ] **Design vs reality section**: pairs of 3D render + finished photo of the same room. None exist on the current site. (section 1.4)
+- [ ] **Design vs reality section**: pairs of 3D render + finished photo of the same room. None exist on the current site. Until they arrive the section shows a marked placeholder pair in development and is **left out of the live site**. 2–4 pairs, shot from the same spot as the render, landscape. (section 1.4)
+- [ ] **Services photos** (section 1.3): residential uses the walnut bedroom render (fine). **Commercial** uses a home study as a stand-in, and **flooring** uses the marble bathroom render, until real commercial and flooring photos arrive.
 - [ ] **Process, step 4**: "handover in about 30 days from production start". Confirm the timeline. (line 119)
 - [ ] **More projects**: 6–10 more projects with photos, locality, area, scope and year. Three is thin for a 15-year studio. (line 130)
 - [ ] **Google rating line**: "★ 4.x from NN Google reviews" (line 134)

@@ -34,3 +34,32 @@ export const intro = {
     { value: 40, suffix: '', label: 'people on the team', confirm: 'update' },
   ],
 };
+
+/** 1.3 Services: three cards, not numbered (CLAUDE.md) */
+export const services = {
+  heading: 'What we design and build',
+  items: [
+    {
+      title: 'Residential interiors',
+      text: 'Complete home interiors for apartments, independent houses and villas. Kitchens, wardrobes, living rooms and bedrooms, planned around your family and your budget.',
+      link: { label: 'Explore residential', href: '/residential-interiors/' },
+    },
+    {
+      title: 'Commercial interiors',
+      text: 'Offices, shops and hospitality spaces that work hard and look the part. Layouts planned for how your team and customers actually move.',
+      link: { label: 'Explore commercial', href: '/commercial-interiors/' },
+    },
+    {
+      title: 'Flooring solutions',
+      text: 'The right floor for every room, from hard-wearing finishes for busy spaces to warmer surfaces for bedrooms. Supplied and installed by our team.',
+      link: { label: 'Explore flooring', href: '/flooring/' },
+    },
+  ],
+};
+
+/** 1.4 Signature: design vs reality */
+export const signature = {
+  heading: 'The 3D design you approve is the home you get.',
+  body: 'Before a single panel is cut, you see your space in 3D and change what you want. Drag across to compare the approved design with the finished room.',
+  control: 'Drag to compare',
+};

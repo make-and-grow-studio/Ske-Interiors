@@ -375,7 +375,7 @@ Shared rules: GSAP + ScrollTrigger. Transform and opacity only. Every moment che
 |---|---|
 | Structure | Render (top layer) and finished photo (bottom layer), same aspect ratio. A `<canvas>` sized to the frame holds the brush mask; the photo is drawn through it |
 | Brush (desktop, `pointer: fine` only) | On pointer move, stamp a soft radial brush (radius 110px, alpha falloff from centre) into the mask. It reveals the photo where the cursor passes |
-| Heal | Every frame the mask loses opacity (`destination-out` at ~4% per frame), so a stroke fully heals **~1.5s after the cursor stops**. The rAF loop runs only while the mask isn't empty and the section is in view (IntersectionObserver) |
+| Heal | The reveal holds while the cursor moves. When it stops, the whole reveal eases back to the design (cosine ease) and is gone **1.5s after the cursor stops**. The rAF loop runs only while there's something to draw and the section is in view (IntersectionObserver). *(Built in prompt 05: an earlier per-frame fade healed too fast to read as "slow".)* |
 | Drag divider | A vertical handle splits render / photo (`clip-path: inset()` on the photo layer). It works with the brush. The handle is a real slider: `role="slider"`, `aria-label="Drag to compare design and finished room"`, `aria-valuenow`, ←/→ move 5%, Home/End go to 0/100% |
 | Touch | Drag handle only (no brush), with a 44px hit area |
 | Several pairs | Thumbnails below switch rooms: a 200ms crossfade and the handle resets to 50% |

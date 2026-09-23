@@ -14,9 +14,18 @@ Until an item is answered, the site shows a visible dev-only placeholder in its 
 - [ ] **Original, full-size files** of the Facebook-compressed and low-res images listed in `scrape/image-report.md` → "Low-res images to request again".
 - [ ] **Current home hero slides are stock photos.** We need real SKE photography for the hero (landscape, ideally 2400px+ wide).
 
+## Found when comparing the old site's text (`scrape/content-gaps.md`)
+
+- [ ] **Google Business Profile**: is https://maps.google.com/?cid=16489544583291727221 SKE's listing (it's the place the old site's map embeds)? Its map pin appears to sit in central Coimbatore (R.S. Puram area), not Kottaipalayam. Check the pin and address on the listing and update them to match.
+- [ ] **Own manufacturing unit**: the old 1BHK page says "SKE Interiors has its own manufacturing units". Confirm, and give the location if SKE wants it mentioned.
+- [ ] **Interior architects**: the old About page says the team includes interior architects. True?
+- [ ] **Testimonials**: OK to lightly edit the four client quotes for grammar? Some sentences were cut in the content file draft (see content-gaps section 4).
+- [ ] **info@skeinteriors.com**: this address isn't on the current site. Where is it used (IndiaMART, visiting cards)? Needed before picking the one email.
+- [ ] **Project details**: the old project pages list the same client ("Vijay Kumar"), similar sizes and budgets for all three. Real details, please (see the project section below).
+
 ## 0. Global (every page)
 
-- [ ] **Address**: confirm the current address. The homepage shows Kottaipalayam; the old Commercial page and IndiaMART still show 56-H, Subramaniam Road East, R.S. Puram, Coimbatore 641002 (landline 0422 457 4830). Then update IndiaMART, Justdial and Google Business Profile to match exactly.
+- [ ] **Address**: confirm the current address. The website now shows Kottaipalayam on every page; IndiaMART (and possibly the Google Maps pin) still show 56-H, Subramaniam Road East, R.S. Puram, Coimbatore 641002 (landline 0422 457 4830). Then update IndiaMART, Justdial and Google Business Profile to match exactly.
 - [ ] **Email**: one email only. The site shows info@skeinteriors.in, info@skeinteriors.com and skeinterior@gmail.com. (line 22)
 - [ ] **Opening hours** (line 25)
 - [ ] **Founding year**: the site says 2011, IndiaMART says 2013. (line 26)

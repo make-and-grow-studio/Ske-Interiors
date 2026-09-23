@@ -1,0 +1,284 @@
+---
+/**
+ * Home 1.7: Testimonials. A slow horizontal marquee of the four quotes.
+ *
+ * - The quotes are in the HTML once for everyone; a second, hidden copy
+ *   follows so the loop is seamless (screen readers skip it).
+ * - Pauses on hover, on keyboard focus, and with the pause button
+ *   (WCAG 2.2.2: moving content must be pausable).
+ * - Reduced motion: no movement; the quotes become a row you can swipe.
+ * - Initials instead of photos (the old avatars were stock images).
+ * - Rating line links to the Google Business Profile from PUBLIC_GBP_URL,
+ *   and is left out when that's empty. The rating itself is still [CONFIRM].
+ */
+import TextLink from '../ui/TextLink.astro';
+import Placeholder from '../Placeholder.astro';
+import { testimonials } from '../../data/home';
+
+const gbpUrl = import.meta.env.PUBLIC_GBP_URL as string | undefined;
+const initials = (name: string) =>
+  name
+    .split(' ')
+    .map((w) => w[0])
+    .join('')
+    .slice(0, 2);
+---
+
+<section class="reviews" aria-labelledby="reviews-heading">
+  <div class="container-page reviews__head">
+    <div>
+      <p class="eyebrow reviews__eyebrow">Reviews</p>
+      <h2 id="reviews-heading" class="reviews__heading">{testimonials.heading}</h2>
+    </div>
+    <div class="reviews__meta">
+      {
+        gbpUrl ? (
+          <p class="reviews__rating">
+            <Placeholder>CONFIRM: {testimonials.ratingConfirm}</Placeholder>
+            <TextLink href={gbpUrl} arrow target="_blank" rel="noopener">
+              {testimonials.reviewsLink}
+            </TextLink>
+          </p>
+        ) : (
+          <Placeholder>Rating line hidden: PUBLIC_GBP_URL is empty (CONFIRM: GBP link + rating)</Placeholder>
+        )
+      }
+      <button type="button" class="reviews__pause caps" data-marquee-toggle aria-pressed="false">
+        <span class="reviews__pause-icon" aria-hidden="true"></span>
+        <span data-label>Pause</span>
+        <span class="visually-hidden"> moving reviews</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="marquee" data-marquee>
+    <div class="marquee__track">
+      {
+        [0, 1].map((copy) => (
+          <ul class="marquee__list" aria-hidden={copy === 1 ? 'true' : undefined}>
+            {testimonials.quotes.map((t) => (
+              <li class="quote">
+                <figure>
+                  <span class="quote__mark" aria-hidden="true">
+                    “
+                  </span>
+                  <blockquote class="quote__text">
+                    <p>{t.text}</p>
+                  </blockquote>
+                  <figcaption class="quote__by">
+                    <span class="quote__initials" aria-hidden="true">
+                      {initials(t.name)}
+                    </span>
+                    <span>
+                      <span class="quote__name">{t.name}</span>
+                      <span class="quote__town">{t.town}</span>
+                    </span>
+                  </figcaption>
+                </figure>
+              </li>
+            ))}
+          </ul>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<script>
+  document.querySelectorAll<HTMLButtonElement>('[data-marquee-toggle]').forEach((btn) => {
+    const marquee = btn.closest('section')!.querySelector<HTMLElement>('[data-marquee]')!;
+    const label = btn.querySelector<HTMLElement>('[data-label]')!;
+    btn.addEventListener('click', () => {
+      const paused = btn.getAttribute('aria-pressed') !== 'true';
+      btn.setAttribute('aria-pressed', String(paused));
+      marquee.toggleAttribute('data-paused', paused);
+      label.textContent = paused ? 'Play' : 'Pause';
+    });
+  });
+</script>
+
+<style>
+  .reviews {
+    padding-block: var(--section-y);
+    background: var(--paper);
+    border-block: 1px solid var(--hairline);
+  }
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  .reviews__head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    justify-content: space-between;
+    gap: var(--space-5);
+    margin-bottom: var(--space-7);
+  }
+  .reviews__eyebrow {
+    margin: 0 0 var(--space-5);
+  }
+  .reviews__heading {
+    margin: 0;
+    font-size: var(--step-5);
+  }
+  @media (min-width: 768px) {
+    .reviews__heading {
+      font-size: var(--step-6);
+    }
+  }
+  .reviews__meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-3) var(--space-6);
+  }
+  .reviews__rating {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-3);
+    margin: 0;
+  }
+
+  .reviews__pause {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6em;
+    min-height: 44px;
+    padding: 0 var(--space-4);
+    border: 1px solid var(--field-line);
+    background: none;
+    color: var(--ink);
+    cursor: pointer;
+  }
+  .reviews__pause:hover {
+    border-color: var(--ink);
+  }
+  /* Pause icon (two bars); becomes a play triangle when paused */
+  .reviews__pause-icon {
+    width: 8px;
+    height: 10px;
+    border-inline: 2px solid currentColor;
+  }
+  .reviews__pause[aria-pressed='true'] .reviews__pause-icon {
+    width: 0;
+    height: 0;
+    border-block: 5px solid transparent;
+    border-inline: 8px solid currentColor;
+    border-inline-end: 0;
+  }
+
+  /* ---- Marquee ---- */
+  .marquee {
+    overflow: hidden;
+  }
+  .marquee__track {
+    display: flex;
+    width: max-content;
+    animation: marquee 90s linear infinite;
+  }
+  .marquee:hover .marquee__track,
+  .marquee:focus-within .marquee__track,
+  .marquee[data-paused] .marquee__track {
+    animation-play-state: paused;
+  }
+  @keyframes marquee {
+    to {
+      transform: translateX(-50%); /* one full copy: the second copy takes its place */
+    }
+  }
+  .marquee__list {
+    display: flex;
+    gap: var(--grid-gap);
+    margin: 0;
+    padding: 0 var(--grid-gap) 0 0;
+    list-style: none;
+  }
+
+  .quote {
+    width: min(26rem, 82vw);
+    flex: none;
+  }
+  .quote figure {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    padding: var(--space-6);
+    background: var(--ivory);
+  }
+  .quote__mark {
+    font-family: var(--family-display);
+    font-size: var(--step-7);
+    line-height: 0.6;
+    color: var(--gold);
+  }
+  .quote__text {
+    flex: 1;
+    margin: var(--space-4) 0 var(--space-6);
+  }
+  .quote__text p {
+    margin: 0;
+    font-size: var(--step-0);
+  }
+  .quote__by {
+    display: flex;
+    align-items: center;
+    gap: var(--space-4);
+    padding-top: var(--space-5);
+    border-top: 1px solid var(--hairline);
+  }
+  .quote__initials {
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    flex: none;
+    border: 1px solid var(--gold);
+    border-radius: var(--corner-round);
+    font-family: var(--family-display);
+    font-size: var(--step-1);
+    line-height: 1;
+    color: var(--gold-deep);
+  }
+  .quote__name {
+    display: block;
+    font-size: var(--step-n2);
+    font-weight: 500;
+    letter-spacing: var(--tracking-label);
+    text-transform: uppercase;
+  }
+  .quote__town {
+    display: block;
+    font-size: var(--step-n1);
+    color: var(--ink-muted);
+  }
+
+  /* ---- Reduced motion: a still row you can swipe, no copy, no button ---- */
+  @media (prefers-reduced-motion: reduce) {
+    .marquee {
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scroll-padding-inline: var(--gutter);
+      padding-inline: var(--gutter);
+    }
+    .marquee__track {
+      animation: none;
+    }
+    .marquee__list[aria-hidden] {
+      display: none;
+    }
+    .quote {
+      scroll-snap-align: start;
+    }
+    .reviews__pause {
+      display: none;
+    }
+  }
+</style>

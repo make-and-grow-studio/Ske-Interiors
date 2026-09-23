@@ -52,6 +52,8 @@ Until an item is answered, the site shows a visible dev-only placeholder in its 
 - [ ] **FAQ, areas**: full list of areas served. (line 177)
 - [ ] **FAQ, free quote**: confirm the site visit is free too. (line 180)
 - [ ] **FAQ, warranty**: warranty terms, if SKE offers one. (line 183)
+- [ ] **Where leads go**: which email should receive estimator and form enquiries? That email is used to create the Web3Forms key (`PUBLIC_WEB3FORMS_KEY`). Until it's set, the live estimator shows the error message and asks people to WhatsApp instead. (section 14, question 14)
+- [ ] **Google reviews link**: once the Business Profile is confirmed, its reviews URL goes in `PUBLIC_GBP_URL`; the "Read reviews on Google" line stays hidden until then.
 - [ ] **Closing section**: "We'll call you back within one working day". Confirm the response time. (line 187)
 
 - [ ] **Studio intro photos**: the content file asks for `residencial1_8.jpg` + `residencial_36.jpg`, but both are missing from the old server. The page uses the 2BHK swing living room and quartz kitchen photos instead (Facebook copies, 1080px). Originals of these, or of the intended pair, please.

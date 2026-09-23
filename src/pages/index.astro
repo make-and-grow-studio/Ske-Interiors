@@ -1,9 +1,9 @@
 ---
 /**
  * Home page (content/site-content.md, section 1).
- * Built so far: 1.1 hero, 1.2 studio intro, 1.3 services, 1.4 design vs
- * reality, 1.5 process, 1.6 recent work, 1.10 closing call to action.
- * Still to come: 1.7–1.9 testimonials, estimator, FAQ (prompt 07).
+ * Sections in order: 1.1 hero, 1.2 studio intro, 1.3 services, 1.4 design vs
+ * reality, 1.5 process, 1.6 recent work, 1.7 testimonials, 1.8 estimator,
+ * 1.9 FAQ, 1.10 closing call to action.
  */
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/home/Hero.astro';
@@ -12,10 +12,16 @@ import Services from '../components/home/Services.astro';
 import Signature from '../components/home/Signature.astro';
 import Process from '../components/home/Process.astro';
 import RecentWork from '../components/home/RecentWork.astro';
+import Testimonials from '../components/home/Testimonials.astro';
+import Estimator from '../components/home/Estimator.astro';
+import Faq from '../components/home/Faq.astro';
+import MapEmbed from '../components/MapEmbed.astro';
+import Placeholder from '../components/Placeholder.astro';
 import CtaBlock from '../components/CtaBlock.astro';
 import TextLink from '../components/ui/TextLink.astro';
 import { business, mapUrl, whatsappUrl } from '../data/site';
-import { businessSchema, websiteSchema } from '../data/schema';
+import { businessSchema, websiteSchema, faqSchema } from '../data/schema';
+import { faq, closing } from '../data/home';
 import { getHeroImage } from '../lib/hero-image';
 import ctaImage from '../../scrape/images/shared/20190131_190716_8eecb74a-f4b3-44ea-997a-e2ce0bf858b2.jpg';
 
@@ -26,7 +32,7 @@ const hero = await getHeroImage();
   title="Interior Designers in Coimbatore | SKE Interiors"
   description="Home and commercial interiors in Coimbatore since 2011. See your space in 3D before we build, with on-time handover. Get a free quote today."
   headerVariant="overlay"
-  jsonLd={[businessSchema, websiteSchema]}
+  jsonLd={[businessSchema, websiteSchema, faqSchema(faq.items)]}
 >
   <!-- Start downloading the hero photo before anything else -->
   <link
@@ -45,16 +51,20 @@ const hero = await getHeroImage();
   <Signature />
   <Process />
   <RecentWork />
+  <Testimonials />
+  <Estimator />
+  <Faq />
 
   <CtaBlock
-    heading="Let's plan your space."
-    text="Tell us about your home or office. We'll call you back within one working day."
+    heading={closing.heading}
+    text={closing.body}
     primary={{ label: 'Get a free quote', href: '/get-a-quote/' }}
     secondary={{ label: 'WhatsApp us', href: whatsappUrl(), track: 'click_whatsapp', external: true }}
     secondaryAsLink
     image={ctaImage}
     imagePosition="center 60%"
   >
+    <Placeholder slot="note">CONFIRM: {closing.bodyConfirm}</Placeholder>
     <div slot="aside" class="cta-aside">
       <p class="cta-aside__label">Visit</p>
       <address>{business.address.full}</address>
@@ -62,6 +72,7 @@ const hero = await getHeroImage();
       <p>
         {business.phones.mobile.map((p) => <a href={`tel:${p.tel}`} data-track="click_call">{p.label}</a>)}
       </p>
+      <MapEmbed class="cta-aside__map" />
       <TextLink href={mapUrl} arrow target="_blank" rel="noopener">Open in Google Maps</TextLink>
     </div>
   </CtaBlock>
@@ -83,6 +94,9 @@ const hero = await getHeroImage();
   .cta-aside a[href^='tel'] {
     display: block;
     text-decoration: none;
+  }
+  .cta-aside :global(.cta-aside__map) {
+    margin-bottom: var(--space-2);
   }
   .cta-aside p {
     margin: 0 0 var(--space-4);

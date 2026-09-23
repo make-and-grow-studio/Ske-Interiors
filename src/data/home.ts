@@ -95,3 +95,100 @@ export const recentWork = {
   confirm: '3 projects is thin for a 15-year studio: ask SKE for 6–10 more with photos',
   link: { label: 'See all work', href: '/our-works/' },
 };
+
+/** 1.7 Testimonials: client wording as given (typos fixed only) */
+export const testimonials = {
+  heading: 'What our clients say',
+  ratingConfirm: '★ 4.x from NN Google reviews',
+  reviewsLink: 'Read reviews on Google',
+  quotes: [
+    {
+      text: 'Best interior in my opinion. Great in terms of pricing, transparency and open to modifications anytime. Can go blindfolded for interior works. Very economical and efficient carpenter team with loads of experience. Special thanks to SKE Interiors team and carpenters. Keep up the good work!',
+      name: 'Jayakumar',
+      town: 'Coimbatore',
+    },
+    {
+      text: 'SKE Interiors have amazing ideas and their execution is marvelous. Aesthetically everything was just like they narrated and I dreamt about my home. I had researched a couple of weeks before hiring them and I am happy that I have taken the right decision. Best part is that they completed my house in the given time. Highly recommended!',
+      name: 'Vijayakumar',
+      town: 'Tiruppur',
+    },
+    {
+      text: "The interior work was well designed and I'm 100 percent satisfied with the finishing. Especially your carpenters were well experienced. My friends and relatives appreciated the interior work done by you. Another good mark is my flat was handed over on time.",
+      name: 'Jacline',
+      town: 'Pollachi',
+    },
+    {
+      text: 'When we planned the interior for our new house, we approached SKE Interiors. They were very professional and transparent in explaining various designs, and gave us ideas based on the design of our house. We were extremely satisfied with their work and the timelines given were adhered to.',
+      name: 'Rajesh Kumar',
+      town: 'Coimbatore',
+    },
+  ],
+};
+
+/** 1.8 Budget estimator. Prices live in src/data/pricing.json (not approved yet) */
+export const estimator = {
+  heading: 'Get a rough budget in 30 seconds',
+  body: "Pick your home and what you want done. We'll show an indicative range, then refine it with a free site visit.",
+  property: ['1BHK', '2BHK', '3BHK', 'Villa', 'Office'],
+  scope: ['Kitchen only', 'Kitchen + wardrobes', 'Full home'],
+  finish: ['Essential', 'Premium', 'Luxury'],
+  button: 'Show my estimate',
+  smallPrint: 'This is an estimate for planning only. Your final quote comes after measurement and design.',
+  /** Section 8 (contact form) error message, reused for every form */
+  error: "Your enquiry didn't send. Check your phone number and try again, or WhatsApp us on +91 98945 88673.",
+};
+
+/**
+ * 1.9 FAQ. Also the source of the FAQPage JSON-LD, so the schema always
+ * matches what's on the page. `answer: null` = waiting on SKE: the question
+ * is left out of the live site (and the schema) until it's answered.
+ */
+export const faq = {
+  heading: 'Questions we get asked',
+  items: [
+    {
+      q: 'How much does interior design cost in Coimbatore?',
+      answer:
+        "It depends on the size of your home, the rooms you want done and the materials you choose. Use the estimator above for an indicative range, or book a free visit and we'll give you a detailed estimate.",
+      confirm: 'add a real starting range if SKE agrees',
+    },
+    {
+      q: 'How long does a full home interior take?',
+      answer:
+        'Once you approve the 3D design, production and installation take about 30 days for most homes. We confirm the exact timeline in your estimate.',
+      confirm: 'timeline',
+    },
+    {
+      q: 'Will I see the design before work starts?',
+      answer:
+        'Yes. We create a 3D design of your space and revise it with you until you approve it. Nothing goes into production before that.',
+    },
+    {
+      q: 'Do you handle everything, or just design?',
+      answer:
+        'Both. We design, supply materials, manufacture and install, so you deal with one team from start to finish.',
+    },
+    {
+      q: 'Which areas do you work in?',
+      answer: 'Coimbatore and nearby towns including Tiruppur and Pollachi.',
+      confirm: 'full list',
+    },
+    {
+      q: 'Is the quote free?',
+      answer: 'Yes. The first consultation and quote are free.',
+      confirm: 'site visit is free',
+    },
+    {
+      q: 'Do you offer a warranty?',
+      answer: null as string | null,
+      confirm: 'warranty terms (high-trust answer if SKE offers one)',
+    },
+  ],
+};
+
+/** 1.10 Closing call to action */
+export const closing = {
+  heading: "Let's plan your space.",
+  body: "Tell us about your home or office. We'll call you back within one working day.",
+  bodyConfirm: 'response time',
+};

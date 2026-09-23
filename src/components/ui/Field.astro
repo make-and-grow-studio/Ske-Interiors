@@ -42,7 +42,10 @@ const {
 } = Astro.props;
 
 const hintId = hint ? `${id}-hint` : undefined;
-const errorId = error ? `${id}-error` : undefined;
+/* The error line is always in the HTML (hidden when empty), so scripts can
+   show a message live: fill its <span>, unhide it, set aria-invalid. */
+const errorSlotId = `${id}-error`;
+const errorId = error ? errorSlotId : undefined;
 const describedBy = [hintId, errorId].filter(Boolean).join(' ') || undefined;
 const common = {
   id,
@@ -98,17 +101,13 @@ const common = {
     )
   }
 
-  {
-    error && (
-      <p id={errorId} class="field__error">
-        <svg viewBox="0 0 16 16" aria-hidden="true" class="field__error-icon">
-          <circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5" />
-          <path d="M8 4.5v4.5M8 11v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
-        </svg>
-        <span>{error}</span>
-      </p>
-    )
-  }
+  <p id={errorSlotId} class="field__error" hidden={!error} data-field-error>
+    <svg viewBox="0 0 16 16" aria-hidden="true" class="field__error-icon">
+      <circle cx="8" cy="8" r="7" fill="none" stroke="currentColor" stroke-width="1.5" />
+      <path d="M8 4.5v4.5M8 11v.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+    </svg>
+    <span>{error}</span>
+  </p>
 </div>
 
 <style>
@@ -215,6 +214,9 @@ const common = {
     font-size: var(--step-n1);
     font-weight: 500;
     color: var(--error);
+  }
+  .field__error[hidden] {
+    display: none;
   }
   :global(.surface-dark) .field__error {
     color: #f2b8a8; /* light brick for dark backgrounds: 9:1 on espresso */

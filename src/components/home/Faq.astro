@@ -1,0 +1,168 @@
+---
+/**
+ * Home 1.9: FAQ. An accessible accordion: each question is a real <button>
+ * with aria-expanded / aria-controls; answers use hidden="until-found", so
+ * they're in the HTML for search engines and the browser's find-in-page
+ * opens them. Without JavaScript every answer shows.
+ *
+ * The FAQPage JSON-LD is built from the same data (src/data/schema.ts).
+ * Unanswered questions (answer: null) only appear in dev, as a placeholder.
+ */
+import Placeholder from '../Placeholder.astro';
+import { faq } from '../../data/home';
+
+const showPlaceholders = import.meta.env.DEV || import.meta.env.PUBLIC_SHOW_PLACEHOLDERS === 'true';
+const items = faq.items.filter((i) => i.answer || showPlaceholders);
+---
+
+<section class="faq" aria-labelledby="faq-heading">
+  <div class="container-page faq__grid">
+    <div>
+      <p class="eyebrow faq__eyebrow">FAQ</p>
+      <h2 id="faq-heading" class="faq__heading">{faq.heading}</h2>
+    </div>
+
+    <div class="faq__list" data-faq>
+      {
+        items.map((item, i) => (
+          <div class="faq__item">
+            <h3 class="faq__q">
+              <button type="button" class="faq__button" id={`faq-q-${i}`} aria-expanded="true" aria-controls={`faq-a-${i}`}>
+                <span>{item.q}</span>
+                <span class="faq__icon" aria-hidden="true" />
+              </button>
+            </h3>
+            <div class="faq__a" id={`faq-a-${i}`} role="region" aria-labelledby={`faq-q-${i}`}>
+              {item.answer ? (
+                <p>
+                  {item.answer}
+                  {item.confirm && <Placeholder>CONFIRM: {item.confirm}</Placeholder>}
+                </p>
+              ) : (
+                <Placeholder>CONFIRM: {item.confirm} (question hidden on the live site until answered)</Placeholder>
+              )}
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-faq]').forEach((list) => {
+    const pairs = [...list.querySelectorAll<HTMLButtonElement>('.faq__button')].map((button) => ({
+      button,
+      panel: document.getElementById(button.getAttribute('aria-controls')!)!,
+    }));
+
+    const set = (p: (typeof pairs)[number], open: boolean) => {
+      p.button.setAttribute('aria-expanded', String(open));
+      if (open) p.panel.removeAttribute('hidden');
+      else p.panel.setAttribute('hidden', 'until-found');
+    };
+
+    // Start closed (they're open in the HTML so nothing is lost without JS)
+    pairs.forEach((p) => {
+      set(p, false);
+      p.button.addEventListener('click', () => set(p, p.button.getAttribute('aria-expanded') !== 'true'));
+      // Find-in-page revealed a closed answer: mark it open
+      p.panel.addEventListener('beforematch', () => set(p, true));
+    });
+  });
+</script>
+
+<style>
+  .faq {
+    padding-block: var(--section-y);
+  }
+  .faq__grid {
+    display: grid;
+    gap: var(--space-7);
+  }
+  @media (min-width: 1024px) {
+    .faq__grid {
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      column-gap: var(--grid-gap);
+    }
+    .faq__grid > :first-child {
+      grid-column: 1 / span 4;
+    }
+    .faq__list {
+      grid-column: 6 / -1;
+    }
+  }
+  .faq__eyebrow {
+    margin: 0 0 var(--space-5);
+  }
+  .faq__heading {
+    margin: 0;
+    max-width: 12ch;
+    font-size: var(--step-5);
+  }
+
+  .faq__list {
+    min-width: 0;
+    border-top: 1px solid var(--hairline);
+  }
+  .faq__item {
+    border-bottom: 1px solid var(--hairline);
+  }
+  .faq__q {
+    margin: 0;
+  }
+  .faq__button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-5);
+    width: 100%;
+    min-height: 44px;
+    padding: var(--space-5) 0;
+    border: 0;
+    background: none;
+    color: var(--ink);
+    font: inherit;
+    font-size: var(--step-1);
+    line-height: 1.35;
+    text-align: left;
+    cursor: pointer;
+  }
+  .faq__button:hover span:first-child {
+    text-decoration: underline;
+    text-decoration-color: var(--accent-line);
+    text-underline-offset: 0.3em;
+  }
+  /* Plus that turns into a minus when open */
+  .faq__icon {
+    position: relative;
+    flex: none;
+    width: 16px;
+    height: 16px;
+  }
+  .faq__icon::before,
+  .faq__icon::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: var(--gold-deep);
+    transition: transform var(--duration-fast) ease;
+  }
+  .faq__icon::after {
+    transform: rotate(90deg);
+  }
+  .faq__button[aria-expanded='true'] .faq__icon::after {
+    transform: rotate(0deg);
+  }
+  .faq__a p {
+    margin: 0;
+    padding-bottom: var(--space-5);
+    color: var(--ink-muted);
+  }
+  .faq__a > :global(.placeholder) {
+    margin-bottom: var(--space-5);
+  }
+</style>

@@ -37,3 +37,19 @@ export const websiteSchema = {
   inLanguage: 'en-IN',
   publisher: { '@id': `${SITE}/#business` },
 };
+
+/**
+ * FAQPage for the home FAQ, built from the same data as the accordion so the
+ * two can't drift apart. Unanswered questions (answer: null) are left out.
+ */
+export const faqSchema = (items: readonly { q: string; answer: string | null }[]) => ({
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: items
+    .filter((i) => i.answer)
+    .map((i) => ({
+      '@type': 'Question',
+      name: i.q,
+      acceptedAnswer: { '@type': 'Answer', text: i.answer },
+    })),
+});

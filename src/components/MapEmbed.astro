@@ -1,0 +1,72 @@
+---
+/**
+ * Google map that loads only when asked (CLAUDE.md performance budget):
+ * a "Show map" button in a sized box; clicking it swaps in the iframe.
+ * Nothing from Google loads before that. Used on Home (closing CTA) and
+ * the Contact page.
+ *
+ *   <MapEmbed />
+ */
+import { business } from '../data/site';
+
+type Props = { class?: string };
+const { class: className } = Astro.props;
+const query = `${business.name}, ${business.address.full}`;
+const src = `https://www.google.com/maps?q=${encodeURIComponent(query)}&output=embed`;
+---
+
+<div class:list={['map', className]} data-map={src}>
+  <button type="button" class="map__button caps" data-map-button>
+    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+      <path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z" fill="none" stroke="currentColor" stroke-width="1.3" />
+      <circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" stroke-width="1.3" />
+    </svg>
+    Show map
+  </button>
+</div>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-map]').forEach((box) => {
+    box.querySelector('[data-map-button]')!.addEventListener('click', () => {
+      const frame = document.createElement('iframe');
+      frame.src = box.dataset.map!;
+      frame.title = 'Map showing the SKE Interiors studio in Coimbatore';
+      frame.loading = 'lazy';
+      frame.referrerPolicy = 'no-referrer-when-downgrade';
+      box.replaceChildren(frame);
+      frame.focus();
+    });
+  });
+</script>
+
+<style>
+  .map {
+    position: relative;
+    aspect-ratio: 4 / 3;
+    border: 1px solid var(--hairline);
+    background: rgb(0 0 0 / 0.18);
+  }
+  .map__button {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7em;
+    border: 0;
+    background: none;
+    color: var(--ink);
+    cursor: pointer;
+  }
+  .map__button:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--accent-line);
+    text-underline-offset: 0.6em;
+  }
+  .map :global(iframe) {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+</style>

@@ -72,7 +72,7 @@ const linkAttrs = (a: Action) => ({
   <div class:list={['cta__inner container-page', hasAside && 'cta__inner--aside']}>
     <div class="cta__main">
       <H class="cta__heading">{heading}</H>
-      {text && <p class="cta__text">{text}</p>}
+      {text && <p class="cta__text">{text}<slot name="note" /></p>}
       <div class="cta__actions">
         <Button href={primary.href} {...linkAttrs(primary)}>{primary.label}</Button>
         {

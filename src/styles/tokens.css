@@ -42,7 +42,7 @@
    * Haigrast. */
   --family-display: var(--font-cormorant); /* Cormorant Garamond: headlines, in capitals */
   --family-text: var(--font-jost); /* Jost: body, labels, buttons, nav */
-  --family-script: var(--font-script); /* Herr Von Muellerhoff: signature accent, sparingly */
+  --family-script: var(--font-script); /* Ms Madi: brush signature accent, sparingly */
 
   /* ---- Type scale: 1.25 ratio at desktop ----
    * Fluid between a 375px and a 1440px screen. Body is 17px on phones and

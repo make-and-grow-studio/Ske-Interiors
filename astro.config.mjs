@@ -59,16 +59,16 @@ export default defineConfig({
       },
     },
     {
-      // Script: a handwritten signature accent, used sparingly
+      // Script: Ms Madi, a brush signature accent (chosen by RJ), used sparingly
       provider: fontProviders.local(),
-      name: 'Herr Von Muellerhoff',
+      name: 'Ms Madi',
       cssVariable: '--font-script',
       fallbacks: ['cursive'],
       display: 'swap',
       options: {
         variants: [
           {
-            src: ['./node_modules/@fontsource/herr-von-muellerhoff/files/herr-von-muellerhoff-latin-400-normal.woff2'],
+            src: ['./node_modules/@fontsource/ms-madi/files/ms-madi-latin-400-normal.woff2'],
             weight: '400',
             style: 'normal',
           },

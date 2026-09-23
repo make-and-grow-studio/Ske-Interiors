@@ -33,7 +33,7 @@ Do not introduce terracotta/orange accents or gradients.
 Type:
 - Display: Cormorant Garamond Light (300) for H1/H2/H3, card titles and the footer wordmark, set in capitals via CSS, lining numerals
 - Text/UI: Jost for body; nav, buttons and labels in small spaced capitals (12px, 0.22em tracking)
-- Script: Herr Von Muellerhoff as a signature accent (e.g. the hero's second line). At most one per section, never for information people must read quickly
+- Script: Ms Madi (brush signature) as the accent (e.g. the hero's second line). At most one per section, never for information people must read quickly
 - Scale: 1.25 ratio; body 17–18px, line-height 1.65; display headings tight (0.95–1.0)
 - Write copy in sentence case in the HTML; capitals come from CSS (`text-transform`), so search engines and screen readers get normal text
 - Line length under 75 characters for body copy.

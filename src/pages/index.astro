@@ -2,14 +2,16 @@
 /**
  * Home page (content/site-content.md, section 1).
  * Built so far: 1.1 hero, 1.2 studio intro, 1.3 services, 1.4 design vs
- * reality, 1.10 closing call to action.
- * Still to come: 1.5 process, 1.6 recent work (06), 1.7–1.9 testimonials, estimator, FAQ (07).
+ * reality, 1.5 process, 1.6 recent work, 1.10 closing call to action.
+ * Still to come: 1.7–1.9 testimonials, estimator, FAQ (prompt 07).
  */
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/home/Hero.astro';
 import StudioIntro from '../components/home/StudioIntro.astro';
 import Services from '../components/home/Services.astro';
 import Signature from '../components/home/Signature.astro';
+import Process from '../components/home/Process.astro';
+import RecentWork from '../components/home/RecentWork.astro';
 import CtaBlock from '../components/CtaBlock.astro';
 import TextLink from '../components/ui/TextLink.astro';
 import { business, mapUrl, whatsappUrl } from '../data/site';
@@ -41,6 +43,8 @@ const hero = await getHeroImage();
   <StudioIntro />
   <Services />
   <Signature />
+  <Process />
+  <RecentWork />
 
   <CtaBlock
     heading="Let's plan your space."

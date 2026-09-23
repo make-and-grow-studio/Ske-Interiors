@@ -63,3 +63,35 @@ export const signature = {
   body: 'Before a single panel is cut, you see your space in 3D and change what you want. Drag across to compare the approved design with the finished room.',
   control: 'Drag to compare',
 };
+
+/** 1.5 Process: a real sequence, so the steps are numbered */
+export const process = {
+  heading: 'How your project moves, from first call to handover',
+  steps: [
+    {
+      title: 'Plan',
+      text: "We meet, at our studio or your site, and talk through how you use the space, what you love, and what isn't working. You leave with a clear brief.",
+    },
+    {
+      title: 'Estimate',
+      text: 'We measure your space and prepare a detailed estimate based on your size, needs and budget. No surprises later.',
+    },
+    {
+      title: 'Design',
+      text: 'Our designers build your space in 3D from that brief. You review it, ask for changes, and approve the final design.',
+    },
+    {
+      title: 'Build',
+      text: 'Materials are procured and furniture goes into production. Our carpenters install everything on site, with handover in about 30 days from production start.',
+      confirm: 'timeline',
+    },
+  ],
+  link: { label: 'Get a free quote', href: '/get-a-quote/' },
+};
+
+/** 1.6 Recent work (cards link to the project pages) */
+export const recentWork = {
+  heading: 'Recent homes',
+  confirm: '3 projects is thin for a 15-year studio: ask SKE for 6–10 more with photos',
+  link: { label: 'See all work', href: '/our-works/' },
+};

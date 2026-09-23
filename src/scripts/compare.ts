@@ -219,3 +219,5 @@ function setup(root: HTMLElement) {
 }
 
 document.querySelectorAll<HTMLElement>('[data-compare]').forEach(setup);
+
+export {}; // a module, so its names stay private to this file

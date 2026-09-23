@@ -1,0 +1,267 @@
+---
+/**
+ * Home 1.6: Recent work. A horizontal carousel (Modora "Modern interior
+ * projects"): a large first card, then portrait cards, then "See all work".
+ *
+ * It's a normal horizontally scrolling list with scroll snapping, so touch
+ * swipe, trackpads and keyboard focus all work natively. carousel.ts adds
+ * the previous / next buttons and mouse drag on desktop.
+ * Caption under each image: project title left, location right.
+ */
+import { Picture } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+import TextLink from '../ui/TextLink.astro';
+import Placeholder from '../Placeholder.astro';
+import { recentWork } from '../../data/home';
+import img3bhk from '../../../scrape/images/shared/20190131_190717_153528da-cd8d-431c-849f-7317bd5e206a.jpg';
+import img2bhk from '../../../scrape/images/shared/FB_IMG_1671554675670.jpg';
+import img1bhk from '../../../scrape/images/shared/FB_IMG_1669397475101.jpg';
+
+/* Projects from content/site-content.md 1.6 (title, location, link, image) */
+const projects: { title: string; location: string; href: string; image: ImageMetadata; alt: string }[] = [
+  {
+    title: '3BHK Home Interior',
+    location: 'Coimbatore',
+    href: '/3bhk-home-interior/',
+    image: img3bhk,
+    alt: 'Family lounge with a glass balustrade in a 3BHK home in Coimbatore, designed by SKE Interiors',
+  },
+  {
+    title: '2BHK House Interior',
+    location: 'Coimbatore',
+    href: '/2bhk-house-interior/',
+    image: img2bhk,
+    alt: 'Living room with a brass-chain swing in a 2BHK home in Coimbatore, designed by SKE Interiors',
+  },
+  {
+    title: '1BHK House Interior',
+    location: 'Coimbatore',
+    href: '/1bhk-house-interior/',
+    image: img1bhk,
+    alt: 'Bedroom seating corner with a bookshelf in a 1BHK home in Coimbatore, designed by SKE Interiors',
+  },
+];
+---
+
+<section class="work" aria-labelledby="work-heading" data-carousel>
+  <div class="container-page work__head">
+    <div>
+      <p class="eyebrow work__eyebrow">Our work</p>
+      <h2 id="work-heading" class="work__heading">{recentWork.heading}</h2>
+      <Placeholder>CONFIRM: {recentWork.confirm}</Placeholder>
+    </div>
+    <div class="work__controls">
+      <button type="button" class="work__arrow" data-prev aria-controls="work-track" aria-label="Previous projects">
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+          <path d="M20 12H4m6-6-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.3"></path>
+        </svg>
+      </button>
+      <button
+        type="button"
+        class="work__arrow work__arrow--solid"
+        data-next
+        aria-controls="work-track"
+        aria-label="Next projects"
+      >
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+          <path d="M4 12h16m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.3"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <ul class="work__track" id="work-track" data-rail>
+    {
+      projects.map((p, i) => (
+        <li class:list={['card', i === 0 && 'card--lead']} data-card>
+          <a href={p.href} class="card__link" draggable="false">
+            <div class="card__media">
+              <Picture
+                src={p.image}
+                alt={p.alt}
+                formats={['avif', 'webp']}
+                widths={i === 0 ? [560, 840, 1120] : [360, 540, 720]}
+                sizes={i === 0 ? '(min-width: 768px) 54vw, 88vw' : '(min-width: 768px) 29vw, 75vw'}
+                loading="lazy"
+                decoding="async"
+                draggable="false"
+              />
+            </div>
+            <div class="card__caption">
+              <h3 class="card__title">{p.title}</h3>
+              <span class="card__location">{p.location}</span>
+            </div>
+          </a>
+        </li>
+      ))
+    }
+    <li class="work__end" data-card>
+      <TextLink href={recentWork.link.href} arrow>{recentWork.link.label}</TextLink>
+    </li>
+  </ul>
+</section>
+
+<script>
+  import '../../scripts/carousel';
+</script>
+
+<style>
+  .work {
+    padding-block: var(--section-y);
+    /* where the page container's content starts, so the track lines up with it */
+    --edge: max(var(--gutter), calc((100vw - var(--container-max)) / 2 + var(--gutter)));
+    --card-h: clamp(21rem, 36vw, 34rem);
+  }
+
+  .work__head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    justify-content: space-between;
+    gap: var(--space-5);
+    margin-bottom: var(--space-7);
+  }
+  .work__eyebrow {
+    margin: 0 0 var(--space-5);
+  }
+  .work__heading {
+    margin: 0;
+    font-size: var(--step-5);
+  }
+  @media (min-width: 768px) {
+    .work__heading {
+      font-size: var(--step-6);
+    }
+  }
+
+  .work__controls {
+    display: flex;
+    gap: var(--space-3);
+  }
+  .work__arrow {
+    display: grid;
+    place-items: center;
+    width: 56px;
+    height: 56px;
+    border: 1px solid var(--ink);
+    border-radius: var(--corner-round);
+    background: transparent;
+    color: var(--ink);
+    cursor: pointer;
+    transition:
+      background-color var(--duration-fast) ease,
+      color var(--duration-fast) ease,
+      opacity var(--duration-fast) ease;
+  }
+  .work__arrow--solid {
+    background: var(--ink);
+    color: var(--on-ink);
+  }
+  .work__arrow:hover:not(:disabled) {
+    background: var(--ink-strong);
+    border-color: var(--ink-strong);
+    color: var(--on-ink);
+  }
+  /* everything fits on screen: no arrows needed */
+  [data-fits] .work__controls {
+    visibility: hidden;
+  }
+  .work__arrow:disabled {
+    opacity: 0.3;
+    cursor: default;
+  }
+
+  /* ---- Track ---- */
+  .work__track {
+    display: flex;
+    gap: var(--grid-gap);
+    margin: 0;
+    padding: 0 var(--edge) var(--space-2);
+    list-style: none;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: var(--edge);
+    scrollbar-width: none;
+  }
+  .work__track::-webkit-scrollbar {
+    display: none;
+  }
+  .work__track.is-dragging {
+    scroll-snap-type: none;
+    cursor: grabbing;
+  }
+  .work__track.is-dragging a {
+    pointer-events: none;
+  }
+
+  .card {
+    flex: 0 0 auto;
+    width: min(calc(var(--card-h) * 0.8), 75vw);
+    scroll-snap-align: start;
+  }
+  .card--lead {
+    width: min(calc(var(--card-h) * 1.5), 88vw);
+  }
+  .card__link {
+    display: block;
+    color: var(--ink);
+    text-decoration: none;
+  }
+  .card__media {
+    height: var(--card-h);
+    overflow: hidden;
+    background: var(--sand);
+  }
+  .card__media :global(picture) {
+    display: block;
+    height: 100%;
+  }
+  .card__media :global(img) {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -webkit-user-drag: none;
+  }
+  .card__caption {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: var(--space-4);
+    padding-top: var(--space-4);
+  }
+  .card__title {
+    margin: 0;
+    font-family: var(--family-text);
+    font-size: var(--step-n2);
+    font-weight: 500;
+    letter-spacing: var(--tracking-label);
+    text-transform: uppercase;
+    /* always underlined: colour alone can't mark a link */
+    text-decoration: underline;
+    text-decoration-color: var(--accent-line);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.7em;
+    transition: text-decoration-thickness var(--duration-fast) ease;
+  }
+  .card__link:hover .card__title,
+  .card__link:focus-visible .card__title {
+    text-decoration-thickness: 2px;
+  }
+  .card__location {
+    flex: none;
+    font-size: var(--step-n1);
+    color: var(--ink-muted);
+  }
+
+  .work__end {
+    flex: 0 0 auto;
+    display: grid;
+    place-items: center;
+    width: 14rem;
+    height: var(--card-h);
+    border: 1px solid var(--hairline);
+    scroll-snap-align: start;
+  }
+</style>

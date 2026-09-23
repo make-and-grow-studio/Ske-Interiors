@@ -1,0 +1,272 @@
+---
+/**
+ * Home 1.5: Process (motion moment 3 of 3).
+ *
+ * The HTML is a plain numbered list: number, title, text and a line drawing
+ * per step. That's what phones, tablets, reduced-motion visitors and search
+ * engines get, all four steps visible.
+ *
+ * On desktop (≥1024px) with motion allowed, src/scripts/process.ts adds
+ * the class "process--pinned": the section holds still for three screens of
+ * scrolling while steps 1 → 4 advance, each drawing draws itself in, and a
+ * thin gold line along the bottom fills with progress.
+ */
+import TextLink from '../ui/TextLink.astro';
+import Placeholder from '../Placeholder.astro';
+import ProcessDrawing from './ProcessDrawing.astro';
+import { process } from '../../data/home';
+---
+
+<section class="process" aria-labelledby="process-heading" data-process>
+  <div class="process__stage container-page" data-stage>
+    <div class="process__head">
+      <div>
+        <p class="eyebrow process__eyebrow">Process</p>
+        <h2 id="process-heading" class="process__heading">{process.heading}</h2>
+      </div>
+      <TextLink href={process.link.href} arrow class="process__cta">{process.link.label}</TextLink>
+    </div>
+
+    <ol class="process__steps" data-steps>
+      {
+        process.steps.map((s, i) => (
+          <li class="step" data-step>
+            <div class="step__text">
+              <span class="step__number" aria-hidden="true">
+                {i + 1}
+              </span>
+              <h3 class="step__title">
+                <span class="visually-hidden">Step {i + 1}: </span>
+                {s.title}
+              </h3>
+              <p class="step__body">
+                {s.text}
+                {s.confirm && <Placeholder>CONFIRM: {s.confirm}</Placeholder>}
+              </p>
+            </div>
+            <div class="step__drawing">
+              <ProcessDrawing step={(i + 1) as 1 | 2 | 3 | 4} />
+            </div>
+          </li>
+        ))
+      }
+    </ol>
+
+    <!-- Progress (pinned mode only; the list above already says where you are) -->
+    <div class="process__progress" aria-hidden="true">
+      <div class="process__track"><div class="process__fill" data-fill></div></div>
+      <ol class="process__marks">
+        {
+          process.steps.map((s, i) => (
+            <li data-mark>
+              <span>{i + 1}</span> {s.title}
+            </li>
+          ))
+        }
+      </ol>
+    </div>
+  </div>
+</section>
+
+<script>
+  /* Load GSAP only where the pinned version is used (desktop, motion allowed) */
+  const query = window.matchMedia('(min-width: 1024px) and (prefers-reduced-motion: no-preference)');
+  const load = () => import('../../scripts/process');
+  if (query.matches) load();
+  else query.addEventListener('change', (e) => e.matches && load(), { once: true });
+</script>
+
+<style>
+  .process {
+    padding-block: var(--section-y);
+  }
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  /* ---- Heading row ---- */
+  .process__head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    justify-content: space-between;
+    gap: var(--space-5) var(--space-7);
+    margin-bottom: var(--space-8);
+  }
+  .process__eyebrow {
+    margin: 0 0 var(--space-5);
+  }
+  .process__heading {
+    margin: 0;
+    max-width: 20ch;
+    font-size: var(--step-5);
+  }
+  @media (min-width: 768px) {
+    .process__heading {
+      font-size: var(--step-6);
+    }
+  }
+
+  /* ---- The list (phones, tablets, reduced motion) ---- */
+  .process__steps {
+    display: grid;
+    gap: var(--space-8);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .step {
+    display: grid;
+    gap: var(--space-5);
+    padding-top: var(--space-6);
+    border-top: 1px solid var(--hairline);
+  }
+  @media (min-width: 768px) {
+    .step {
+      grid-template-columns: 5fr 6fr;
+      column-gap: var(--space-7);
+      align-items: center;
+    }
+  }
+  .step__number {
+    display: block;
+    font-family: var(--family-display);
+    font-weight: var(--weight-display);
+    font-size: var(--step-7);
+    line-height: 0.9;
+    font-variant-numeric: lining-nums;
+    color: var(--gold-deep);
+  }
+  .step__title {
+    margin: var(--space-4) 0 var(--space-3);
+    font-family: var(--family-display);
+    font-weight: var(--weight-display);
+    font-size: var(--step-4);
+    line-height: 1;
+    letter-spacing: var(--tracking-display);
+    text-transform: uppercase;
+  }
+  .step__body {
+    margin: 0;
+    max-width: 44ch;
+    color: var(--ink-muted);
+  }
+  .step__drawing {
+    max-width: 30rem;
+    padding: var(--space-5);
+    background: var(--paper);
+  }
+
+  .process__progress {
+    display: none;
+  }
+
+  /* ---- Pinned (desktop, set by process.ts) ----
+     The stage is exactly one screen tall: heading, then the current step
+     (which takes whatever height is left), then the progress line. */
+  .process--pinned {
+    padding-block: 0;
+  }
+  .process--pinned .process__stage {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding-top: calc(88px + var(--space-6)); /* clear the sticky header */
+    padding-bottom: var(--space-6);
+  }
+  .process--pinned .process__head {
+    margin-bottom: var(--space-5);
+  }
+  .process--pinned .process__eyebrow {
+    margin-bottom: var(--space-4);
+  }
+  .process--pinned .process__heading {
+    max-width: 28ch;
+    font-size: var(--step-4);
+  }
+  .process--pinned .process__steps {
+    flex: 1;
+    min-height: 0;
+    gap: 0;
+    grid-template-rows: minmax(0, 1fr);
+  }
+  .process--pinned .step {
+    grid-area: 1 / 1; /* all steps share one place; only the current shows */
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    grid-template-rows: minmax(0, 1fr);
+    min-height: 0; /* may shrink to the space left; the drawing scales down */
+    column-gap: var(--grid-gap);
+    padding-top: 0;
+    border-top: 0;
+    visibility: hidden;
+  }
+  .process--pinned .step__text {
+    grid-column: 1 / span 5;
+    align-self: center;
+  }
+  .process--pinned .step__number {
+    font-size: var(--step-8);
+  }
+  .process--pinned .step__title {
+    margin-top: var(--space-3);
+    font-size: var(--step-5);
+  }
+  .process--pinned .step__drawing {
+    grid-column: 7 / -1;
+    align-self: stretch; /* exactly the row's height, not the drawing's */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: none;
+    min-height: 0;
+  }
+  .process--pinned .step__drawing :global(svg) {
+    width: 100%;
+    height: 100%; /* the drawing scales to fit, keeping its proportions */
+    min-width: 0;
+    min-height: 0;
+  }
+  .process--pinned .process__progress {
+    display: block;
+    margin-top: var(--space-5);
+  }
+  .process__track {
+    height: 1px;
+    background: var(--hairline);
+  }
+  .process__fill {
+    height: 2px;
+    margin-top: -0.5px;
+    background: var(--gold);
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  /* four equal columns: each label sits where its step begins on the line */
+  .process__marks {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: var(--space-3) 0 0;
+    padding: 0;
+    list-style: none;
+    font-size: var(--step-n2);
+    font-weight: 500;
+    letter-spacing: var(--tracking-label);
+    text-transform: uppercase;
+    color: var(--ink-muted);
+  }
+  .process__marks li {
+    transition: color var(--duration-fast) ease;
+  }
+  .process__marks span {
+    margin-right: 0.5em;
+    color: var(--gold-deep);
+  }
+  .process__marks li.is-done {
+    color: var(--ink);
+  }
+</style>

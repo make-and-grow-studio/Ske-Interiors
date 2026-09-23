@@ -388,7 +388,7 @@ Shared rules: GSAP + ScrollTrigger. Transform and opacity only. Every moment che
 |---|---|
 | Desktop (≥1024px, motion allowed) | The section **pins** for 3 × 100vh of scroll. Left: large step number (Bodoni, step 7) and title + text. Right: the step's line drawing. A thin progress line (1px stone track, 2px teak fill) runs along the bottom, `scaleX` 0 → 1 with scroll (`scrub: 0.3`) |
 | Step change | At 25% / 50% / 75% progress, the outgoing step fades and moves −16px, the incoming step fades in from +16px, 0.4s. The line drawing draws itself in: `stroke-dashoffset` from length to 0, 0.8s |
-| Snap | `snap: { snapTo: 1/3, duration: 0.3, ease: "power1.inOut" }`, so it never rests between steps |
+| Snap | *(Changed in prompt 06.)* No scroll snapping: it fights Lenis smooth scroll. It isn't needed either, because each step owns an equal quarter of the pinned scroll and only one whole step is ever shown, so it never rests "between" steps. GSAP loads only on desktop with motion allowed (~44 KB gzipped); phones get the plain list and no GSAP |
 | Mobile / tablet (<1024px) | No pinning. A plain vertical list: number, title, text and drawing per step, all visible |
 | Reduced motion | The vertical list at every size. No pin, no scroll-jacking |
 

@@ -53,6 +53,8 @@ Until an item is answered, the site shows a visible dev-only placeholder in its 
 - [ ] **FAQ, warranty**: warranty terms, if SKE offers one. (line 183)
 - [ ] **Closing section**: "We'll call you back within one working day". Confirm the response time. (line 187)
 
+- [ ] **Studio intro photos**: the content file asks for `residencial1_8.jpg` + `residencial_36.jpg`, but both are missing from the old server. The page uses the 2BHK swing living room and quartz kitchen photos instead (Facebook copies, 1080px). Originals of these, or of the intended pair, please.
+
 ## 2. About (`/about-us/`)
 
 - [ ] **Our story**: founding story, founder name(s), anything SKE wants to say about how it started. (line 207)

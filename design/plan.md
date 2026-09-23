@@ -356,6 +356,8 @@ Shared rules: GSAP + ScrollTrigger. Transform and opacity only. Every moment che
 
 ### 1. Hero load (once per page view)
 
+> **Built with CSS, not GSAP (prompt 04).** Same timings and easing as below, but as CSS keyframes. That way the animation starts on the first frame and the headline never waits for a ~30 KB script on slow 4G. The home page ships no animation JavaScript for the hero, and it needs no "wait for image decode" step. Lighthouse mobile: Performance 98, LCP 2.0s, CLS 0.
+
 | | |
 |---|---|
 | Trigger | `DOMContentLoaded`, after the hero image has decoded (`img.decode()`), capped at 300ms of waiting so a slow image never holds the text back |

@@ -1,0 +1,278 @@
+---
+/**
+ * Home hero (content file 1.1). Motion moment 1: on load the headline lines
+ * rise from a mask one after another while the photo eases from 1.08 to 1.
+ *
+ * The animation is pure CSS (no JavaScript), so it starts on the first frame
+ * and never delays the text on a slow connection. With reduced motion the
+ * hero simply appears in its final state.
+ *
+ * The hero image is the page's LCP: the page preloads it (src/lib/hero-image.ts),
+ * served as AVIF/WebP at the right width, and never faded (scale only), so
+ * it counts as painted immediately.
+ */
+import Button from '../ui/Button.astro';
+import TextLink from '../ui/TextLink.astro';
+import Placeholder from '../Placeholder.astro';
+import { hero } from '../../data/home';
+import { getHeroImage } from '../../lib/hero-image';
+
+const img = await getHeroImage();
+---
+
+<section class="hero surface-photo" aria-labelledby="hero-title">
+  <div class="hero__media">
+    <picture>
+      <source type="image/avif" srcset={img.avif.srcSet.attribute} sizes={img.sizes} />
+      <source type="image/webp" srcset={img.webp.srcSet.attribute} sizes={img.sizes} />
+      <img
+        src={img.fallback.src}
+        alt={img.alt}
+        width={img.width}
+        height={img.height}
+        fetchpriority="high"
+        loading="eager"
+        decoding="async"
+        class="hero__img"
+      />
+    </picture>
+  </div>
+
+  <div class="hero__content container-page">
+    <h1 id="hero-title" class="hero__title">
+      <span class="hero__mask hero__mask--kicker"><span class="hero__line hero__kicker">{hero.kicker}</span></span>
+      {' '}
+      <span class="hero__mask"><span class="hero__line hero__display">{hero.lines[0]}</span></span>
+      {' '}
+      <span class="hero__mask hero__mask--right"><span class="hero__line hero__display">{hero.lines[1]}</span></span>
+    </h1>
+
+    <div class="hero__band">
+      <p class="hero__sub">{hero.sub}</p>
+      <div class="hero__actions">
+        <Button href={hero.primary.href}>{hero.primary.label}</Button>
+        <TextLink href={hero.secondary.href} arrow>{hero.secondary.label}</TextLink>
+      </div>
+    </div>
+
+    <ul class="hero__facts">
+      {
+        hero.facts.map((f) => (
+          <li>
+            {f.text}
+            {f.confirm && <Placeholder>CONFIRM: {f.confirm}</Placeholder>}
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>
+
+<style>
+  .hero {
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    align-items: flex-end;
+    min-height: 100svh;
+    min-height: max(100svh, 38rem);
+    overflow: hidden;
+    background: var(--charcoal);
+    color: var(--ink);
+  }
+
+  /* ---- Photo ---- */
+  .hero__media {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+  }
+  .hero__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 38% center; /* keeps the TV partition in view on phones */
+  }
+  /* Flat charcoal scrim for legible white text (no gradients) */
+  .hero__media::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgb(31 29 26 / 0.42);
+  }
+
+  /* ---- Content ---- */
+  .hero__content {
+    width: 100%;
+    /* clear the fixed header at the top (72px phone, 88px desktop) and the phone bottom bar */
+    padding-top: calc(72px + var(--space-5));
+    padding-bottom: calc(var(--space-4) + var(--mobile-bar-h, 0px));
+  }
+  @media (min-width: 1024px) {
+    .hero__content {
+      padding-top: calc(88px + var(--space-6));
+      padding-bottom: var(--space-5);
+    }
+  }
+
+  .hero__title {
+    display: grid;
+    margin: 0;
+    font-weight: 400;
+  }
+  /* Each visual line sits in a mask so it can rise into view */
+  .hero__mask {
+    display: block;
+    overflow: clip;
+    /* room for descenders (y, g) inside the mask */
+    padding-bottom: 0.08em;
+    margin-bottom: -0.08em;
+  }
+  .hero__line {
+    display: block;
+  }
+  .hero__kicker {
+    margin-bottom: var(--space-3);
+    font-family: var(--family-text);
+    font-size: var(--step-1);
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 1.3;
+  }
+  .hero__display {
+    font-family: var(--family-display);
+    font-size: var(--step-7); /* one step smaller on phones so the hero fits the screen */
+    line-height: 1;
+    letter-spacing: var(--tracking-display);
+    text-wrap: balance;
+  }
+  @media (min-width: 768px) {
+    .hero__display {
+      font-size: var(--step-8);
+    }
+  }
+  /* Modora stagger: the second line is pushed to the right edge */
+  .hero__mask--right {
+    text-align: right;
+  }
+  @media (min-width: 768px) {
+    .hero__mask--right {
+      padding-left: 25%;
+    }
+  }
+
+  /* Bottom band: hairline, sub-copy left, actions right */
+  .hero__band {
+    display: grid;
+    gap: var(--space-4);
+    margin-top: var(--space-5);
+    padding-top: var(--space-4);
+    border-top: 1px solid var(--hairline);
+  }
+  @media (min-width: 768px) {
+    .hero__band {
+      gap: var(--space-5);
+      margin-top: var(--space-6);
+      padding-top: var(--space-5);
+    }
+  }
+  @media (min-width: 1024px) {
+    .hero__band {
+      grid-template-columns: minmax(0, 7fr) auto;
+      align-items: center;
+      column-gap: var(--space-7);
+    }
+    .hero__actions {
+      padding-left: var(--space-7);
+      border-left: 1px solid var(--hairline);
+      align-self: stretch;
+    }
+  }
+  .hero__sub {
+    margin: 0;
+    max-width: 60ch;
+    font-size: var(--step-0);
+    line-height: 1.55;
+  }
+  .hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-4) var(--space-6);
+  }
+
+  /* Facts strip */
+  .hero__facts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 0;
+    margin: var(--space-4) 0 0;
+    padding: 0;
+    list-style: none;
+    font-size: var(--step-n1);
+    font-weight: 500;
+    color: var(--ink-muted);
+  }
+  .hero__facts li + li::before {
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 0.9em;
+    margin-inline: 0.9rem;
+    vertical-align: -0.1em;
+    background: var(--hairline);
+  }
+  /* Phones: one fact per line (a wrapped divider would start a line) */
+  @media (max-width: 767.98px) {
+    .hero__facts {
+      flex-direction: column;
+    }
+    .hero__facts li + li::before {
+      display: none;
+    }
+  }
+
+  /* ---- Motion moment 1: hero load (CSS only, runs once) ----
+     Photo 1.08 → 1 over 1.4s; lines rise 110% → 0 over 0.9s, 0.12s apart,
+     starting at 0.1s; band and facts fade up from 0.7s. Done by ~1.3s. */
+  @media (prefers-reduced-motion: no-preference) {
+    .hero__img {
+      animation: hero-settle 1.4s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+    .hero__line {
+      animation: hero-rise 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+    .hero__mask:nth-child(1) .hero__line {
+      animation-delay: 0.1s;
+    }
+    .hero__mask:nth-child(2) .hero__line {
+      animation-delay: 0.22s;
+    }
+    .hero__mask:nth-child(3) .hero__line {
+      animation-delay: 0.34s;
+    }
+    .hero__band,
+    .hero__facts {
+      animation: hero-fade 0.5s ease-out 0.7s both;
+    }
+    .hero__facts {
+      animation-delay: 0.8s;
+    }
+  }
+  @keyframes hero-settle {
+    from {
+      transform: scale(1.08);
+    }
+  }
+  @keyframes hero-rise {
+    from {
+      transform: translateY(110%);
+    }
+  }
+  @keyframes hero-fade {
+    from {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+  }
+</style>

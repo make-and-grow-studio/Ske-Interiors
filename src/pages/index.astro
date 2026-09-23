@@ -1,49 +1,42 @@
 ---
 /**
- * TEMPORARY: layout shell preview (prompt 03). Not the Home page yet.
- * Shows the overlay header over the hero photo, the closing CTA block and
- * the footer. The real Home sections are built in prompts 04–07.
+ * Home page (content/site-content.md, section 1).
+ * Built so far: 1.1 hero, 1.2 studio intro, 1.10 closing call to action.
+ * Still to come: 1.3 services, 1.4 design vs reality (prompt 05),
+ * 1.5 process, 1.6 recent work (06), 1.7–1.9 testimonials, estimator, FAQ (07).
  */
-import { Picture } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/home/Hero.astro';
+import StudioIntro from '../components/home/StudioIntro.astro';
 import CtaBlock from '../components/CtaBlock.astro';
 import TextLink from '../components/ui/TextLink.astro';
 import { business, mapUrl, whatsappUrl } from '../data/site';
-// Interim hero chosen in design/plan.md (3BHK living room render, 1280px)
-import heroImage from '../../scrape/images/shared/20190131_190715_5c7214a7-65a8-4dc0-9547-690a4395b35d.jpg';
+import { businessSchema, websiteSchema } from '../data/schema';
+import { getHeroImage } from '../lib/hero-image';
 import ctaImage from '../../scrape/images/shared/20190131_190716_8eecb74a-f4b3-44ea-997a-e2ce0bf858b2.jpg';
+
+const hero = await getHeroImage();
 ---
 
 <BaseLayout
   title="Interior Designers in Coimbatore | SKE Interiors"
   description="Home and commercial interiors in Coimbatore since 2011. See your space in 3D before we build, with on-time handover. Get a free quote today."
   headerVariant="overlay"
-  noindex
+  jsonLd={[businessSchema, websiteSchema]}
 >
-  <section class="shell-hero" aria-label="Hero (built in prompt 04)">
-    <Picture
-      src={heroImage}
-      alt="Living room with staircase and TV partition unit in a 3BHK in Coimbatore, designed by SKE Interiors"
-      formats={['avif', 'webp']}
-      widths={[640, 960, 1280]}
-      sizes="100vw"
-      loading="eager"
-      fetchpriority="high"
-      class="shell-hero__img"
-    />
-    <div class="shell-hero__scrim"></div>
-    <div class="container-page shell-hero__note">
-      <p>Layout shell preview. The hero content arrives in prompt 04.</p>
-    </div>
-  </section>
+  <!-- Start downloading the hero photo before anything else -->
+  <link
+    slot="head"
+    rel="preload"
+    as="image"
+    type="image/avif"
+    imagesrcset={hero.avif.srcSet.attribute}
+    imagesizes={hero.sizes}
+    fetchpriority="high"
+  />
 
-  <section class="container-page shell-body">
-    <h1 class="text-step-6">Layout shell</h1>
-    <p class="text-step-1">
-      Scroll down: the header turns solid once you leave the top of the page. On phones, the bottom bar keeps Call,
-      WhatsApp and Get a quote on screen.
-    </p>
-  </section>
+  <Hero />
+  <StudioIntro />
 
   <CtaBlock
     heading="Let's plan your space."
@@ -54,10 +47,10 @@ import ctaImage from '../../scrape/images/shared/20190131_190716_8eecb74a-f4b3-4
     image={ctaImage}
     imagePosition="center 60%"
   >
-    <div slot="aside" class="shell-aside">
-      <p class="shell-aside__label">Visit</p>
+    <div slot="aside" class="cta-aside">
+      <p class="cta-aside__label">Visit</p>
       <address>{business.address.full}</address>
-      <p class="shell-aside__label">Call</p>
+      <p class="cta-aside__label">Call</p>
       <p>
         {business.phones.mobile.map((p) => <a href={`tel:${p.tel}`} data-track="click_call">{p.label}</a>)}
       </p>
@@ -67,50 +60,19 @@ import ctaImage from '../../scrape/images/shared/20190131_190716_8eecb74a-f4b3-4
 </BaseLayout>
 
 <style>
-  .shell-hero {
-    position: relative;
-    height: 100svh;
-    min-height: 32rem;
-    background: var(--charcoal);
-    overflow: hidden;
-  }
-  .shell-hero :global(.shell-hero__img) {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .shell-hero__scrim {
-    position: absolute;
-    inset: 0;
-    background: rgb(31 29 26 / 0.3);
-  }
-  .shell-hero__note {
-    position: absolute;
-    inset: auto 0 2rem;
-    color: var(--white);
-    font-size: var(--step-n1);
-  }
-  .shell-body {
-    padding-block: var(--section-y);
-  }
-  .shell-body p {
-    margin-top: var(--space-5);
-  }
-  .shell-aside address {
+  .cta-aside address {
     font-style: normal;
     margin-bottom: var(--space-4);
   }
-  .shell-aside__label {
+  .cta-aside__label {
     margin: 0 0 0.25rem;
     color: var(--ink-muted);
   }
-  .shell-aside a[href^='tel'] {
+  .cta-aside a[href^='tel'] {
     display: block;
     text-decoration: none;
   }
-  .shell-aside p {
+  .cta-aside p {
     margin: 0 0 var(--space-4);
   }
 </style>

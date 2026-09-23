@@ -1,0 +1,59 @@
+{
+  "api": {
+    "media": {
+      "items": 222,
+      "last_status": 200
+    },
+    "pages": {
+      "items": 9,
+      "last_status": 200
+    },
+    "posts": {
+      "items": 6,
+      "last_status": 200
+    },
+    "categories": {
+      "items": 3,
+      "last_status": 200
+    },
+    "tags": {
+      "items": 0,
+      "last_status": 200
+    }
+  },
+  "sitemaps": {
+    "wp-sitemap.xml": {
+      "status": 200,
+      "locs": 1109,
+      "children": []
+    },
+    "sitemap.xml": {
+      "status": 200,
+      "locs": 1109,
+      "children": []
+    },
+    "sitemap_index.xml": {
+      "status": 200,
+      "locs": 1109,
+      "children": []
+    }
+  },
+  "sitemap_spam_urls": 3324,
+  "real_urls": [
+    "https://skeinteriors.com/",
+    "https://skeinteriors.com/1bhk-house-interior/",
+    "https://skeinteriors.com/2bhk-house-interior/",
+    "https://skeinteriors.com/3bhk-home-interior/",
+    "https://skeinteriors.com/about-us/",
+    "https://skeinteriors.com/commercial-interiors/",
+    "https://skeinteriors.com/commercial/",
+    "https://skeinteriors.com/contact-us/",
+    "https://skeinteriors.com/flooring/",
+    "https://skeinteriors.com/get-a-quote/",
+    "https://skeinteriors.com/industries/",
+    "https://skeinteriors.com/our-works/",
+    "https://skeinteriors.com/residential-interiors/",
+    "https://skeinteriors.com/residential/",
+    "https://skeinteriors.com/sample-page/"
+  ]
+}

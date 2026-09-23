@@ -1,0 +1,549 @@
+{
+ "_about": "Hand review of every downloaded image (looked at each one). Keyed by filename. subject / project / type (render | photo | graphic) / quality (hero-ready | good | low-res | unusable) / notes. Stock = theme-demo or stock photo, not SKE's work.",
+ "process-bg.jpg": {
+  "subject": "other",
+  "project": "theme graphic",
+  "type": "graphic",
+  "quality": "unusable",
+  "notes": "Dark line-drawing background texture from the WordPress theme."
+ },
+ "footer-bg.jpg": {
+  "subject": "other",
+  "project": "theme graphic",
+  "type": "graphic",
+  "quality": "unusable",
+  "notes": "Dark footer texture from the WordPress theme."
+ },
+ "works-bg2.jpg": {
+  "subject": "other",
+  "project": "theme graphic",
+  "type": "graphic",
+  "quality": "unusable",
+  "notes": "Faint architectural sketch background from the WordPress theme."
+ },
+ "profile1.png": {
+  "subject": "other",
+  "project": "stock",
+  "type": "photo",
+  "quality": "unusable",
+  "notes": "Testimonial avatar. Stock model portrait, not a real client. Do not use."
+ },
+ "profile2.png": {
+  "subject": "other",
+  "project": "stock",
+  "type": "photo",
+  "quality": "unusable",
+  "notes": "Testimonial avatar. Stock model portrait, not a real client. Do not use."
+ },
+ "profile3.png": {
+  "subject": "other",
+  "project": "stock",
+  "type": "photo",
+  "quality": "unusable",
+  "notes": "Testimonial avatar. Stock model portrait, not a real client. Do not use."
+ },
+ "profile4.png": {
+  "subject": "other",
+  "project": "stock",
+  "type": "photo",
+  "quality": "unusable",
+  "notes": "Testimonial avatar. Stock model portrait, not a real client. Do not use."
+ },
+ "slider1.jpg": {
+  "subject": "living room",
+  "project": "stock",
+  "type": "render",
+  "quality": "unusable",
+  "notes": "Theme-demo stock render (lilac living room). Not SKE's work. In the media library, not on the live site."
+ },
+ "slider2.jpg": {
+  "subject": "kitchen",
+  "project": "stock",
+  "type": "photo",
+  "quality": "unusable",
+  "notes": "Current home hero slide. Stock photo (Scandinavian kitchen), not SKE's work. The content file plans to use it for the hero: don't."
+ },
+ "slider3.jpg": {
+  "subject": "bedroom",
+  "project": "stock",
+  "type": "photo",
+  "quality": "unusable",
+  "notes": "Current home hero slide. Stock photo (hotel-style bedroom), not SKE's work. Don't use for the hero."
+ },
+ "slider4.jpg": {
+  "subject": "office",
+  "project": "stock",
+  "type": "render",
+  "quality": "unusable",
+  "notes": "Theme-demo stock office render. Not SKE's work."
+ },
+ "slider5.jpg": {
+  "subject": "office",
+  "project": "stock",
+  "type": "photo",
+  "quality": "unusable",
+  "notes": "Current home hero slide. Stock photo (European open office), not SKE's work."
+ },
+ "slider6.jpg": {
+  "subject": "office",
+  "project": "stock",
+  "type": "photo",
+  "quality": "unusable",
+  "notes": "Current home hero slide. Stock photo (same office as slider5), not SKE's work."
+ },
+ "service1.jpg": {
+  "subject": "living room",
+  "project": "stock",
+  "type": "photo",
+  "quality": "unusable",
+  "notes": "Theme-demo stock photo (Halloween decor). Not SKE's work."
+ },
+ "service2.jpg": {
+  "subject": "other",
+  "project": "stock",
+  "type": "photo",
+  "quality": "unusable",
+  "notes": "Theme-demo stock photo (library/cafe). Not SKE's work."
+ },
+ "service3.jpg": {
+  "subject": "other",
+  "project": "stock",
+  "type": "photo",
+  "quality": "unusable",
+  "notes": "Theme-demo stock photo (industrial hall). Not SKE's work."
+ },
+ "about-img.jpg": {
+  "subject": "exterior",
+  "project": "stock",
+  "type": "render",
+  "quality": "unusable",
+  "notes": "Theme-demo stock render of a modern gabled house. Not SKE's work."
+ },
+ "3d-rendering-modern-design-marble-tile-toilet-bathroom-with-shelf.jpg": {
+  "subject": "other",
+  "project": "stock",
+  "type": "render",
+  "quality": "unusable",
+  "notes": "Stock (Freepik-style filename) bathroom render. Not SKE's work."
+ },
+ "ancient-chinise-room.jpg": {
+  "subject": "retail",
+  "project": "stock",
+  "type": "photo",
+  "quality": "unusable",
+  "notes": "Stock photo of a Chinese restaurant. Not SKE's work."
+ },
+ "business-meeting-working-room-office-building-1.jpg": {
+  "subject": "office",
+  "project": "stock",
+  "type": "render",
+  "quality": "unusable",
+  "notes": "Stock office render. Not SKE's work."
+ },
+ "image-windows-morden-office-building.jpg": {
+  "subject": "office",
+  "project": "stock",
+  "type": "photo",
+  "quality": "unusable",
+  "notes": "Stock photo of an office atrium. Not SKE's work."
+ },
+ "lobby-condominium-building.jpg": {
+  "subject": "office",
+  "project": "stock",
+  "type": "photo",
+  "quality": "unusable",
+  "notes": "Stock photo of a building lobby. Not SKE's work."
+ },
+ "modern-beauty-salon-interior.jpg": {
+  "subject": "retail",
+  "project": "stock",
+  "type": "photo",
+  "quality": "unusable",
+  "notes": "Stock photo of a beauty salon. Not SKE's work."
+ },
+ "room-interior-design-1.jpg": {
+  "subject": "other",
+  "project": "stock",
+  "type": "photo",
+  "quality": "unusable",
+  "notes": "Stock photo of a library. Not SKE's work."
+ },
+ "school-is-closed-due-covid19-pandemic.jpg": {
+  "subject": "other",
+  "project": "stock",
+  "type": "photo",
+  "quality": "unusable",
+  "notes": "Stock photo of a classroom. Not SKE's work."
+ },
+ "unoccupied-modern-clinic-workspace-with-nobody-it-having-turned-computer-screen-showing-medical-report-medical-room-having-firstaid-kit-contemporary-hospital-furniture-patients-documents.jpg": {
+  "subject": "office",
+  "project": "stock",
+  "type": "photo",
+  "quality": "unusable",
+  "notes": "Stock photo of a clinic room. Not SKE's work."
+ },
+ "margo-brodowicz-183156-unsplash.jpg": {
+  "subject": "other",
+  "project": "stock",
+  "type": "photo",
+  "quality": "unusable",
+  "notes": "Unsplash photo (plane wing). Unrelated to interiors."
+ },
+ "tim-peterson-1099515-unsplash.jpg": {
+  "subject": "other",
+  "project": "stock",
+  "type": "photo",
+  "quality": "unusable",
+  "notes": "Unsplash photo (bison landscape). Unrelated to interiors."
+ },
+ "wabi-jayme-578762-unsplash.jpg": {
+  "subject": "other",
+  "project": "stock",
+  "type": "photo",
+  "quality": "unusable",
+  "notes": "Unsplash photo (night road). Unrelated to interiors."
+ },
+ "yoann-siloine-532511-unsplash.jpg": {
+  "subject": "other",
+  "project": "stock",
+  "type": "photo",
+  "quality": "unusable",
+  "notes": "Unsplash photo (Polaroid camera). Unrelated to interiors."
+ },
+ "Ske-1.png": {
+  "subject": "logo",
+  "project": "brand",
+  "type": "graphic",
+  "quality": "low-res",
+  "notes": "Live header logo, 250px wide, grey/white on transparent (for dark backgrounds). Request an SVG."
+ },
+ "SKE-Interior-1.png": {
+  "subject": "logo",
+  "project": "brand",
+  "type": "graphic",
+  "quality": "low-res",
+  "notes": "Logo, 250px, light version on transparent. SKE-Interior-2/3.png were byte-identical copies (removed)."
+ },
+ "SKE-Interior-new1.png": {
+  "subject": "logo",
+  "project": "brand",
+  "type": "graphic",
+  "quality": "good",
+  "notes": "Black logo with 'Residential & Commercial Interior' tagline, 1041px. Best raster logo for light backgrounds until SKE sends an SVG."
+ },
+ "SKE-Interior.png": {
+  "subject": "logo",
+  "project": "brand",
+  "type": "graphic",
+  "quality": "good",
+  "notes": "Black logo with tagline, 1972px. Largest version."
+ },
+ "Ske.png": {
+  "subject": "logo",
+  "project": "brand",
+  "type": "graphic",
+  "quality": "good",
+  "notes": "Black logo, tagline 'Residential & Commercial', 1042px."
+ },
+ "cropped-SKE-Interior-new1.png": {
+  "subject": "logo",
+  "project": "brand",
+  "type": "graphic",
+  "quality": "low-res",
+  "notes": "Light logo variant, 250px."
+ },
+ "cropped-SKE-Interior.png": {
+  "subject": "logo",
+  "project": "brand",
+  "type": "graphic",
+  "quality": "good",
+  "notes": "Light logo variant on transparent, 1972px (for dark backgrounds)."
+ },
+ "cropped-cropped-SKE-Interior.png": {
+  "subject": "logo",
+  "project": "brand",
+  "type": "graphic",
+  "quality": "good",
+  "notes": "Same as cropped-SKE-Interior.png, 2px shorter."
+ },
+ "20181002_095954_IMG_8260.jpg": {
+  "subject": "living room",
+  "project": "unassigned (residential gallery)",
+  "type": "render",
+  "quality": "low-res",
+  "notes": "Living room with grey sofas, wood slat partition, open kitchen behind. 790x600."
+ },
+ "20190131_190709_5ce9bae3-d83b-4728-af5e-0cfe4f01126b.jpg": {
+  "subject": "office",
+  "project": "unassigned (residential gallery)",
+  "type": "render",
+  "quality": "good",
+  "notes": "Home study / small office with twin desks and wall storage. Also used on home and 'commercial' pages."
+ },
+ "20190131_190713_ddcd44fa-d3d1-49bb-9aa6-96c1a1847715.jpg": {
+  "subject": "bedroom",
+  "project": "3BHK Home Interior",
+  "type": "render",
+  "quality": "good",
+  "notes": "Bedroom with pink bedspread, wardrobe and study niche. Same room as 190717_8322be1c."
+ },
+ "20190131_190713_e5677a83-7a94-4ec1-a94a-bd1a4a35a97c.jpg": {
+  "subject": "bedroom",
+  "project": "3BHK Home Interior",
+  "type": "render",
+  "quality": "good",
+  "notes": "Bedroom with TV unit, textured wallpaper and wall clock."
+ },
+ "20190131_190715_5c7214a7-65a8-4dc0-9547-690a4395b35d.jpg": {
+  "subject": "living room",
+  "project": "3BHK Home Interior",
+  "type": "render",
+  "quality": "good",
+  "notes": "Living room with staircase, TV partition unit and cream sofas."
+ },
+ "20190131_190716_51d626d3-a2e4-48ed-92ad-6f74e72b0090.jpg": {
+  "subject": "bedroom",
+  "project": "3BHK Home Interior",
+  "type": "render",
+  "quality": "good",
+  "notes": "Master bedroom with glossy wardrobe and TV unit."
+ },
+ "20190131_190716_6c612b6a-b7c3-4886-9258-8336a29b1a6e.jpg": {
+  "subject": "living room",
+  "project": "3BHK Home Interior",
+  "type": "render",
+  "quality": "good",
+  "notes": "Living room, cream sofas, TV partition. Near-duplicate of 190717_4c9f42c4 (same render, tiny change)."
+ },
+ "20190131_190716_8eecb74a-f4b3-44ea-997a-e2ce0bf858b2.jpg": {
+  "subject": "living room",
+  "project": "3BHK Home Interior",
+  "type": "render",
+  "quality": "good",
+  "notes": "Upper living / family area with glass stair rail, false ceiling."
+ },
+ "20190131_190716_f87a3dc2-192a-4283-b47d-40500725f282.jpg": {
+  "subject": "bedroom",
+  "project": "3BHK Home Interior",
+  "type": "render",
+  "quality": "good",
+  "notes": "Kids' / teen bedroom with study desk and sofa."
+ },
+ "20190131_190717_153528da-cd8d-431c-849f-7317bd5e206a.jpg": {
+  "subject": "living room",
+  "project": "3BHK Home Interior",
+  "type": "render",
+  "quality": "good",
+  "notes": "Project cover. Family lounge with glass balustrade and false ceiling cove lighting. A '-1' copy was byte-identical (removed)."
+ },
+ "20190131_190717_4c9f42c4-5a8d-4bac-8974-8e9cca5e37fc.jpg": {
+  "subject": "living room",
+  "project": "3BHK Home Interior",
+  "type": "render",
+  "quality": "good",
+  "notes": "Near-duplicate of 190716_6c612b6a."
+ },
+ "20190131_190717_8322be1c-7c13-41eb-bb4c-a851138eac56.jpg": {
+  "subject": "bedroom",
+  "project": "3BHK Home Interior",
+  "type": "render",
+  "quality": "good",
+  "notes": "Same bedroom as 190713_ddcd44fa from the other side: wardrobe, dresser, TV unit."
+ },
+ "20190131_190718_61abca03-514e-4748-ae8a-347b4f593de4.jpg": {
+  "subject": "bedroom",
+  "project": "3BHK Home Interior",
+  "type": "render",
+  "quality": "good",
+  "notes": "Bedroom with patterned wallpaper, bed back panel, wardrobe."
+ },
+ "20190131_190719_60a5f79f-2278-44dd-98ea-cc9e42d547da.jpg": {
+  "subject": "bedroom",
+  "project": "3BHK Home Interior",
+  "type": "render",
+  "quality": "good",
+  "notes": "Same bedroom as 190718_61abca03, wider angle with wall clock decal."
+ },
+ "20191204_195552_IMG_1414.jpg": {
+  "subject": "bedroom",
+  "project": "unassigned (residential gallery)",
+  "type": "render",
+  "quality": "low-res",
+  "notes": "Bedroom with sliding wardrobe, textured feature wall, wooden floor. 960x720. Small watermark bottom-right."
+ },
+ "20220209_230625_IMG_3870.jpg": {
+  "subject": "pooja unit",
+  "project": "unassigned (residential gallery)",
+  "type": "render",
+  "quality": "low-res",
+  "notes": "Pooja room with wooden doors, jaali panel and marble floor. 960x720. Only pooja image on the site."
+ },
+ "20220209_230628_IMG_3871.jpg": {
+  "subject": "kitchen",
+  "project": "2BHK House Interior",
+  "type": "render",
+  "quality": "low-res",
+  "notes": "L-shaped kitchen, wood + grey gloss, tall unit and microwave. 800x600."
+ },
+ "20220209_230633_IMG_3872.jpg": {
+  "subject": "kitchen",
+  "project": "2BHK House Interior",
+  "type": "render",
+  "quality": "low-res",
+  "notes": "Same kitchen, hob side with diamond-pattern backsplash. 800x600."
+ },
+ "20220209_230642_IMG_3873.jpg": {
+  "subject": "bedroom",
+  "project": "2BHK House Interior",
+  "type": "render",
+  "quality": "low-res",
+  "notes": "Bedroom with false ceiling pattern, wardrobe and dresser. 690x597."
+ },
+ "20220209_230645_IMG_3874.jpg": {
+  "subject": "bedroom",
+  "project": "2BHK House Interior",
+  "type": "render",
+  "quality": "low-res",
+  "notes": "Bedroom with white gloss wardrobe, clock wall, dresser. 800x600."
+ },
+ "20220209_230649_IMG_3875.jpg": {
+  "subject": "bedroom",
+  "project": "2BHK House Interior",
+  "type": "render",
+  "quality": "low-res",
+  "notes": "Bedroom with walnut wall panelling and shag rug. 960x720."
+ },
+ "20220209_230652_IMG_3876.jpg": {
+  "subject": "bedroom",
+  "project": "2BHK House Interior",
+  "type": "render",
+  "quality": "low-res",
+  "notes": "Bedroom with smoked-glass wardrobe and framed quote. 800x600."
+ },
+ "20220211_171055_IMG_3952.jpg": {
+  "subject": "living room",
+  "project": "2BHK House Interior",
+  "type": "render",
+  "quality": "low-res",
+  "notes": "Foyer console with vertical wood battens and planters. 750x740."
+ },
+ "20220212_183806_IMG_3975.jpg": {
+  "subject": "living room",
+  "project": "2BHK House Interior",
+  "type": "render",
+  "quality": "good",
+  "notes": "Living room with L-sofa and metal lattice partition, 2048x1152. WARNING: faint third-party watermark ('monnfie') on the sofa. Confirm SKE owns this render before using it."
+ },
+ "20220212_183809_IMG_3976.jpg": {
+  "subject": "living room",
+  "project": "2BHK House Interior",
+  "type": "render",
+  "quality": "good",
+  "notes": "Living room with olive sofa and slatted planter partition, 2048x1152. WARNING: same faint third-party watermark at right edge. Confirm ownership. A '-1' copy was byte-identical (removed)."
+ },
+ "FB_IMG_1668356007269.jpg": {
+  "subject": "kitchen",
+  "project": "1BHK House Interior",
+  "type": "render",
+  "quality": "low-res",
+  "notes": "Island kitchen, oak tall units, white gloss. Heavy Facebook compression (41 KB). European styling (wood stove, island); confirm this is an SKE design."
+ },
+ "FB_IMG_1668356010527.jpg": {
+  "subject": "living room",
+  "project": "1BHK House Interior",
+  "type": "render",
+  "quality": "low-res",
+  "notes": "Dining area with dark stone table and boucle chairs. Facebook compression. European styling (wood stove, island); confirm this is an SKE design."
+ },
+ "FB_IMG_1668356013184.jpg": {
+  "subject": "kitchen",
+  "project": "1BHK House Interior",
+  "type": "render",
+  "quality": "low-res",
+  "notes": "Kitchen island with hob, view to dining. Facebook compression. European styling (wood stove, island); confirm this is an SKE design."
+ },
+ "FB_IMG_1668356018768.jpg": {
+  "subject": "kitchen",
+  "project": "1BHK House Interior",
+  "type": "render",
+  "quality": "low-res",
+  "notes": "Kitchen island from the plant side. Facebook compression. European styling (wood stove, island); confirm this is an SKE design."
+ },
+ "FB_IMG_1668356021070.jpg": {
+  "subject": "kitchen",
+  "project": "1BHK House Interior",
+  "type": "render",
+  "quality": "low-res",
+  "notes": "Kitchen with built-in ovens and oak panelling. Facebook compression. European styling (wood stove, island); confirm this is an SKE design."
+ },
+ "FB_IMG_1668356023735.jpg": {
+  "subject": "kitchen",
+  "project": "1BHK House Interior",
+  "type": "render",
+  "quality": "low-res",
+  "notes": "Kitchen island, wider view. Facebook compression. European styling (wood stove, island); confirm this is an SKE design."
+ },
+ "FB_IMG_1668356027417.jpg": {
+  "subject": "living room",
+  "project": "1BHK House Interior",
+  "type": "render",
+  "quality": "low-res",
+  "notes": "Dining with wood stove and pendant lights. Facebook compression. European styling (wood stove, island); confirm this is an SKE design."
+ },
+ "FB_IMG_1668356030086.jpg": {
+  "subject": "living room",
+  "project": "1BHK House Interior",
+  "type": "render",
+  "quality": "low-res",
+  "notes": "Dining room, frontal view. Facebook compression. European styling (wood stove, island); confirm this is an SKE design."
+ },
+ "FB_IMG_1669397475101.jpg": {
+  "subject": "bedroom",
+  "project": "1BHK House Interior",
+  "type": "render",
+  "quality": "good",
+  "notes": "Project cover. Bedroom seating corner with bookshelf and cove ceiling. Portrait 1080x1215."
+ },
+ "FB_IMG_1669397482531.jpg": {
+  "subject": "wardrobe",
+  "project": "1BHK House Interior",
+  "type": "render",
+  "quality": "good",
+  "notes": "Open + hinged walnut wardrobe with dresser. Portrait."
+ },
+ "FB_IMG_1669397487697.jpg": {
+  "subject": "other",
+  "project": "1BHK House Interior",
+  "type": "render",
+  "quality": "good",
+  "notes": "Bathroom vanity with dark marble wall and round mirror. Portrait."
+ },
+ "FB_IMG_1669397490899.jpg": {
+  "subject": "bedroom",
+  "project": "1BHK House Interior",
+  "type": "render",
+  "quality": "good",
+  "notes": "Bedroom with walnut headboard wall, study desk. Portrait."
+ },
+ "FB_IMG_1671554675670.jpg": {
+  "subject": "living room",
+  "project": "2BHK House Interior",
+  "type": "photo",
+  "quality": "good",
+  "notes": "Project cover. REAL PHOTO: living room with brass-chain oonjal swing, wood slat ceiling, TV wall. Portrait 1080x1350, Facebook-compressed. Best real photo on the site; ask for the camera original. Shown in the 2BHK gallery, but the style doesn't match the 2BHK renders, so it may be a different home: confirm with SKE."
+ },
+ "FB_IMG_1671554681269.jpg": {
+  "subject": "kitchen",
+  "project": "2BHK House Interior",
+  "type": "photo",
+  "quality": "good",
+  "notes": "REAL PHOTO: kitchen counter with white quartz, walnut slats, floating shelves. Portrait, Facebook-compressed. Shown in the 2BHK gallery, but the style doesn't match the 2BHK renders, so it may be a different home: confirm with SKE."
+ },
+ "FB_IMG_1671554686721.jpg": {
+  "subject": "false ceiling",
+  "project": "2BHK House Interior",
+  "type": "photo",
+  "quality": "good",
+  "notes": "REAL PHOTO: corridor with lit wood-slat ceiling, wall panelling and open staircase. Portrait, Facebook-compressed. Shown in the 2BHK gallery, but the style doesn't match the 2BHK renders, so it may be a different home: confirm with SKE."
+ }
+}

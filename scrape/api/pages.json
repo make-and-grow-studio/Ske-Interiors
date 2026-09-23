@@ -1,0 +1,921 @@
+[
+  {
+    "id": 327,
+    "date": "2023-04-11T09:24:30",
+    "date_gmt": "2023-04-11T09:24:30",
+    "guid": {
+      "rendered": "http://localhost/interiors/?page_id=327"
+    },
+    "modified": "2023-04-11T10:28:55",
+    "modified_gmt": "2023-04-11T10:28:55",
+    "slug": "get-a-quote",
+    "status": "publish",
+    "type": "page",
+    "link": "https://skeinteriors.com/get-a-quote/",
+    "title": {
+      "rendered": "Get a Quote"
+    },
+    "content": {
+      "rendered": "\n<div class=\"wpcf7 no-js\" id=\"wpcf7-f313-o1\" lang=\"en-US\" dir=\"ltr\" data-wpcf7-id=\"313\">\n<div class=\"screen-reader-response\"><p role=\"status\" aria-live=\"polite\" aria-atomic=\"true\"></p> <ul></ul></div>\n<form action=\"/wp-json/wp/v2/pages?per_page=100&#038;page=1#wpcf7-f313-o1\" method=\"post\" class=\"wpcf7-form init\" aria-label=\"Contact form\" novalidate=\"novalidate\" data-status=\"init\">\n<fieldset class=\"hidden-fields-container\"><input type=\"hidden\" name=\"_wpcf7\" value=\"313\" /><input type=\"hidden\" name=\"_wpcf7_version\" value=\"6.1.7\" /><input type=\"hidden\" name=\"_wpcf7_locale\" value=\"en_US\" /><input type=\"hidden\" name=\"_wpcf7_unit_tag\" value=\"wpcf7-f313-o1\" /><input type=\"hidden\" name=\"_wpcf7_container_post\" value=\"0\" /><input type=\"hidden\" name=\"_wpcf7_posted_data_hash\" value=\"\" />\n</fieldset>\n<div class=\"row\">\n\t<div class=\"col-sm-12 col-lg-6\">\n\t\t<p><span class=\"wpcf7-form-control-wrap\" data-name=\"first-name\"><input size=\"40\" maxlength=\"400\" class=\"wpcf7-form-control wpcf7-text wpcf7-validates-as-required form-control\" aria-required=\"true\" aria-invalid=\"false\" placeholder=\"First Name*\" value=\"\" type=\"text\" name=\"first-name\" /></span>\n\t\t</p>\n\t</div>\n\t<div class=\"col-sm-12 col-lg-6\">\n\t\t<p><span class=\"wpcf7-form-control-wrap\" data-name=\"last-name\"><input size=\"40\" maxlength=\"400\" class=\"wpcf7-form-control wpcf7-text form-control\" aria-invalid=\"false\" placeholder=\"Last Name\" value=\"\" type=\"text\" name=\"last-name\" /></span>\n\t\t</p>\n\t</div>\n</div>\n<div class=\"row\">\n\t<div class=\"col-sm-12 col-lg-6\">\n\t\t<p><span class=\"wpcf7-form-control-wrap\" data-name=\"your-email\"><input size=\"40\" maxlength=\"400\" class=\"wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email form-control\" aria-required=\"true\" aria-invalid=\"false\" placeholder=\"Email*\" value=\"\" type=\"email\" name=\"your-email\" /></span>\n\t\t</p>\n\t</div>\n\t<div class=\"col-sm-12 col-lg-6\">\n\t\t<p><span class=\"wpcf7-form-control-wrap\" data-name=\"phone\"><input size=\"40\" maxlength=\"400\" class=\"wpcf7-form-control wpcf7-tel wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-tel form-control\" aria-required=\"true\" aria-invalid=\"false\" placeholder=\"Phone No.*\" value=\"\" type=\"tel\" name=\"phone\" /></span>\n\t\t</p>\n\t</div>\n</div>\n<div class=\"row\">\n\t<div class=\"col-sm-12 col-lg-12\">\n\t\t<p><span class=\"wpcf7-form-control-wrap\" data-name=\"Service\"><select class=\"wpcf7-form-control wpcf7-select wpcf7-validates-as-required form-control\" aria-required=\"true\" aria-invalid=\"false\" name=\"Service\"><option value=\"--Select Service--\">--Select Service--</option><option value=\"Residential Interiors\">Residential Interiors</option><option value=\"Commercial Interiors\">Commercial Interiors</option><option value=\"Flooring Interiors\">Flooring Interiors</option></select></span>\n\t\t</p>\n\t</div>\n</div>\n<div class=\"row\">\n\t<div class=\"col-sm-12 col-lg-6\">\n\t\t<p><span class=\"wpcf7-form-control-wrap\" data-name=\"area\"><input size=\"40\" maxlength=\"400\" class=\"wpcf7-form-control wpcf7-text form-control\" aria-invalid=\"false\" placeholder=\"Area size (in Sq.Ft)*\" value=\"\" type=\"text\" name=\"area\" /></span>\n\t\t</p>\n\t</div>\n\t<div class=\"col-sm-12 col-lg-6\">\n\t\t<p><span class=\"wpcf7-form-control-wrap\" data-name=\"budget\"><input size=\"40\" maxlength=\"400\" class=\"wpcf7-form-control wpcf7-text form-control\" aria-invalid=\"false\" placeholder=\"Budget\" value=\"\" type=\"text\" name=\"budget\" /></span>\n\t\t</p>\n\t</div>\n</div>\n<div class=\"row\">\n\t<div class=\"col-sm-12 col-lg-12\">\n\t\t<p><span class=\"wpcf7-form-control-wrap\" data-name=\"your-message\"><textarea cols=\"40\" rows=\"10\" maxlength=\"2000\" class=\"wpcf7-form-control wpcf7-textarea form-control\" aria-invalid=\"false\" placeholder=\"Message\" name=\"your-message\"></textarea></span>\n\t\t</p>\n\t</div>\n\t<div class=\"col-sm-12 col-lg-12\">\n\t\t<p><input class=\"wpcf7-form-control wpcf7-submit has-spinner btn-submit\" type=\"submit\" value=\"Submit\" />\n\t\t</p>\n\t</div>\n</div><div class=\"wpcf7-response-output\" aria-hidden=\"true\"></div>\n</form>\n</div>\n\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+      "_acf_changed": false,
+      "footnotes": ""
+    },
+    "class_list": [
+      "post-327",
+      "page",
+      "type-page",
+      "status-publish",
+      "hentry"
+    ],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://skeinteriors.com/wp-json/wp/v2/pages/327",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://skeinteriors.com/wp-json/wp/v2/pages"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://skeinteriors.com/wp-json/wp/v2/types/page"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://skeinteriors.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://skeinteriors.com/wp-json/wp/v2/comments?post=327"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 2,
+          "href": "https://skeinteriors.com/wp-json/wp/v2/pages/327/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 329,
+          "href": "https://skeinteriors.com/wp-json/wp/v2/pages/327/revisions/329"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://skeinteriors.com/wp-json/wp/v2/media?parent=327"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 210,
+    "date": "2023-04-11T04:07:31",
+    "date_gmt": "2023-04-11T04:07:31",
+    "guid": {
+      "rendered": "http://localhost/interiors/?page_id=210"
+    },
+    "modified": "2023-04-12T11:08:42",
+    "modified_gmt": "2023-04-12T11:08:42",
+    "slug": "flooring",
+    "status": "publish",
+    "type": "page",
+    "link": "https://skeinteriors.com/flooring/",
+    "title": {
+      "rendered": "Flooring Solution"
+    },
+    "content": {
+      "rendered": "<style type=\"text/css\">\n#foogallery-gallery-358 .fg-image { width: 340px; }\n#foogallery-gallery-358 { --fg-gutter: 10px; }</style>\n\t\t\t<div class=\"foogallery foogallery-container foogallery-default foogallery-lightbox-foobox fg-center fg-m-col3 fg-default fg-ready fg-light fg-border-thin fg-loading-default fg-loaded-fade-in fg-caption-hover fg-hover-fade fg-hover-zoom fg-no-js\" id=\"foogallery-gallery-358\" data-foogallery=\"{&quot;item&quot;:{&quot;showCaptionTitle&quot;:true,&quot;showCaptionDescription&quot;:true},&quot;lazy&quot;:true,&quot;src&quot;:&quot;src&quot;,&quot;srcset&quot;:&quot;srcset&quot;}\" style=\"--fg-title-line-clamp: 0; --fg-description-line-clamp: 0;\" >\n\t<div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1681237841047.jpg\" data-attachment-id=\"363\" data-caption-title=\"FB_IMG_1681237841047\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1681237841047.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1681237844091.jpg\" data-attachment-id=\"364\" data-caption-title=\"FB_IMG_1681237844091\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1681237844091.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1681237846781.jpg\" data-attachment-id=\"365\" data-caption-title=\"FB_IMG_1681237846781\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1681237846781.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1681237849275.jpg\" data-attachment-id=\"366\" data-caption-title=\"FB_IMG_1681237849275\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1681237849275.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1681237851977.jpg\" data-attachment-id=\"367\" data-caption-title=\"FB_IMG_1681237851977\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1681237851977.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1681237854473.jpg\" data-attachment-id=\"368\" data-caption-title=\"FB_IMG_1681237854473\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1681237854473.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1681237857057.jpg\" data-attachment-id=\"369\" data-caption-title=\"FB_IMG_1681237857057\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1681237857057.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1681237860080.jpg\" data-attachment-id=\"370\" data-caption-title=\"FB_IMG_1681237860080\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1681237860080.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div></div>\n\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+      "_acf_changed": false,
+      "footnotes": ""
+    },
+    "class_list": [
+      "post-210",
+      "page",
+      "type-page",
+      "status-publish",
+      "hentry"
+    ],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://skeinteriors.com/wp-json/wp/v2/pages/210",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://skeinteriors.com/wp-json/wp/v2/pages"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://skeinteriors.com/wp-json/wp/v2/types/page"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://skeinteriors.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://skeinteriors.com/wp-json/wp/v2/comments?post=210"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 6,
+          "href": "https://skeinteriors.com/wp-json/wp/v2/pages/210/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 361,
+          "href": "https://skeinteriors.com/wp-json/wp/v2/pages/210/revisions/361"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://skeinteriors.com/wp-json/wp/v2/media?parent=210"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 18,
+    "date": "2023-04-05T08:42:14",
+    "date_gmt": "2023-04-05T08:42:14",
+    "guid": {
+      "rendered": "http://localhost/interiors/?page_id=18"
+    },
+    "modified": "2023-04-11T04:32:02",
+    "modified_gmt": "2023-04-11T04:32:02",
+    "slug": "contact-us",
+    "status": "publish",
+    "type": "page",
+    "link": "https://skeinteriors.com/contact-us/",
+    "title": {
+      "rendered": "Contact Us"
+    },
+    "content": {
+      "rendered": "",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "templates/contact-temp.php",
+    "meta": {
+      "_acf_changed": false,
+      "footnotes": ""
+    },
+    "class_list": [
+      "post-18",
+      "page",
+      "type-page",
+      "status-publish",
+      "hentry"
+    ],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://skeinteriors.com/wp-json/wp/v2/pages/18",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://skeinteriors.com/wp-json/wp/v2/pages"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://skeinteriors.com/wp-json/wp/v2/types/page"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://skeinteriors.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://skeinteriors.com/wp-json/wp/v2/comments?post=18"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 1,
+          "href": "https://skeinteriors.com/wp-json/wp/v2/pages/18/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 19,
+          "href": "https://skeinteriors.com/wp-json/wp/v2/pages/18/revisions/19"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://skeinteriors.com/wp-json/wp/v2/media?parent=18"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 16,
+    "date": "2023-04-05T08:42:01",
+    "date_gmt": "2023-04-05T08:42:01",
+    "guid": {
+      "rendered": "http://localhost/interiors/?page_id=16"
+    },
+    "modified": "2023-04-10T04:05:00",
+    "modified_gmt": "2023-04-10T04:05:00",
+    "slug": "our-works",
+    "status": "publish",
+    "type": "page",
+    "link": "https://skeinteriors.com/our-works/",
+    "title": {
+      "rendered": "Our Works"
+    },
+    "content": {
+      "rendered": "",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "templates/our-works-template.php",
+    "meta": {
+      "_acf_changed": false,
+      "footnotes": ""
+    },
+    "class_list": [
+      "post-16",
+      "page",
+      "type-page",
+      "status-publish",
+      "hentry"
+    ],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://skeinteriors.com/wp-json/wp/v2/pages/16",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://skeinteriors.com/wp-json/wp/v2/pages"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://skeinteriors.com/wp-json/wp/v2/types/page"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://skeinteriors.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://skeinteriors.com/wp-json/wp/v2/comments?post=16"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 1,
+          "href": "https://skeinteriors.com/wp-json/wp/v2/pages/16/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 17,
+          "href": "https://skeinteriors.com/wp-json/wp/v2/pages/16/revisions/17"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://skeinteriors.com/wp-json/wp/v2/media?parent=16"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 14,
+    "date": "2023-04-05T08:41:48",
+    "date_gmt": "2023-04-05T08:41:48",
+    "guid": {
+      "rendered": "http://localhost/interiors/?page_id=14"
+    },
+    "modified": "2023-04-12T11:08:13",
+    "modified_gmt": "2023-04-12T11:08:13",
+    "slug": "commercial-interiors",
+    "status": "publish",
+    "type": "page",
+    "link": "https://skeinteriors.com/commercial-interiors/",
+    "title": {
+      "rendered": "Commercial Interiors"
+    },
+    "content": {
+      "rendered": "<style type=\"text/css\">\n#foogallery-gallery-357 .fg-image { width: 340px; }\n#foogallery-gallery-357 { --fg-gutter: 10px; }</style>\n\t\t\t<div class=\"foogallery foogallery-container foogallery-default foogallery-lightbox-foobox fg-center fg-m-col3 fg-default fg-ready fg-light fg-border-thin fg-loading-default fg-loaded-fade-in fg-caption-hover fg-hover-fade fg-hover-zoom fg-no-js\" id=\"foogallery-gallery-357\" data-foogallery=\"{&quot;item&quot;:{&quot;showCaptionTitle&quot;:true,&quot;showCaptionDescription&quot;:true},&quot;lazy&quot;:true,&quot;src&quot;:&quot;src&quot;,&quot;srcset&quot;:&quot;srcset&quot;}\" style=\"--fg-title-line-clamp: 0; --fg-description-line-clamp: 0;\" >\n\t<div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/commercial.jpg\" data-attachment-id=\"371\" data-caption-title=\"commercial\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/commercial.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/commercial_2.jpg\" data-attachment-id=\"372\" data-caption-title=\"commercial_2\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/commercial_2.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/commercial_3.jpg\" data-attachment-id=\"373\" data-caption-title=\"commercial_3\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/commercial_3.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/commercial_4.jpg\" data-attachment-id=\"374\" data-caption-title=\"commercial_4\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/commercial_4.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/commercial_5.jpg\" data-attachment-id=\"375\" data-caption-title=\"commercial_5\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/commercial_5.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/commercial_6.jpg\" data-attachment-id=\"376\" data-caption-title=\"commercial_6\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/commercial_6.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/commercial_7.jpg\" data-attachment-id=\"377\" data-caption-title=\"commercial_7\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/commercial_7.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/commercial_8.jpg\" data-attachment-id=\"378\" data-caption-title=\"commercial_8\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/commercial_8.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/commercial_9.jpg\" data-attachment-id=\"379\" data-caption-title=\"commercial_9\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/commercial_9.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/commercial_10.jpg\" data-attachment-id=\"380\" data-caption-title=\"commercial_10\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/commercial_10.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/commercial_11.jpg\" data-attachment-id=\"381\" data-caption-title=\"commercial_11\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/commercial_11.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/commercial_12.jpg\" data-attachment-id=\"382\" data-caption-title=\"commercial_12\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/commercial_12.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/commercial_13.jpg\" data-attachment-id=\"383\" data-caption-title=\"commercial_13\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/commercial_13.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div></div>\n\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+      "_acf_changed": false,
+      "footnotes": ""
+    },
+    "class_list": [
+      "post-14",
+      "page",
+      "type-page",
+      "status-publish",
+      "hentry"
+    ],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://skeinteriors.com/wp-json/wp/v2/pages/14",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://skeinteriors.com/wp-json/wp/v2/pages"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://skeinteriors.com/wp-json/wp/v2/types/page"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://skeinteriors.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://skeinteriors.com/wp-json/wp/v2/comments?post=14"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 8,
+          "href": "https://skeinteriors.com/wp-json/wp/v2/pages/14/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 360,
+          "href": "https://skeinteriors.com/wp-json/wp/v2/pages/14/revisions/360"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://skeinteriors.com/wp-json/wp/v2/media?parent=14"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 12,
+    "date": "2023-04-05T08:41:20",
+    "date_gmt": "2023-04-05T08:41:20",
+    "guid": {
+      "rendered": "http://localhost/interiors/?page_id=12"
+    },
+    "modified": "2023-04-12T11:09:08",
+    "modified_gmt": "2023-04-12T11:09:08",
+    "slug": "residential-interiors",
+    "status": "publish",
+    "type": "page",
+    "link": "https://skeinteriors.com/residential-interiors/",
+    "title": {
+      "rendered": "Residential Interior"
+    },
+    "content": {
+      "rendered": "<style type=\"text/css\">\n#foogallery-gallery-356 .fg-image { width: 340px; }\n#foogallery-gallery-356 { --fg-gutter: 10px; }</style>\n\t\t\t<div class=\"foogallery foogallery-container foogallery-default foogallery-lightbox-foobox fg-center fg-m-col3 fg-default fg-ready fg-light fg-border-thin fg-loading-default fg-loaded-fade-in fg-caption-hover fg-hover-fade fg-hover-zoom fg-no-js\" id=\"foogallery-gallery-356\" data-foogallery=\"{&quot;item&quot;:{&quot;showCaptionTitle&quot;:true,&quot;showCaptionDescription&quot;:true},&quot;lazy&quot;:true,&quot;src&quot;:&quot;src&quot;,&quot;srcset&quot;:&quot;srcset&quot;}\" style=\"--fg-title-line-clamp: 0; --fg-description-line-clamp: 0;\" >\n\t<div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/20181002_095954_IMG_8260.jpg\" data-attachment-id=\"221\" data-caption-title=\"20181002_095954_IMG_8260\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/cache/2023/04/20181002_095954_IMG_8260/3992158537.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/20220212_183809_IMG_3976.jpg\" data-attachment-id=\"222\" data-caption-title=\"20220212_183809_IMG_3976\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/cache/2023/04/20220212_183809_IMG_3976/2497495582.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/20190131_190709_5ce9bae3-d83b-4728-af5e-0cfe4f01126b.jpg\" data-attachment-id=\"223\" data-caption-title=\"20190131_190709_5ce9bae3-d83b-4728-af5e-0cfe4f01126b\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/cache/2023/04/20190131_190709_5ce9bae3-d83b-4728-af5e-0cfe4f01126b/610212450.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/20191204_195552_IMG_1414.jpg\" data-attachment-id=\"224\" data-caption-title=\"20191204_195552_IMG_1414\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/cache/2023/04/20191204_195552_IMG_1414/4069093277.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/20190131_190717_153528da-cd8d-431c-849f-7317bd5e206a.jpg\" data-attachment-id=\"226\" data-caption-title=\"20190131_190717_153528da-cd8d-431c-849f-7317bd5e206a\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/cache/2023/04/20190131_190717_153528da-cd8d-431c-849f-7317bd5e206a/1798379247.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/20190131_190719_60a5f79f-2278-44dd-98ea-cc9e42d547da.jpg\" data-attachment-id=\"229\" data-caption-title=\"20190131_190719_60a5f79f-2278-44dd-98ea-cc9e42d547da\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/cache/2023/04/20190131_190719_60a5f79f-2278-44dd-98ea-cc9e42d547da/1589526769.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/20190131_190713_ddcd44fa-d3d1-49bb-9aa6-96c1a1847715.jpg\" data-attachment-id=\"230\" data-caption-title=\"20190131_190713_ddcd44fa-d3d1-49bb-9aa6-96c1a1847715\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/cache/2023/04/20190131_190713_ddcd44fa-d3d1-49bb-9aa6-96c1a1847715/1366205429.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/20190131_190713_e5677a83-7a94-4ec1-a94a-bd1a4a35a97c.jpg\" data-attachment-id=\"231\" data-caption-title=\"20190131_190713_e5677a83-7a94-4ec1-a94a-bd1a4a35a97c\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/cache/2023/04/20190131_190713_e5677a83-7a94-4ec1-a94a-bd1a4a35a97c/2405507057.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/20190131_190715_5c7214a7-65a8-4dc0-9547-690a4395b35d.jpg\" data-attachment-id=\"232\" data-caption-title=\"20190131_190715_5c7214a7-65a8-4dc0-9547-690a4395b35d\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/cache/2023/04/20190131_190715_5c7214a7-65a8-4dc0-9547-690a4395b35d/1217359281.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/20190131_190716_6c612b6a-b7c3-4886-9258-8336a29b1a6e.jpg\" data-attachment-id=\"233\" data-caption-title=\"20190131_190716_6c612b6a-b7c3-4886-9258-8336a29b1a6e\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/cache/2023/04/20190131_190716_6c612b6a-b7c3-4886-9258-8336a29b1a6e/2394668234.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/20190131_190716_8eecb74a-f4b3-44ea-997a-e2ce0bf858b2.jpg\" data-attachment-id=\"234\" data-caption-title=\"20190131_190716_8eecb74a-f4b3-44ea-997a-e2ce0bf858b2\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/cache/2023/04/20190131_190716_8eecb74a-f4b3-44ea-997a-e2ce0bf858b2/490360081.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/20190131_190716_51d626d3-a2e4-48ed-92ad-6f74e72b0090.jpg\" data-attachment-id=\"235\" data-caption-title=\"20190131_190716_51d626d3-a2e4-48ed-92ad-6f74e72b0090\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/cache/2023/04/20190131_190716_51d626d3-a2e4-48ed-92ad-6f74e72b0090/2049919375.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/20190131_190716_f87a3dc2-192a-4283-b47d-40500725f282.jpg\" data-attachment-id=\"236\" data-caption-title=\"20190131_190716_f87a3dc2-192a-4283-b47d-40500725f282\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/cache/2023/04/20190131_190716_f87a3dc2-192a-4283-b47d-40500725f282/1075998799.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/20190131_190717_4c9f42c4-5a8d-4bac-8974-8e9cca5e37fc.jpg\" data-attachment-id=\"237\" data-caption-title=\"20190131_190717_4c9f42c4-5a8d-4bac-8974-8e9cca5e37fc\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/cache/2023/04/20190131_190717_4c9f42c4-5a8d-4bac-8974-8e9cca5e37fc/3204362175.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/20190131_190717_8322be1c-7c13-41eb-bb4c-a851138eac56.jpg\" data-attachment-id=\"238\" data-caption-title=\"20190131_190717_8322be1c-7c13-41eb-bb4c-a851138eac56\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/cache/2023/04/20190131_190717_8322be1c-7c13-41eb-bb4c-a851138eac56/1416023624.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/20220209_230642_IMG_3873.jpg\" data-attachment-id=\"246\" data-caption-title=\"20220209_230642_IMG_3873\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/cache/2023/04/20220209_230642_IMG_3873/172641725.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/20220209_230633_IMG_3872.jpg\" data-attachment-id=\"245\" data-caption-title=\"20220209_230633_IMG_3872\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/cache/2023/04/20220209_230633_IMG_3872/2338598812.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/20220209_230628_IMG_3871.jpg\" data-attachment-id=\"244\" data-caption-title=\"20220209_230628_IMG_3871\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/cache/2023/04/20220209_230628_IMG_3871/4041676339.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/20220209_230625_IMG_3870.jpg\" data-attachment-id=\"243\" data-caption-title=\"20220209_230625_IMG_3870\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/cache/2023/04/20220209_230625_IMG_3870/3611192888.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/20190131_190718_61abca03-514e-4748-ae8a-347b4f593de4.jpg\" data-attachment-id=\"240\" data-caption-title=\"20190131_190718_61abca03-514e-4748-ae8a-347b4f593de4\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/cache/2023/04/20190131_190718_61abca03-514e-4748-ae8a-347b4f593de4/511501837.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/20190131_190717_153528da-cd8d-431c-849f-7317bd5e206a-1.jpg\" data-attachment-id=\"239\" data-caption-title=\"20190131_190717_153528da-cd8d-431c-849f-7317bd5e206a\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/cache/2023/04/20190131_190717_153528da-cd8d-431c-849f-7317bd5e206a-1/3894364285.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/20220209_230645_IMG_3874.jpg\" data-attachment-id=\"247\" data-caption-title=\"20220209_230645_IMG_3874\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/cache/2023/04/20220209_230645_IMG_3874/2412356696.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/20220209_230649_IMG_3875.jpg\" data-attachment-id=\"248\" data-caption-title=\"20220209_230649_IMG_3875\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/cache/2023/04/20220209_230649_IMG_3875/1363534191.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/20220209_230652_IMG_3876.jpg\" data-attachment-id=\"249\" data-caption-title=\"20220209_230652_IMG_3876\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/cache/2023/04/20220209_230652_IMG_3876/717674688.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/20220211_171055_IMG_3952.jpg\" data-attachment-id=\"250\" data-caption-title=\"20220211_171055_IMG_3952\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/cache/2023/04/20220211_171055_IMG_3952/1864058028.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/20220212_183806_IMG_3975.jpg\" data-attachment-id=\"251\" data-caption-title=\"20220212_183806_IMG_3975\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/cache/2023/04/20220212_183806_IMG_3975/2230882024.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/20220212_183809_IMG_3976-1.jpg\" data-attachment-id=\"252\" data-caption-title=\"20220212_183809_IMG_3976\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/cache/2023/04/20220212_183809_IMG_3976-1/2620311440.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1671554675670.jpg\" data-attachment-id=\"253\" data-caption-title=\"FB_IMG_1671554675670\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/cache/2023/04/FB_IMG_1671554675670/1857500965.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1671554681269.jpg\" data-attachment-id=\"254\" data-caption-title=\"FB_IMG_1671554681269\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/cache/2023/04/FB_IMG_1671554681269/885035669.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1671554686721.jpg\" data-attachment-id=\"255\" data-caption-title=\"FB_IMG_1671554686721\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/cache/2023/04/FB_IMG_1671554686721/3436848502.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1668356007269.jpg\" data-attachment-id=\"259\" data-caption-title=\"FB_IMG_1668356007269\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/cache/2023/04/FB_IMG_1668356007269/3192899205.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1668356010527.jpg\" data-attachment-id=\"260\" data-caption-title=\"FB_IMG_1668356010527\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/cache/2023/04/FB_IMG_1668356010527/2655903411.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1668356013184.jpg\" data-attachment-id=\"261\" data-caption-title=\"FB_IMG_1668356013184\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/cache/2023/04/FB_IMG_1668356013184/2900669992.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1668356018768.jpg\" data-attachment-id=\"262\" data-caption-title=\"FB_IMG_1668356018768\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/cache/2023/04/FB_IMG_1668356018768/231009552.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1668356021070.jpg\" data-attachment-id=\"263\" data-caption-title=\"FB_IMG_1668356021070\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/cache/2023/04/FB_IMG_1668356021070/2656319095.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1668356023735.jpg\" data-attachment-id=\"264\" data-caption-title=\"FB_IMG_1668356023735\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/cache/2023/04/FB_IMG_1668356023735/2819436022.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1668356027417.jpg\" data-attachment-id=\"265\" data-caption-title=\"FB_IMG_1668356027417\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/cache/2023/04/FB_IMG_1668356027417/640805137.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1668356030086.jpg\" data-attachment-id=\"266\" data-caption-title=\"FB_IMG_1668356030086\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/cache/2023/04/FB_IMG_1668356030086/3980379300.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1669397475101.jpg\" data-attachment-id=\"267\" data-caption-title=\"FB_IMG_1669397475101\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/cache/2023/04/FB_IMG_1669397475101/3881130364.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1669397482531.jpg\" data-attachment-id=\"268\" data-caption-title=\"FB_IMG_1669397482531\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/cache/2023/04/FB_IMG_1669397482531/3710363215.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1669397487697.jpg\" data-attachment-id=\"269\" data-caption-title=\"FB_IMG_1669397487697\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/cache/2023/04/FB_IMG_1669397487697/2902921610.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/FB_IMG_1669397490899.jpg\" data-attachment-id=\"270\" data-caption-title=\"FB_IMG_1669397490899\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/cache/2023/04/FB_IMG_1669397490899/3951208591.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial.jpg\" data-attachment-id=\"384\" data-caption-title=\"residencial\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_2.jpg\" data-attachment-id=\"385\" data-caption-title=\"residencial_2\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_2.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_3.jpg\" data-attachment-id=\"386\" data-caption-title=\"residencial_3\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_3.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_4.jpg\" data-attachment-id=\"387\" data-caption-title=\"residencial_4\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_4.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_5.jpg\" data-attachment-id=\"388\" data-caption-title=\"residencial_5\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_5.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_6.jpg\" data-attachment-id=\"389\" data-caption-title=\"residencial_6\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_6.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_7.jpg\" data-attachment-id=\"390\" data-caption-title=\"residencial_7\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_7.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_8.jpg\" data-attachment-id=\"391\" data-caption-title=\"residencial_8\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_8.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_9.jpg\" data-attachment-id=\"392\" data-caption-title=\"residencial_9\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_9.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_10.jpg\" data-attachment-id=\"393\" data-caption-title=\"residencial_10\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_10.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_11.jpg\" data-attachment-id=\"394\" data-caption-title=\"residencial_11\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_11.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_12.jpg\" data-attachment-id=\"395\" data-caption-title=\"residencial_12\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_12.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_13.jpg\" data-attachment-id=\"396\" data-caption-title=\"residencial_13\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_13.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_14.jpg\" data-attachment-id=\"397\" data-caption-title=\"residencial_14\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_14.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_15.jpg\" data-attachment-id=\"398\" data-caption-title=\"residencial_15\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_15.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_16.jpg\" data-attachment-id=\"399\" data-caption-title=\"residencial_16\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_16.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_17.jpg\" data-attachment-id=\"400\" data-caption-title=\"residencial_17\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_17.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_18.jpg\" data-attachment-id=\"401\" data-caption-title=\"residencial_18\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_18.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_19.jpg\" data-attachment-id=\"402\" data-caption-title=\"residencial_19\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_19.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_20.jpg\" data-attachment-id=\"403\" data-caption-title=\"residencial_20\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_20.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_21.jpg\" data-attachment-id=\"404\" data-caption-title=\"residencial_21\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_21.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_22.jpg\" data-attachment-id=\"405\" data-caption-title=\"residencial_22\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_22.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_23.jpg\" data-attachment-id=\"406\" data-caption-title=\"residencial_23\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_23.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_24.jpg\" data-attachment-id=\"407\" data-caption-title=\"residencial_24\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_24.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_25.jpg\" data-attachment-id=\"408\" data-caption-title=\"residencial_25\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_25.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_26.jpg\" data-attachment-id=\"409\" data-caption-title=\"residencial_26\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_26.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_27.jpg\" data-attachment-id=\"410\" data-caption-title=\"residencial_27\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_27.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_28.jpg\" data-attachment-id=\"411\" data-caption-title=\"residencial_28\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_28.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_29.jpg\" data-attachment-id=\"412\" data-caption-title=\"residencial_29\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_29.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_30.jpg\" data-attachment-id=\"413\" data-caption-title=\"residencial_30\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_30.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_31.jpg\" data-attachment-id=\"414\" data-caption-title=\"residencial_31\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_31.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_32.jpg\" data-attachment-id=\"415\" data-caption-title=\"residencial_32\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_32.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_33.jpg\" data-attachment-id=\"416\" data-caption-title=\"residencial_33\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_33.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_34.jpg\" data-attachment-id=\"417\" data-caption-title=\"residencial_34\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_34.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_35.jpg\" data-attachment-id=\"418\" data-caption-title=\"residencial_35\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_35.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_36.jpg\" data-attachment-id=\"419\" data-caption-title=\"residencial_36\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_36.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1.jpg\" data-attachment-id=\"420\" data-caption-title=\"residencial1\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_2.jpg\" data-attachment-id=\"421\" data-caption-title=\"residencial1_2\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_2.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_3.jpg\" data-attachment-id=\"422\" data-caption-title=\"residencial1_3\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_3.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_4.jpg\" data-attachment-id=\"423\" data-caption-title=\"residencial1_4\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_4.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_5.jpg\" data-attachment-id=\"424\" data-caption-title=\"residencial1_5\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_5.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_6.jpg\" data-attachment-id=\"425\" data-caption-title=\"residencial1_6\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_6.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_7.jpg\" data-attachment-id=\"426\" data-caption-title=\"residencial1_7\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_7.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_8.jpg\" data-attachment-id=\"427\" data-caption-title=\"residencial1_8\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_8.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_9.jpg\" data-attachment-id=\"428\" data-caption-title=\"residencial1_9\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_9.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_10.jpg\" data-attachment-id=\"429\" data-caption-title=\"residencial1_10\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_10.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_11.jpg\" data-attachment-id=\"430\" data-caption-title=\"residencial1_11\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_11.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_12.jpg\" data-attachment-id=\"431\" data-caption-title=\"residencial1_12\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_12.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_13.jpg\" data-attachment-id=\"432\" data-caption-title=\"residencial1_13\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_13.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_14.jpg\" data-attachment-id=\"433\" data-caption-title=\"residencial1_14\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_14.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_15.jpg\" data-attachment-id=\"434\" data-caption-title=\"residencial1_15\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_15.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_16.jpg\" data-attachment-id=\"435\" data-caption-title=\"residencial1_16\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_16.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_17.jpg\" data-attachment-id=\"436\" data-caption-title=\"residencial1_17\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_17.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_18.jpg\" data-attachment-id=\"437\" data-caption-title=\"residencial1_18\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_18.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_19.jpg\" data-attachment-id=\"438\" data-caption-title=\"residencial1_19\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_19.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_20.jpg\" data-attachment-id=\"439\" data-caption-title=\"residencial1_20\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_20.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_21.jpg\" data-attachment-id=\"440\" data-caption-title=\"residencial1_21\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_21.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_22.jpg\" data-attachment-id=\"441\" data-caption-title=\"residencial1_22\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_22.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_23.jpg\" data-attachment-id=\"442\" data-caption-title=\"residencial1_23\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_23.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_24.jpg\" data-attachment-id=\"443\" data-caption-title=\"residencial1_24\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_24.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_25.jpg\" data-attachment-id=\"444\" data-caption-title=\"residencial1_25\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_25.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_26.jpg\" data-attachment-id=\"445\" data-caption-title=\"residencial1_26\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_26.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_27.jpg\" data-attachment-id=\"446\" data-caption-title=\"residencial1_27\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_27.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_28.jpg\" data-attachment-id=\"447\" data-caption-title=\"residencial1_28\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_28.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_29.jpg\" data-attachment-id=\"448\" data-caption-title=\"residencial1_29\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_29.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_30.jpg\" data-attachment-id=\"449\" data-caption-title=\"residencial1_30\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_30.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_31.jpg\" data-attachment-id=\"450\" data-caption-title=\"residencial1_31\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_31.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_32.jpg\" data-attachment-id=\"451\" data-caption-title=\"residencial1_32\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_32.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_33.jpg\" data-attachment-id=\"452\" data-caption-title=\"residencial1_33\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_33.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_34.jpg\" data-attachment-id=\"453\" data-caption-title=\"residencial1_34\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_34.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_35.jpg\" data-attachment-id=\"454\" data-caption-title=\"residencial1_35\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_35.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_36.jpg\" data-attachment-id=\"455\" data-caption-title=\"residencial1_36\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_36.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_37.jpg\" data-attachment-id=\"456\" data-caption-title=\"residencial1_37\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_37.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_38.jpg\" data-attachment-id=\"457\" data-caption-title=\"residencial1_38\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_38.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_39.jpg\" data-attachment-id=\"458\" data-caption-title=\"residencial1_39\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_39.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_40.jpg\" data-attachment-id=\"459\" data-caption-title=\"residencial1_40\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_40.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_41.jpg\" data-attachment-id=\"460\" data-caption-title=\"residencial1_41\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_41.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_42.jpg\" data-attachment-id=\"461\" data-caption-title=\"residencial1_42\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_42.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_43.jpg\" data-attachment-id=\"462\" data-caption-title=\"residencial1_43\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_43.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_44.jpg\" data-attachment-id=\"463\" data-caption-title=\"residencial1_44\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_44.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_45.jpg\" data-attachment-id=\"464\" data-caption-title=\"residencial1_45\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_45.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_46.jpg\" data-attachment-id=\"465\" data-caption-title=\"residencial1_46\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_46.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_47.jpg\" data-attachment-id=\"466\" data-caption-title=\"residencial1_47\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial1_47.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_32-1.jpg\" data-attachment-id=\"469\" data-caption-title=\"residencial_32\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial_32-1.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial3.jpg\" data-attachment-id=\"470\" data-caption-title=\"residencial3\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial3.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial3_2.jpg\" data-attachment-id=\"471\" data-caption-title=\"residencial3_2\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial3_2.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial3_3.jpg\" data-attachment-id=\"472\" data-caption-title=\"residencial3_3\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial3_3.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial3_4.jpg\" data-attachment-id=\"473\" data-caption-title=\"residencial3_4\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial3_4.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial3_5.jpg\" data-attachment-id=\"474\" data-caption-title=\"residencial3_5\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial3_5.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial3_6.jpg\" data-attachment-id=\"475\" data-caption-title=\"residencial3_6\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial3_6.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial3_7.jpg\" data-attachment-id=\"476\" data-caption-title=\"residencial3_7\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial3_7.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div><div class=\"fg-item fg-type-image fg-loading\"><figure class=\"fg-item-inner\"><a href=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial3_8.jpg\" data-attachment-id=\"477\" data-caption-title=\"residencial3_8\" data-type=\"image\" class=\"fg-thumb\"><span class=\"fg-image-wrap\"><img src=\"https://skeinteriors.com/wp-content/uploads/2023/04/residencial3_8.jpg\" width=\"340\" height=\"340\" class=\"skip-lazy fg-image\" decoding=\"async\" loading=\"lazy\"></span><span class=\"fg-image-overlay\"></span></a></figure><div class=\"fg-loader\"></div></div></div>\n\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "",
+    "meta": {
+      "_acf_changed": false,
+      "footnotes": ""
+    },
+    "class_list": [
+      "post-12",
+      "page",
+      "type-page",
+      "status-publish",
+      "hentry"
+    ],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://skeinteriors.com/wp-json/wp/v2/pages/12",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://skeinteriors.com/wp-json/wp/v2/pages"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://skeinteriors.com/wp-json/wp/v2/types/page"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://skeinteriors.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://skeinteriors.com/wp-json/wp/v2/comments?post=12"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 14,
+          "href": "https://skeinteriors.com/wp-json/wp/v2/pages/12/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 362,
+          "href": "https://skeinteriors.com/wp-json/wp/v2/pages/12/revisions/362"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://skeinteriors.com/wp-json/wp/v2/media?parent=12"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 10,
+    "date": "2023-04-05T08:40:47",
+    "date_gmt": "2023-04-05T08:40:47",
+    "guid": {
+      "rendered": "http://localhost/interiors/?page_id=10"
+    },
+    "modified": "2023-04-11T08:53:01",
+    "modified_gmt": "2023-04-11T08:53:01",
+    "slug": "about-us",
+    "status": "publish",
+    "type": "page",
+    "link": "https://skeinteriors.com/about-us/",
+    "title": {
+      "rendered": "About Us"
+    },
+    "content": {
+      "rendered": "<p>SKE Interiors – One Of The Best Interior Designers In Coimbatore. We Expertise On All Types Of Interior Designs Like Residentials Interior, Commercials Interior, and Flooring Interiors Designing.</p>\n<p>We are a team of highly-skilled and extremely prolific interior designers in Coimbatore. Our interior design company in Coimbatore can transform the client’s vision into reality, even better than their imagination. We have a close-knit team of interior designers and interior architects who are well-versed and highly skilled in building residential interior spaces as well as commercial interior spaces which work both practically and aesthetically. Our thoughtful and innovative interior design solutions are initiated by partnering closely with our clients. Interior design companies in Coimbatore aim at thoroughly understanding the client’s taste and likes and transforming them into the interior design solutions. With extreme values in place, Dream Interior decorators in Coimbatore can take every step towards excellence in interior design services.</p>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>SKE Interiors – One Of The Best Interior Designers In Coimbatore. We Expertise On All Types Of Interior Designs Like Residentials Interior, Commercials Interior, and Flooring Interiors Designing. We are a team of highly-skilled and extremely prolific interior designers in Coimbatore. Our interior design company in Coimbatore can transform the client’s vision into reality, even [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 255,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "templates/about-temp.php",
+    "meta": {
+      "_acf_changed": false,
+      "footnotes": ""
+    },
+    "class_list": [
+      "post-10",
+      "page",
+      "type-page",
+      "status-publish",
+      "has-post-thumbnail",
+      "hentry"
+    ],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://skeinteriors.com/wp-json/wp/v2/pages/10",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://skeinteriors.com/wp-json/wp/v2/pages"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://skeinteriors.com/wp-json/wp/v2/types/page"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://skeinteriors.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://skeinteriors.com/wp-json/wp/v2/comments?post=10"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 4,
+          "href": "https://skeinteriors.com/wp-json/wp/v2/pages/10/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 316,
+          "href": "https://skeinteriors.com/wp-json/wp/v2/pages/10/revisions/316"
+        }
+      ],
+      "wp:featuredmedia": [
+        {
+          "embeddable": true,
+          "href": "https://skeinteriors.com/wp-json/wp/v2/media/255"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://skeinteriors.com/wp-json/wp/v2/media?parent=10"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 8,
+    "date": "2023-04-05T08:40:36",
+    "date_gmt": "2023-04-05T08:40:36",
+    "guid": {
+      "rendered": "http://localhost/interiors/?page_id=8"
+    },
+    "modified": "2024-12-14T12:04:14",
+    "modified_gmt": "2024-12-14T12:04:14",
+    "slug": "ske-interiors-coimbatore",
+    "status": "publish",
+    "type": "page",
+    "link": "https://skeinteriors.com/",
+    "title": {
+      "rendered": "Home"
+    },
+    "content": {
+      "rendered": "<p>SKE Interiors – One Of The Best Interior Designers In Coimbatore. We Expertise On All Types Of Interior Designs Like Residentials Interior, Commercials Interior, and Flooring Interiors Designing.</p>\n<p>We are a team of highly-skilled and extremely prolific interior designers in Coimbatore. Our interior design company in Coimbatore can transform the client’s vision into reality, even better than their imagination. We have a close-knit team of interior designers and interior architects who are well-versed and highly skilled in building residential interior spaces as well as commercial interior spaces which work both practically and aesthetically. Our thoughtful and innovative interior design solutions are initiated by partnering closely with our clients. Interior design companies in Coimbatore aim at thoroughly understanding the client’s taste and likes and transforming them into the interior design solutions. With extreme values in place, Dream Interior decorators in Coimbatore can take every step towards excellence in interior design services.</p>\n<p>We Expertise On All Types Of Interior Designs Like Residentials Interior, Commercials Interior, and Flooring Interiors Designing.</p>\n<p>We are a team of highly-skilled and extremely prolific interior designers in Coimbatore. Our interior design company in Coimbatore can transform the client’s vision into reality, even better than their imagination. We have a close-knit team of interior designers and interior architects who are well-versed and highly skilled in building residential interior spaces as well as commercial interior spaces which work both practically and aesthetically.</p>\n<p>We Expertise On All Types Of Interior Designs Like Residentials Interior, Commercials Interior, and Flooring Interiors Designing.</p>\n<p>Our thoughtful and innovative interior design solutions are initiated by partnering closely with our clients. Interior design companies in Coimbatore aim at thoroughly understanding the client’s taste and likes and transforming them into the interior design solutions. With extreme values in place, Dream Interior decorators in Coimbatore can take every step towards excellence in interior design services.</p>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>SKE Interiors – One Of The Best Interior Designers In Coimbatore. We Expertise On All Types Of Interior Designs Like Residentials Interior, Commercials Interior, and Flooring Interiors Designing. We are a team of highly-skilled and extremely prolific interior designers in Coimbatore. Our interior design company in Coimbatore can transform the client’s vision into reality, even [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "template": "templates/frontpage.php",
+    "meta": {
+      "_acf_changed": false,
+      "footnotes": ""
+    },
+    "class_list": [
+      "post-8",
+      "page",
+      "type-page",
+      "status-publish",
+      "hentry"
+    ],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://skeinteriors.com/wp-json/wp/v2/pages/8",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://skeinteriors.com/wp-json/wp/v2/pages"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://skeinteriors.com/wp-json/wp/v2/types/page"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://skeinteriors.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://skeinteriors.com/wp-json/wp/v2/comments?post=8"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 29,
+          "href": "https://skeinteriors.com/wp-json/wp/v2/pages/8/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 558,
+          "href": "https://skeinteriors.com/wp-json/wp/v2/pages/8/revisions/558"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://skeinteriors.com/wp-json/wp/v2/media?parent=8"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "date": "2023-04-05T06:08:33",
+    "date_gmt": "2023-04-05T06:08:33",
+    "guid": {
+      "rendered": "http://localhost/interiors/?page_id=2"
+    },
+    "modified": "2023-04-05T06:08:33",
+    "modified_gmt": "2023-04-05T06:08:33",
+    "slug": "sample-page",
+    "status": "publish",
+    "type": "page",
+    "link": "https://skeinteriors.com/sample-page/",
+    "title": {
+      "rendered": "Sample Page"
+    },
+    "content": {
+      "rendered": "\n<p class=\"wp-block-paragraph\">This is an example page. It&#8217;s different from a blog post because it will stay in one place and will show up in your site navigation (in most themes). Most people start with an About page that introduces them to potential site visitors. It might say something like this:</p>\n\n\n\n<blockquote class=\"wp-block-quote is-layout-flow wp-block-quote-is-layout-flow\"><p>Hi there! I&#8217;m a bike messenger by day, aspiring actor by night, and this is my website. I live in Los Angeles, have a great dog named Jack, and I like pi&#241;a coladas. (And gettin&#8217; caught in the rain.)</p></blockquote>\n\n\n\n<p class=\"wp-block-paragraph\">&#8230;or something like this:</p>\n\n\n\n<blockquote class=\"wp-block-quote is-layout-flow wp-block-quote-is-layout-flow\"><p>The XYZ Doohickey Company was founded in 1971, and has been providing quality doohickeys to the public ever since. Located in Gotham City, XYZ employs over 2,000 people and does all kinds of awesome things for the Gotham community.</p></blockquote>\n\n\n\n<p class=\"wp-block-paragraph\">As a new WordPress user, you should go to <a href=\"http://localhost/interiors/wp-admin/\">your dashboard</a> to delete this page and create new pages for your content. Have fun!</p>\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>This is an example page. It&#8217;s different from a blog post because it will stay in one place and will show up in your site navigation (in most themes). Most people start with an About page that introduces them to potential site visitors. It might say something like this: Hi there! I&#8217;m a bike messenger [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "parent": 0,
+    "menu_order": 0,
+    "comment_status": "closed",
+    "ping_status": "open",
+    "template": "",
+    "meta": {
+      "_acf_changed": false,
+      "footnotes": ""
+    },
+    "class_list": [
+      "post-2",
+      "page",
+      "type-page",
+      "status-publish",
+      "hentry"
+    ],
+    "acf": [],
+    "_links": {
+      "self": [
+        {
+          "href": "https://skeinteriors.com/wp-json/wp/v2/pages/2",
+          "targetHints": {
+            "allow": [
+              "GET"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://skeinteriors.com/wp-json/wp/v2/pages"
+        }
+      ],
+      "about": [
+        {
+          "href": "https://skeinteriors.com/wp-json/wp/v2/types/page"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "https://skeinteriors.com/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "https://skeinteriors.com/wp-json/wp/v2/comments?post=2"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 0,
+          "href": "https://skeinteriors.com/wp-json/wp/v2/pages/2/revisions"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "https://skeinteriors.com/wp-json/wp/v2/media?parent=2"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  }
+]
